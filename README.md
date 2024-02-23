@@ -72,3 +72,6 @@ M-LAB hosts it's network data in a custom BigQuery link - https://www.measuremen
 
 # geo spatial data for the rest of the world
 https://gadm.org/data.html
+
+# References
+https://github.com/EDJNet/internet_speed - For Europe
