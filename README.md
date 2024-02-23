@@ -69,3 +69,6 @@ District of Columbia: 11
 
 # M-LAB dataset
 M-LAB hosts it's network data in a custom BigQuery link - https://www.measurementlab.net/data/docs/bq/quickstart/
+
+# geo spatial data for the rest of the world
+https://gadm.org/data.html
