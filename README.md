@@ -3,7 +3,7 @@ Internet Access Disparities
 
 
 # IXP Datasets
-CAID Dataset - https://publicdata.caida.org/datasets/ixps/
+CAIDA Dataset - https://publicdata.caida.org/datasets/ixps/
 
 File ixs.jsonl contains information about individual IXPs. The "pch_id", "pdb_id", and "pdb_org_id" values match the IXP ids in the original sources, Packet Clearing House (PCH) and PeeringDB (PDB) respectively. Other fields are self-explanatory.
 
