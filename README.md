@@ -1,7 +1,6 @@
 # Internet-Access-Disparities
 Internet Access Disparities
 
-
 # IXP Datasets
 CAIDA Dataset - https://publicdata.caida.org/datasets/ixps/
 
@@ -14,59 +13,6 @@ File locations.jsonl is similar to the geoname locations, but contains negative 
 # Ookla Datasets
 TIGER (Topologically Integrated Geographic Encoding and Referencing) shapefiles are a type of digital data produced by the United States Census Bureau. They contain detailed geographic and cartographic information used for mapping and geographic analysis. TIGER shapefiles are an integral part of the infrastructure for mapping and geographic information systems (GIS) in the United States, supporting various applications, including demographics, urban planning, transportation, and more.
 
-STATEEFP for mapping in Ookla:
-Alabama: 01
-Alaska: 02
-Arizona: 04
-Arkansas: 05
-California: 06
-Colorado: 08
-Connecticut: 09
-Delaware: 10
-Florida: 12
-Georgia: 13
-Hawaii: 15
-Idaho: 16
-Illinois: 17
-Indiana: 18
-Iowa: 19
-Kansas: 20
-Kentucky: 21
-Louisiana: 22
-Maine: 23
-Maryland: 24
-Massachusetts: 25
-Michigan: 26
-Minnesota: 27
-Mississippi: 28
-Missouri: 29
-Montana: 30
-Nebraska: 31
-Nevada: 32
-New Hampshire: 33
-New Jersey: 34
-New Mexico: 35
-New York: 36
-North Carolina: 37
-North Dakota: 38
-Ohio: 39
-Oklahoma: 40
-Oregon: 41
-Pennsylvania: 42
-Rhode Island: 44
-South Carolina: 45
-South Dakota: 46
-Tennessee: 47
-Texas: 48
-Utah: 49
-Vermont: 50
-Virginia: 51
-Washington: 53
-West Virginia: 54
-Wisconsin: 55
-Wyoming: 56
-District of Columbia: 11
-
 # M-LAB dataset
 M-LAB hosts it's network data in a custom BigQuery link - https://www.measurementlab.net/data/docs/bq/quickstart/
 
@@ -74,4 +20,82 @@ M-LAB hosts it's network data in a custom BigQuery link - https://www.measuremen
 https://gadm.org/data.html
 
 # References
-https://github.com/EDJNet/internet_speed - For Europe
+[1] https://github.com/EDJNet/internet_speed - For Europe
+[2] https://dl.acm.org/doi/abs/10.1145/3578338.3593522 - A Comparative Analysis of Ookla Speedtest and Measurement Labs Network Diagnostic Test (NDT7)
+[3] https://ebelding.cs.ucsb.edu/sites/default/files/publications/paul_imc_subscription_tier.pdf - The Importance of Contextualization of Crowdsourced Active Speed Test Measurements
+
+# Things to consider when devising conclusions
+Check tiers of ISP when checking for disparities using Reference [3]
+
+# System Design
+![Architecture](./system_design.png)
+
+Large Scale Data Analysis
+
+1. Data Sources: Our methodology utilizes multiple data sources for network metric data:
+- MLAB (Measurement Lab): Provides open-source internet performance data.
+- OOKLA: Offers data from speed tests that measure internet connection speeds.
+- RIPE Atlas: Maintains a global network of probes that measure internet connectivity
+and reachability.
+
+2. Data Pull: Data is extracted from these sources, through a custom interface designed to
+query and collect the necessary information from the above stated data sources.
+
+3. Data Ingestion: The collected data may undergo an ingestion process to a data storage
+system where it can be processed. Data ingestion will involve:
+- Data Correlation: Associating different data points with each other based on common
+identifiers.
+- Data Cleaning: Removing or correcting erroneous or incomplete data entries.
+
+4. Data Storage: The ingested data is stored in a format and system that facilitates analysis.
+We will be storing this on our local file server systems since we will be dealing with large
+volumes of data which will amount to nearly 50 GB.
+
+5. Data Plotting: The stored data is then plotted for visualization. This could involve:
+- Tableau: For creating interactive data visualizations.
+- Python: Using libraries like Matplotlib, seaborn, or Plotly for creating static or interactive
+plots.
+
+Low-Level Data Analysis
+
+Note on the selection of specific regions: A few states from the US and all the metropolitan
+cities in the following countries/continent: India, Africa, Middle East and SouthEast Asia. This
+selection of countries will be refined once we have the large scale dataset ready.
+
+1. Low-Level Parameters: More detailed analysis is performed with a focus on specific
+regions, informed by:
+- Selection of Few Regions: Targeting specific areas for in-depth analysis.
+- Cross-Reference: Using network data, census information, recent news, trends, and
+research papers to understand the context of the selected regions.
+
+2. Other Data Sources: Additional data to support the analysis might come from:
+- ITU (International Telecommunication Union): Provides standardized global telecom
+data.
+- IXP Data: Data from internet exchange points from open source IXPs datasets like
+CAIDA.
+
+3. Dynamic RIPE Atlas Traceroute Information: Utilizing traceroute data from RIPE Atlas for
+real-time path analysis which can provide insight into network performance and topology.
+
+4. Political Climate and Socio-Economic Data: Incorporating contextual data that could
+impact internet access and performance, such as:
+- Social Media and News: For up-to-date information on the political climate.
+- NGO Reports: Reports from Non-Governmental Organizations on regional
+developments.
+- UN Websites (UNSD): United Nations Statistical Division for global statistical data or
+any other relevant UN body
+- Census Websites of the Country: For demographic and socio-economic data.
+
+Conclusion and Reporting
+
+After conducting both large-scale and low-level data analysis, the findings are compiled and
+synthesized into reports. These reports likely include:
+- Analysis and Hypothesis for Disparities: Examining the reasons behind disparities in
+internet access and quality among different regions.
+- Reporting and Conclusions: Presenting the analysis results, drawing conclusions, and
+possibly making policy recommendations.
+This methodology is comprehensive, integrating both macro and micro-level data analyzes to
+understand internet access disparities and network performance. It leverages a wide array of
+tools and data sources to provide a multi-faceted view of internet metrics and contextual
+factors. The end goal is to report findings that are well-informed by a variety of qualitative and
+quantitative data points.
