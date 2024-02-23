@@ -7,7 +7,11 @@ import numpy as np
 import os
 import pyogrio
 import json
+import warnings
 
+# Ignore specific future and deprecation warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 # Constants
 BASE_SHAPEFILE_PATH = "/Users/beja/Desktop/Classes/Winter'24/project/Internet-Access-Disparities/datasets/OOKLA/shapefiles/performance/"
 CENSUS_PATH_TEMPLATE = "/Users/beja/Desktop/Classes/Winter'24/project/Internet-Access-Disparities/datasets/CENSUS/tl_{}_us_county.zip"
@@ -98,7 +102,7 @@ def process_state_year(state, year):
     analyze_and_save_state_data(year, state, county_stats_list, output_path)
 
 def main():
-    with ThreadPoolExecutor(max_workers=4) as executor:
+    with ThreadPoolExecutor(max_workers=8) as executor:
         # Create a list to hold all of the tasks
         future_to_state_year = {
             executor.submit(process_state_year, state, year): (state, year)
