@@ -19,11 +19,6 @@ M-LAB hosts it's network data in a custom BigQuery link - https://www.measuremen
 # geo spatial data for the rest of the world
 https://gadm.org/data.html
 
-# References
-[1] https://github.com/EDJNet/internet_speed - For Europe
-[2] https://dl.acm.org/doi/abs/10.1145/3578338.3593522 - A Comparative Analysis of Ookla Speedtest and Measurement Labs Network Diagnostic Test (NDT7)
-[3] https://ebelding.cs.ucsb.edu/sites/default/files/publications/paul_imc_subscription_tier.pdf - The Importance of Contextualization of Crowdsourced Active Speed Test Measurements
-
 # Things to consider when devising conclusions
 Check tiers of ISP when checking for disparities using Reference [3]
 
@@ -99,3 +94,9 @@ understand internet access disparities and network performance. It leverages a w
 tools and data sources to provide a multi-faceted view of internet metrics and contextual
 factors. The end goal is to report findings that are well-informed by a variety of qualitative and
 quantitative data points.
+
+
+# References
+- [1] https://github.com/EDJNet/internet_speed - For Europe
+- [2] https://dl.acm.org/doi/abs/10.1145/3578338.3593522 - A Comparative Analysis of Ookla Speedtest and Measurement Labs Network Diagnostic Test (NDT7)
+- [3] https://ebelding.cs.ucsb.edu/sites/default/files/publications/paul_imc_subscription_tier.pdf - The Importance of Contextualization of Crowdsourced Active Speed Test Measurements
