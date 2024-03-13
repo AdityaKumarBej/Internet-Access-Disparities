@@ -1,43 +1,5 @@
 # Internet-Access-Disparities
-<<<<<<< HEAD
-Internet Access Disparities
-
-# IXP Datasets
-CAIDA Dataset - https://publicdata.caida.org/datasets/ixps/
-
-File ixs.jsonl contains information about individual IXPs. The "pch_id", "pdb_id", and "pdb_org_id" values match the IXP ids in the original sources, Packet Clearing House (PCH) and PeeringDB (PDB) respectively. Other fields are self-explanatory.
-
-File organizations.jsonl contains the information about each organization learned from PDB. These can be matched with their corresponding facility by matching the facility's pdb_org_id with the organization's pdb_org_id.
-
-File locations.jsonl is similar to the geoname locations, but contains negative "geo_id"s for those locations where geographic locations of IXPs were not found in the geonames dataset.
-
-# Ookla Datasets
-TIGER (Topologically Integrated Geographic Encoding and Referencing) shapefiles are a type of digital data produced by the United States Census Bureau. They contain detailed geographic and cartographic information used for mapping and geographic analysis. TIGER shapefiles are an integral part of the infrastructure for mapping and geographic information systems (GIS) in the United States, supporting various applications, including demographics, urban planning, transportation, and more.
-
-# M-LAB dataset
-M-LAB hosts it's network data in a custom BigQuery link - https://www.measurementlab.net/data/docs/bq/quickstart/
-
-# Census Data
-- USA
-U.S. Census Bureau ftp site. - https://www2.census.gov/geo/tiger/TIGER2023/COUNTY/tl_2023_us_county.zip (for 2023)
-
-- EUROPE
-The geometries of European territorial units (local administrative units (LAU) and regions/districts (NUTS2/NUTS3)) distributed by Eurostat for EU Member States, EU official candidate countries, and EFTA countries.
-Available through the library latlon2map [1]
-
-# geo spatial data for the rest of the world
-https://gadm.org/data.html
-
-# References
-[1] https://github.com/EDJNet/internet_speed - For Europe
-[2] https://dl.acm.org/doi/abs/10.1145/3578338.3593522 - A Comparative Analysis of Ookla Speedtest and Measurement Labs Network Diagnostic Test (NDT7)
-[3] https://ebelding.cs.ucsb.edu/sites/default/files/publications/paul_imc_subscription_tier.pdf - The Importance of Contextualization of Crowdsourced Active Speed Test Measurements
-
-# Things to consider when devising conclusions
-Check tiers of ISP when checking for disparities using Reference [3]
-=======
 Project scope - Conduct a large scale analysis of network measurements in USA, Europe and India and low-level analysis for a few select regions to understand if there are Internet Access Disparities among the general population for a given region. Socio-economic, geographic and political climate factors are taking into account when conducting the analysis.
->>>>>>> origin/main
 
 # System Design
 ![Architecture](./system_design.png)
