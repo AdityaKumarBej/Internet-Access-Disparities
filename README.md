@@ -16,6 +16,14 @@ TIGER (Topologically Integrated Geographic Encoding and Referencing) shapefiles 
 # M-LAB dataset
 M-LAB hosts it's network data in a custom BigQuery link - https://www.measurementlab.net/data/docs/bq/quickstart/
 
+# Census Data
+- USA
+U.S. Census Bureau ftp site. - https://www2.census.gov/geo/tiger/TIGER2023/COUNTY/tl_2023_us_county.zip (for 2023)
+
+- EUROPE
+The geometries of European territorial units (local administrative units (LAU) and regions/districts (NUTS2/NUTS3)) distributed by Eurostat for EU Member States, EU official candidate countries, and EFTA countries.
+Available through the library latlon2map [1]
+
 # geo spatial data for the rest of the world
 https://gadm.org/data.html
 
