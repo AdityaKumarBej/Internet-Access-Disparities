@@ -91,7 +91,10 @@ M-LAB hosts it's network data in a custom BigQuery link - https://www.measuremen
 
 # Census Data
 - USA
-U.S. Census Bureau ftp site. - https://www2.census.gov/geo/tiger/TIGER2023/COUNTY/tl_2023_us_county.zip (for 2023)
+-> U.S. Census Bureau ftp site. - https://www2.census.gov/geo/tiger/TIGER2023/COUNTY/tl_2023_us_county.zip (for 2023)
+
+-> Household income, Population details for all counties - https://www.ers.usda.gov/data-products/county-level-data-sets/county-level-data-sets-download-data/
+
 
 - EUROPE
 The geometries of European territorial units (local administrative units (LAU) and regions/districts (NUTS2/NUTS3)) distributed by Eurostat for EU Member States, EU official candidate countries, and EFTA countries.
