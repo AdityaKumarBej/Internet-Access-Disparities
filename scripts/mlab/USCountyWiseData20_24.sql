@@ -12,7 +12,7 @@ SELECT  FORMAT_DATE('%Y', counties.date)     year,
         avg(counties.dl_minRTT_LOG_AVG_rnd2) download_minRTT_r2,
         avg(counties.ul_minRTT_LOG_AVG_rnd1) upload_minRTT_r1,
         avg(counties.ul_minRTT_LOG_AVG_rnd2) upload_minRTT_r2,
-        count(*)                             number_of_measurements
+        count(*)                             num_of_measurements_daily_sampled
 FROM    `statistics.v0_us_counties`          counties
 WHERE   counties.country_code             = "US"
 -- AND     counties.state                 = "US-AL"
