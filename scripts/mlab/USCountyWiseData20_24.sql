@@ -1,6 +1,6 @@
-SELECT  FORMAT_DATE('%G', counties.date)     year,
-        states.GEOID                         geoid,
-        states.state_name                    state,
+SELECT  FORMAT_DATE('%Y', counties.date)     year,
+        counties.GEOID                       geoid,
+        counties.state_fips_code             state,
         counties.county_name                 county,
         avg(counties.download_MIN)           download_min,
         avg(counties.upload_MIN)             upload_min,
@@ -11,22 +11,13 @@ SELECT  FORMAT_DATE('%G', counties.date)     year,
         avg(counties.dl_minRTT_LOG_AVG_rnd1) download_minRTT_r1,
         avg(counties.dl_minRTT_LOG_AVG_rnd2) download_minRTT_r2,
         avg(counties.ul_minRTT_LOG_AVG_rnd1) upload_minRTT_r1,
-        avg(counties.ul_minRTT_LOG_AVG_rnd2) upload_minRTT_r2 
-        
-FROM    `statistics.v0_us_states`            states,
-        `statistics.v0_us_counties`          counties
-
-WHERE   states.GEOID  = counties.state_fips_code
-AND     states.GEOID  BETWEEN '01' AND '56'  
-AND     FORMAT_DATE('%G', counties.date) >= '2020'
-AND     FORMAT_DATE('%G', counties.date) <= '2024'
-AND     (
-        FORMAT_DATE('%e', counties.date) = '01'
-        OR
-        FORMAT_DATE('%e', counties.date) = '15'
-        OR
-        FORMAT_DATE('%e', counties.date) = '30'
-        )
+        avg(counties.ul_minRTT_LOG_AVG_rnd2) upload_minRTT_r2,
+        count(*)                             number_of_measurements
+FROM    `statistics.v0_us_counties`          counties
+WHERE   counties.country_code             = "US"
+-- AND     counties.state                 = "US-AL"
+-- AND     counties.county_name           = "Autauga"
+AND     counties.date BETWEEN '2020-01-01' AND '2024-12-31'
 GROUP BY  year,
           geoid,
           state,
