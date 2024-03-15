@@ -1,0 +1,2 @@
+year,geoid,state,state_name,county,download_min,upload_min,download_avg,upload_avg,download_max,upload_max,download_minRTT_r1,download_minRTT_r2,upload_minRTT_r1,upload_minRTT_r2,number_of_measurements
+2022,11001,11,District of Columbia,District of Columbia,23.355590277777779,6.9159392361111074,134.56666145833319,44.433961805555555,1006.1565937499997,674.5912864583313,4.5663066202090592,4.5690278745644539,6.8089371727748658,6.8111326352530517,4608
