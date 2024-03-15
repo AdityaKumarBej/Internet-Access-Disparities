@@ -1,9 +1,9 @@
 import pandas as pd
 
 # Paths to the input files
-population_estimates_path = "../../datasets/CENSUS/USA/PopulationEstimates.xlsx"
-unemployment_path = "../../datasets/CENSUS/USA/Unemployment.xlsx"
-master_csv_path = "../../results/mlab/USA/Yearly Masters/2024_US_state_county.csv"
+population_estimates_path = "../../datasets/CENSUS/US/PopulationEstimates.xlsx"
+unemployment_path = "../../datasets/CENSUS/US/Unemployment.xlsx"
+master_csv_path = "../../results/mlab/US/Yearly Masters/2024_US_state_county.csv"
 
 # Read the data from the Excel and CSV files
 population_estimates = pd.read_excel(population_estimates_path)
@@ -27,5 +27,5 @@ merged_data = merged_data.merge(unemployment_data, left_on='geoid', right_on='FI
 merged_data.drop(['FIPStxt', 'FIPS_Code'], axis=1, inplace=True)
 
 # Save the merged data to a new CSV file
-output_path = "../../results/mlab/USA/Yearly Masters/2024_US_state_county_census.csv"
+output_path = "../../results/mlab/US/Yearly Masters/2024_US_state_county_census.csv"
 merged_data.to_csv(output_path, index=False)
