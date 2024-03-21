@@ -111,3 +111,6 @@ Check tiers of ISP when checking for disparities using Reference [3]
 - [1] https://github.com/EDJNet/internet_speed - For Europe
 - [2] https://dl.acm.org/doi/abs/10.1145/3578338.3593522 - A Comparative Analysis of Ookla Speedtest and Measurement Labs Network Diagnostic Test (NDT7)
 - [3] https://ebelding.cs.ucsb.edu/sites/default/files/publications/paul_imc_subscription_tier.pdf - The Importance of Contextualization of Crowdsourced Active Speed Test Measurements
+- [4] https://people.cs.umass.edu/~phillipa/papers/MLab_CCR.pdf - M-Lab: User initiated Internet data for the research community
+- [5] https://www.trai.gov.in/sites/default/files/QPIR_05122023_0.pdf - Telecom Regulatory Authority of India | The Indian Telecom Services Performance Indicators
+- [6] https://www.fcc.gov/oet/mba/raw-data-releases - MBA Datasets
