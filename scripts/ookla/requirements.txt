@@ -1,0 +1,7 @@
+geopandas
+matplotlib
+pandas
+numpy
+shapely
+adjustText
+pyogrio
