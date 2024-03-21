@@ -1,0 +1,512 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{minted}
+\usepackage{xcolor} % to access the named colour LightGray
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage{listings}
+\usepackage{fancyvrb}
+\usepackage{algorithm}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{framed}
+\definecolor{LightGray}{gray}{0.9}
+\usepackage[listings,skins]{tcolorbox}
+\usepackage[skipbelow=\topskip,skipabove=\topskip]{mdframed}
+\usepackage{tabularx}
+\usepackage{array}
+\lstset{language=Python,
+        basicstyle=\ttfamily\footnotesize,
+        keywordstyle=\color{blue},
+        commentstyle=\color{red},
+        breaklines=true,                 % Automatically breaks long lines
+        postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}, % Mark line breaks
+        stringstyle=\color{red},
+        showstringspaces=false,
+        identifierstyle=\color{black},
+        procnamekeys={def,class},
+        numbers=left,                     % Add line numbers on the left
+        numberstyle=\tiny\color{gray},    % Style of the line numbers
+        stepnumber=1,                     % Line number step
+        numbersep=5pt,                    % How far the line numbers are from the code
+        xleftmargin=0.5cm
+        }
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\pagestyle{plain}
+
+\begin{document}
+
+\title{Internet Access Disparity\\
+% {\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
+% should not be used}
+% \thanks{}
+}
+
+\author{\IEEEauthorblockN{Aditya Kumar Bej}
+\IEEEauthorblockA{\textit{Department of Computer Science} \\
+
+\textit{University of California, Davis}\\
+Davis, California \\
+akbej@ucdavis.edu}
+\and
+\IEEEauthorblockN{Shivani Kalamadi}
+\IEEEauthorblockA{\textit{Department of Computer Science} \\
+\textit{University of California, Davis}\\
+Davis, California \\
+skalamadi@ucdavis.edu}
+% \and
+% \IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
+% \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+% \textit{name of organization (of Aff.)}\\
+% City, Country \\
+% email address or ORCID}
+% \and
+% \IEEEauthorblockN{4\textsuperscript{th} Given Name Surname}
+% \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+% \textit{name of organization (of Aff.)}\\
+% City, Country \\
+% email address or ORCID}
+% \and
+% \IEEEauthorblockN{5\textsuperscript{th} Given Name Surname}
+% \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+% \textit{name of organization (of Aff.)}\\
+% City, Country \\
+% email address or ORCID}
+% \and
+% \IEEEauthorblockN{6\textsuperscript{th} Given Name Surname}
+% \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+% \textit{name of organization (of Aff.)}\\
+% City, Country \\
+% email address or ORCID}
+}
+
+\maketitle
+\thispagestyle{plain}
+
+\begin{abstract}
+% This document is a model and instructions for \LaTeX.
+% This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
+% or Math in Paper Title or Abstract.
+
+Even in today's world with numerous technological advancements, the digital divide, in terms of Internet Access Disparity is a pressing issue that affects millions of people worldwide. The importance of having access to high-speed broadband had become more obvious during the COVID-19 pandemic. This paper presents a comprehensive analysis of the current state of the quality of Internet served and identifying access disparities in certain regions, focusing on the United States and India which rank in the top three highest number of active internet users. We highlight the multifaceted nature of Internet Access Disparity such as socioeconomic status, geographic location, infrastructure limitations, and political biases in the regions. We also try to understand and assess the impact of Internet Exchange Providers (IXPs) in bettering the quality of the network in the given region. We aim to provide an updated and comprehensive dataset of Internet Metrics along with relevant census information and discuss the implications of these findings to policymakers, infrastructure develop or any other relevant stakeholders.
+
+\end{abstract}
+
+\begin{IEEEkeywords}
+Digital Divide, Internet Access, Information Technology
+\end{IEEEkeywords}
+
+\section{Introduction}
+    Consistent with the approaches to what is considered to be human rights which includes equality, non-discrimination and covenants on civil, political, economic, social, and cultural rights, access to high-speed Internet is increasingly not seen just as a convenience, but as a necessity and more recently as a human right by the United Nations General Assembly in the Universal Declaration of Human Rights.
+
+   A total of roughly 5.35 billion people around the world use the Internet at the start of 2024, which is equivalent to 66\% of the world's total population. While this figure suggests a significant level of global connectivity, there are a wide variety of factors which affect the quality of the internet served to the population. An often overlooked aspect of this disparity is the poor and unequal quality of internet service among those who are considered connected. This dimension of Internet Access Disparity (IAD) highlights that simply having access to the internet does not guarantee equitable participation in the digital world. 
+
+   The importance of understanding and addressing IAD cannot be exaggerated. In the era where Internet is considered to be the backbone of global economies, education systems, and healthcare services, being disconnected or even having poor access means being disadvantaged. The implications of IAD extends beyond the inability to just browse the web or access social media; they include critical barriers to education, employment opportunities, and even life-saving health information. This disparity can have impacts on individuals and communities which can perpetuate exclusion in both urban and rural landscapes across developed and developing nations.
+   
+   Addressing the issue of IAD requires a nuanced understanding that goes beyond merely counting who is an active internet user or not. This issue encompasses several key factors such as Bandwidth and Speed, Reliability and Latency, Data caps and affordability, the Internet Infrastructure, the geographic type (rural/urban), Population Diversity, and any relevant political biases in the region which affects implementing policies to make internet access more affordable and promoting the overall internet infrastructure in the given region.
+
+   To this end, we conduct two levels of analysis - a large scale analysis of all the US states and its counties and all the states and cities in India, and a low level analysis of certain regions from both the countries. We start with a broad analysis, collecting data on network performance from OOKLA \cite{11} and M-LAB \cite{10} which are crowd sourced measurements and relevant census information to spot patterns of consistent slow internet speeds and high latency. After identifying regions with lower performance, we zoom in for a detailed examination to understand why these areas are struggling. During this deeper dive, we consider several factors, including how many internet providers are available in that region, the common service plans people subscribe to, the presence of Internet Exchange Points nearby, the dynamic traceroute information from RIPE ATLAS \cite{12} and any local government actions related to internet infrastructure and rules.
+
+   By integrating these two levels of analysis, this research work offers a holistic view of Internet Access Disparities, bridging the gap between macro-level trends and micro-level dynamics. Through our work, we anticipate uncovering actionable insights that can inform policy, practice, and infrastructure development, ultimately contributing to the reduction of the digital divide. The aim is to not only highlight the disparities that hinder equitable internet access but also the pave the way for any targeted interventions that ensure a more connected and inclusive digital future for all.
+
+   \textbf{Summarizing our findings}:
+   \begin{itemize}
+        \item We find evidence of Internet Access Disparities between regions having similar census metrics. We do an apples to apples comparison rather than an apples to oranges comparison when comparing different regions by taking into account the census metrics such as population size, the median household income etc. 
+        \item We find that the presence of IXPs does indeed improve the quality of network speeds in a given region versus a region with no IXPs.
+        \item We find evidence pointing to regions experiencing inadequate internet services primarily due to insufficient funding for their network infrastructure. Additionally, historical instances of government-level corruption, exemplified by the notorious 2G scam in India as a case study \cite{7}, lend further support to our findings, highlighting how political mismanagement can significantly impact the quality and distribution of internet access. Various states in the USA have faced challenges in broadband expansion due to political, regulatory, and lobbying pressures \cite{8}. For example, some states have laws that make it difficult for municipalities to create their own broadband services, often due to lobbying by private ISPs. This can limit options for expanding internet access in underserved areas.
+   \end{itemize}
+
+\section{Research Question}
+In this study, we focus on understanding the disparities in Internet Accesses across different regions within two countries. Our investigation is structured around three key research questions:
+\begin{itemize}
+\item {\textbf{RQ1}} : \textbf{\textit{To what extent do differences in socioeconomic factors such as income level, geographic type (rural/urban), population diversity impact internet access?}}
+
+We seek to explore how various socioeconomic factors, including income level, whether an area is rural or urban, and the diversity of its population, affect access to the internet. 
+\item \textbf{RQ2} : \textbf{\textit{Does the presence of IXPs in certain regions differentially impact internet access in terms of speed, reliability, and internet affordability}}
+
+Our second question examines the influence of Internet Exchange Points (IXPs) on internet access, particularly looking at their impact on the speed, reliability, and affordability of internet services.
+
+\item \textbf{RQ3} : \textbf{\textit{How does the presence of any inherent political biases influence internet access?}}
+
+Lastly, we investigate how political biases and government policies affect internet access. This includes looking at whether certain regions or communities face disparities in internet access due to political decisions, regulations, or lack of initiatives aimed at improving digital infrastructure.
+\end{itemize}
+
+\section{Hypothesis}
+\label{sec:hypothesis}
+
+\subsection{\textbf{Regions with lower socioeconomic status are served by lower-quality network providers, leading to significant disparities in internet access, speed, and reliability.}}
+
+\textit{Null Hypothesis (H0)}: There is no significant difference in the quality of network providers serving regions with different socioeconomic statuses. Variations in socioeconomic factors such as income level, geographic type (rural/urban), and population diversity do not significantly influence internet access, speed, and reliability.
+
+\textit{Alternate Hypothesis (H1)}: Regions with lower socioeconomic status are served by lower-quality network providers, leading to significant disparities in internet access, speed, and reliability compared to regions with higher socioeconomic status. Variations in socioeconomic factors such as income level, geographic type (rural/urban), and population diversity significantly influence the quality of internet access.
+
+\subsection{\textbf{The growth of Internet Exchange Points (IXPs) in specific regions over the last five years is likely to impact internet access disparities.}}
+
+\textit{Null Hypothesis (H0)}: The growth of Internet Exchange Points (IXPs) in specific regions over the last five years has no significant impact on internet access disparities among those regions.
+
+\textit{Alternate Hypothesis (H1)}: The growth of Internet Exchange Points (IXPs) in specific regions over the last five years significantly impacts internet access disparities, potentially improving access quality and reducing disparities in those regions.
+
+\subsection{\textbf{The presence of political biases significantly influences internet access}}
+\textit{Null Hypothesis (H0)}: The presence of political biases does not significantly influence internet access, including aspects such as availability, speed, and reliability.
+
+\textit{Alternate Hypothesis (H1)}: Political biases stemming from government ideologies, regulatory bodies, and policy-making processes can lead to unequal distribution of internet access across different regions, communities, and socio-economic groups.
+
+\section{Related work}
+To the best of our knowledge, prior work lacks an in-depth analysis of the way Internet trends and access disparities are analyzed especially when involving an entire country and all the states within it. Prior work was mostly focused on access disparities among ethnic groups and among specific communities and some studies are outdated \cite{1}
+
+We focus on studies which closely relate to our scope and note down the limitations for the studies which closely relate to our scope helps in evaluating gaps in current and prior research.
+
+\subsection{\textbf{The type-of-internet-access digital divide and the well-being of ethnic minority and majority consumers: A multi-country investigation \cite{2}}}
+The research paper "The type-of-internet-access digital divide and the well-being of ethnic minority and majority consumers: A multi-country investigation" by Bartikowski et al. (2018) explores the impact of mobile versus regular internet use on consumers' perceptions of their economic situation and life satisfaction. It highlights how these effects vary based on ethnic status (majority vs. minority) and the wealth of countries (richer vs. poorer). The study uses multi-level modeling and data from over 26,000 consumers across 21 countries to support its hypotheses.
+
+While the study accounts for national wealth and ethnic status, there are myriad other socio-economic factors that could influence the relationship between internet access type and well-being, such as education levels, employment status, and urban vs. rural residency. These factors might require more detailed analysis using comprehensive census data.
+
+\subsection{\textbf{There is more to IXPs than meets the eye \cite{3}}}
+The research paper "There is more to IXPs than meets the eye" by Chatzis et al. (2013) discusses the role of Internet Exchange Points (IXPs) in the Internet ecosystem, their operational and technical aspects, and their impact on innovation in Europe and globally. The paper highlights the critical role of IXPs in facilitating traffic exchange and reducing latencies.
+
+The paper captures a snapshot of the IXP landscape as of May 2013. Given the dynamic nature of Internet infrastructure, with new IXPs emerging and existing ones expanding, the findings might not fully represent the current state or trends in IXPs' impact on network metrics and Internet performance. While the study offers substantial evidence highlighting the significance of Internet Exchange Points (IXPs), it does not delve into how IXPs in regions with suboptimal internet conditions might experience benefits from IXPs.
+
+\subsection{\textbf{Digital discrimination: Political bias in Internet service provision across ethnic groups \cite{4}}}
+The research paper "Digital discrimination: Political bias in Internet service provision across ethnic groups" by Nils B. Weidmann et al. (2016) presents a comprehensive examination of the political bias in Internet service allocation among ethnic groups worldwide, demonstrating that politically excluded groups have significantly lower Internet penetration compared to those in power. The study shows a persistent political bias in internet access globally only among ethnic groups. The global expansion of the Internet is thought to enhance government transparency and democracy, but the study shows marginalized groups have significantly lower Internet access rates compared to those in power, highlighting a barrier to the liberating potential of technology. Nevertheless, the study is outdated, and due to its global scope, it lacks in-depth exploration of specific countries or regions. And moreover, the studies focuses on only ethnic groups which makes up a very small percentage of the entire population given a particular state or a county.
+
+
+\subsection{\textbf{The importance of contextualization of crowdsourced active speed test measurements \cite{5}}}
+The paper "The importance of contextualization of crowdsourced active speed test measurements" by Udit Paul and colleagues (2022) addresses the need to contextualize crowdsourced speed test measurements to accurately understand network access and performance. This study contributes significantly to our understanding of the nuances behind speed test data which we have considered as part of our methodology when dealing with OOKLA and M-LAB network data.
+
+This study contributes only on improving our methodology to analyze data and not contribute to other factors such as the actual analysis of the network metrics given a region with the census data as it is beyond the scope of the paper. Also, the study's context and findings are influenced by the specific policy and regulatory environment of the U.S. telecommunications sector. When applying these insights to other countries, differences in regulation, competition, and infrastructure development stages could lead to different implications.
+
+
+\subsection{\textbf{A Comparative Analysis of Ookla Speedtest and Measurement Labs Network Diagnostic Test (NDT7) \cite{6}}}
+The research paper "A Comparative Analysis of Ookla Speedtest and Measurement Labs Network Diagnostic Test (NDT7)" by MacMillan et al. (2023) offers an in-depth evaluation of two widely used internet speed testing tools, focusing on their performance under various conditions and their impact on network metric analysis across different demographics.
+
+While the paper provides a controlled, in-lab comparison of Ookla and NDT7 and extends the analysis to wide-area deployments, the variability of real-world internet usage scenarios and network configurations may not be fully captured. These scenarios can significantly influence the accuracy and representativeness of speed test results across different regions and demographics.
+
+
+\section{Theoretical Contribution}
+
+Summarizing our theoretical contributions:
+
+\begin{itemize}
+\item \textbf{Developing a general framework for a high level country wide analysis} We develop a general framework and
+parameters to consider when conducting a comprehensive analysis to identify internet trends and identify disparities
+in a given region
+\item \textbf{An exhaustive updated dataset} We contribute a novel dataset for evaluating the combined impact of socioeconomic factors and network provider quality on internet access disparities. By building upon existing tools like M-Lab Speed Test, OOKLA's Open Data, and RIPE Atlas data, we will create a geographically weighted, multi-layered dataset encompassing speed, reliability, network provider quality, and relevant socioeconomic indicators for select regions. This allows us to map internet access disparities with granular detail.
+\item \textbf{Historical trends of upto five years} We analyze and visualize the historical trend of the past five years based on the collected network data for each region.
+\item \textbf{Open source} We have open sourced our research work \cite{9}
+\end{itemize}
+
+\section{Methodology}
+\label{sec:methodology}
+
+\subsection{Overview}
+\begin{figure*}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Term Project/image_4.png} % Scale the image to 150% of its original size
+    \caption{Comprehensive Data Analysis Workflow}
+    \label{fig:arch}
+\end{figure*}
+
+Figure \ref{fig:arch} shows the high level architecture of how the research is conducted. The research methodology is crafted to tackle the challenge of analyzing large-scale internet access disparities, incorporating a variety of data sources and analytical tools like RIPE ATLAS to effectively explore research questions and hypotheses. The process begins with collecting data from leading network metrics providers, including MLAB, OOKLA, and RIPE Atlas, ensuring a solid foundation for analysis through a meticulous data preparation process involving extraction, correlation, cleaning, and storage, managed with Git for version control.
+
+The methodology emphasizes data visualization using Tableau and Python to make complex data sets accessible and understandable, alongside detailed regional analyses that cross-reference network data with socio-economic and political information, utilizing resources like the International Telecommunications Union (ITU) \cite{13}, Census Data \cite{14} \cite{15}, and Dynamic Traceroute information from RIPE Atlas for real-time network insights. This approach is enriched with Internet Exchange Point (IXP) data for geographical insights and ISP affordability assessments.
+
+The culmination of the research is the production of comprehensive reports that synthesize the findings, supported by graphs that illustrate trends and patterns in internet access across different demographics, aiming to conclusively address the research hypotheses. Overall, this methodological framework is designed for its robustness, clarity, and ability to provide meaningful insights into internet access equality, potentially informing policy and practice.
+
+\subsection{Large Scale Data Analysis}
+\begin{figure*}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Term Project/image_2.png}
+    \caption{High Level Bulk Analysis}
+    \label{fig:high_level}
+\end{figure*}
+
+Figure \ref{fig:high_level} outlines the general structured approach to collect and analyze network and census data as part of our High Level Bulk Analysis Methodology. The breakdown of the process is detailed in the below steps
+
+\begin{itemize}
+    \item \textbf{Country-Level Breakdown} - We identify the country of interest and break it down into states or major administrative region (denoted as State 1 to State N)
+    \item \textbf{Regional Segmentation} - Each state is further subdivided into smaller regions such as counties or cities. This allows for data collection at a more granular level.
+    \item \textbf{Data Collection - Network Data} - Network data is collected for each county or city. The specific metrics gathered include - Average Download Speed, Average Upload Speed, Average Latency, Number of Tests conducted. These are similar metrics which are available in both OOKLA and M-LAB and the types of networks considered are fixed (wired connections) and mobile (wireless connections). We collect data of the past five years 
+    \item \textbf{Data Collection - Census Data} - Alongside network data, census data is also collected. This demographic information includes the Population Count, Net Migration Count, and the Median Household Income.
+    \item \textbf{Data Integration} - The network data and census data are then combined and this integration allows for a comprehensive analysis that accounts for both technological and demographic factors
+    \item \textbf{Analysis} - With the integrated dataset, an analysis is conducted to understand and interpret the combined data. The objective here is to derive insights from the fused datasets, aiming to identify correlations or patterns. 
+    \item \textbf{Low Level Analysis} - Following the high-level analysis, certain regions are selected for more detailed, low-level analysis. This step is a deeper dive into specific areas of interest that may emerged from the initial analysis such as lower download and upload speeds or higher latency.
+\end{itemize}
+
+
+% \textbf{Intuition on choosing the stated Census parameters} - Each of the census data metrics provides a different perspective on the factors that may influence internet access:
+
+% \begin{enumerate}
+%     \item \textbf{Population Count} - This metric gives insight into the demand side of the internet access equation. A higher population count typically indicates a greater need for robust internet infrastructure to support the connectivity needs of residents. In contrast, areas with sparse populations may experience less incentive for investment in digital infrastructure due to lower potential for return on investment for service providers.
+
+%     \item \textbf{Median Household Income} - This economic indicator can be closely correlated with internet access disparities. Higher median household income levels are often associated with better access to a variety of services, including the internet, due to greater purchasing power and the likelihood of existing infrastructure in wealthier areas. Lower-income areas might have less access due to affordability issues and possibly lower levels of existing infrastructure, as service providers may not prioritize investment in these regions.
+% \end{enumerate}
+
+% There are other several census data points which can be employed as part of future work for more precise analysis but for the sake of limiting the scope of the study, we have decided to not include these parameters as part of our high level study. However, these parameters can be considered when doing a low-level deep dive for a specific region to further understand the trends of Internet Access Disparities. A few examples of such parameters include Educational Attainment, Age Distribution, Race and Ethnicity, Language Proficiency, Housing Characteristics, Disability Status and Poverty Status.
+
+\subsection{Low Level Data Analysis}
+
+\begin{figure*}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Term Project/image_3.png}
+    \caption{Low Level Data Analysis Parameters}
+    \label{fig:low_level_data_analysis}
+\end{figure*}
+
+
+Figure  \ref{fig:low_level_data_analysis} depicts the framework for conducting low-level analysis on identifying internet access disparities  within select regions. This framework consists of a comprehensive set of parameters, each encapsulated within its domain, which when combined, offers a multi-faceted view of the internet ecosystem.
+
+For each region, to conduct low-level analysis, gather the following information. The intuition of each segment is explained below.
+\begin{itemize}
+    \item \textbf{IXP and ISP Data} - This segment focuses on analysis of Internet Service Providers (ISPs) and Internet Exchange Points (IXPs) within the region. Key metrics include the number of ISPs, which affects competition and potentially service quality; the cost of services; which influences accessibility and affordability for consumers; and the presence of IXPs, which can affect the speed and reliability of internet connectivity.
+    \item \textbf{Network Metrics} - This segment analyzes the technical performance of internet services, considering both static measurements such as crowd-sourced data from M-LAB and OOKLA and dynamic metrics such as trace route information from RIPE ATLAS which gives the state of the internet in real time and tracks the path the data takes from a source to a destination over the internet so we can understand if any hops are through IXPs
+    \item \textbf{Socio-Economic Data} - This component integrates socio-economic factors, with the data points such as the census data parameters which we have chosen for our research, the number of internet users, which reflects the penetration of internet usage; and the state of internet infrastructure, which is fundamental to service availability.
+    \item \textbf{Political Climate Data} - This component delves into the political environment's impact on internet infrastructure, scrutinizing government initiatives that could promote or hinder the development of internet services, network regulations that may affect how services are provided and maintained, and infrastructure investment, which is critical for the expansion and upgrading of internet infrastructure.
+\end{itemize}
+
+\section{Data Filtering}
+
+\subsection{Criteria on Country Selection}
+Table \ref{tab:overviewtable} shows the number of Internet Users and Penetration rate of the top 3 countries with the highest number of internet users in the world \cite{18}. We decided to choose United States and India since they rank among the top 3 countries with the most active internet users. We decided to skip China due to reasons such as less transparency in their census data and stricter network regulations which can bias our research work.
+
+\begin{table}[htbp]
+\caption{Internet Data (2021)}
+\label{tab:overviewtable}
+\begin{center}
+\begin{tabular}{|c|c|c}
+\hline
+Country & \# of Internet Users & Internet Penetration \\
+\hline
+China & 1.8 trillion & 73.1 \% \\
+\hline
+India & 692 million & 48.7 \% \\
+\hline
+USA & 311 million & 93.73 \% \\
+\hline
+\end{tabular}
+\label{tab:overview}
+\end{center}
+\end{table}
+
+\subsection{Correlating M-LAB and OOKLA Data}
+
+
+
+
+\section{Measures}
+To assess the hypothesis proposed in our study in Section~\ref{sec:hypothesis} on Internet Access Disparities, we employ a well-defined set of metrics as shown in Table~\ref{tab:metrics_table} that captures the various dimensions of internet access. These measurements are selected to minimize ambiguity and ensure the comprehensive testing of our hypothesis, thereby reducing the scope of unanswered questions and accurately deciding the truth value of our hypotheses.
+
+
+\begin{table}[htbp]
+    \caption{Metrics Captured}
+    \label{tab:metrics_table}
+\begin{center}
+    \begin{tabular}{|c|}
+        \hline
+        \multicolumn{1}{|c|}{\textbf{M-LAB and OOKLA Network Metrics (over 5 years)}} \\
+        \hline
+        Average Download Speed \\
+        \hline
+        Average Upload Speed \\
+        \hline
+        Average Latency \\
+        \hline
+        Location Data (X, Y coord.) \\
+        \hline
+        Number of Tests \\
+        \hline
+    \end{tabular}
+    
+    \bigskip % Adds vertical space between the tables
+    
+    \begin{tabular}{|c|}
+        \hline
+        \multicolumn{1}{|c|}{\textbf{US Census Metrics}} \\
+        \hline
+        Population Count \\
+        \hline
+        Median Household Income \\
+        \hline
+    \end{tabular}
+    
+    \bigskip % Adds vertical space between the tables
+    
+    \begin{tabular}{|c|}
+        \hline
+        \multicolumn{1}{|c|}{\textbf{India Census Metrics}} \\
+        \hline
+        Population Count \\
+        \hline
+        Net State Domestic Product (NSDP) \\
+        \hline
+        Gross State Domestic Product (GSDP) \\
+        \hline
+    \end{tabular}
+
+    \bigskip % Adds vertical space between the tables
+
+    \begin{tabular}{|c|}
+        \hline
+        \multicolumn{1}{|c|}{\textbf{Misc. Data for Low Level Analysis}} \\
+        \hline
+        Number of ISPs in a region \\
+        \hline
+        Number of IXPs in a region \\
+        \hline
+        Government Network Infrastructure Investment Data \\
+        \hline
+        Internet Penetration Rate of a Region \\
+        \hline
+    \end{tabular}
+
+    \bigskip % Adds vertical space between the tables
+\end{center}
+\end{table}
+
+
+Analyzing \textbf{M-LAB and OOKLA data over a five-year period} is useful when examining historical trends in Internet Growth and correlating with the the related census data, we can identify how Internet Access Disparity has been in-place or introduced: The following metrics for network data are captured and analyzed for each County (US) and State (India)
+
+\begin{enumerate}
+    \item \textbf{Average Download Speed:} Measures the speed at which data is transferred from the internet to the user's computer, indicative of network quality. Higher speeds suggest better internet access and are crucial for regions to support high-bandwidth applications.
+    \item \textbf{Average Upload Speed}: Reflects the speed at which data is sent from the user's computer to the internet. Essential for user-generated content, cloud services, and online gaming. This metric is significant for assessing the capacity for symmetrical internet usage.
+    \item \textbf{Average Latency}: Latency indicates the delay before a transfer of data begins following an instruction for its transfer. Lower latency is critical for real-time applications, such as VoIP calls and online gaming.
+    \item \textbf{Location Data (X, Y coord.)}: Provides geographical information, enabling the analysis of network performance in relation to specific regions. This aids in identifying geographic disparities in internet access.
+    \item \textbf{Number of Test}s: The volume of network tests conducted provides an indication of data reliability and can suggest user engagement and internet penetration in the area.
+\end{enumerate}
+
+\textbf{For Census data pertaining the the United States of America:}
+
+Each of the census data metrics provides a different perspective on the factors that may influence internet access:
+\begin{enumerate}
+    \item \textbf{Population Count} - This metric gives insight into the demand side of the internet access equation. A higher population count typically indicates a greater need for robust internet infrastructure to support the connectivity needs of residents. In contrast, areas with sparse populations may experience less incentive for investment in digital infrastructure due to lower potential for return on investment for service providers.
+    \item \textbf{Median Household Income} - This economic indicator can be closely correlated with internet access disparities. Higher median household income levels are often associated with better access to a variety of services, including the internet, due to greater purchasing power and the likelihood of existing infrastructure in wealthier areas. Lower-income areas might have less access due to affordability issues and possibly lower levels of existing infrastructure, as service providers may not prioritize investment in these regions.
+\end{enumerate}
+
+\textbf{For Census data pertaining the India:}
+\begin{enumerate}
+    \item \textbf{Population Count}
+    \item \textbf{Net State Domestic Product (NSDP)} - It represents the average income produced per person in that region and is a useful indicator of the general standard of living and economic prosperity and is also indicative of the economic capability to afford internet services.
+    \item \textbf{Gross State Domestic Product (GSDP)} - It represents the total economic output or income generated within a state and is a broad measure of the state's economy. We can infer potential investment capacity for infrastructure, including internet services, in a state.
+\end{enumerate}
+
+There are other several census data points which can be employed as part of future work for more precise analysis but for the sake of limiting the scope of the study, we have decided to not include these parameters as part of our high level study. However, these parameters can be considered when doing a low-level deep dive for a specific region to further understand the trends of Internet Access Disparities. A few examples of such parameters include Educational Attainment, Age Distribution, Race and Ethnicity, Language Proficiency, Housing Characteristics, Disability Status and Poverty Status.
+
+
+
+\textbf{In regards to the Miscellaneous Data captured for further Low-Level Analysis:}
+\begin{enumerate}
+    \item \textbf{Number of ISPs in a region}: More ISPs can indicate a competitive market, potentially leading to better services and lower prices for consumers.
+    \item \textbf{Number of IXPs in a region}: IXPs reduce the distance data must travel, improving speed and reliability. Their growth can be a proxy for improving network infrastructure.
+    \item \textbf{Government Network Infrastructure Investment Data}: Investments in infrastructure are crucial for enhancing internet access and quality. This metric helps assess the role of policy and government support.
+    \item \textbf{Internet Penetration Rate of a Region}: The percentage of individuals with internet access, directly related to the extent of internet disparities.
+\end{enumerate}
+
+
+\section{Risks and Limitations}
+
+We identify certain risks/limitations and shown ways to reduce them for the scope of our research.
+
+\subsection{Contextualizing datasets used}
+Utilizing Crowdsourced data at the surface value is problematic and it is essential to contextualize these measurements to understand better what the attained network metrics truly measure. This was addressed in the paper "The importance of contextualization of crowdsourced active speed test measurements" \cite{5}. We understand this need so we try to mitigate potential biases by the our own following measures done within the scope of a quarter:
+
+\begin{itemize}
+    \item We \textbf{filter out} any biased data by considering the number of tests conducted for a particular network metric in a given region. We ensure the number of tests is greater than atleast 50. This is done based on the intuition that a larger number of tests contribute to the reliability and validity of the data and increases our confidence in the conclusions drawn.
+    \item We introduce \textbf{dynamic traceroute information} during our low-level analysis as this provides us with near real-time information such as latency and packet loss. This can serve as a means to validate and corroborate the static crowdsourced data, ensuring the metrics used in the analysis are accurate and trustworthy.
+    \item We \textbf{utilize both M-LAB and OOKLA datasets}, as opposed to relying on just one, as this enhances the overall richness of the dataset. This allows for cross-validation of results and since M-LAB and OOKLA use different methodologies for measuring network performance, combining them provides a more nuanced view that accounts for these methodological differences. Also, anomalies in one can be checked against the other if needed.
+\end{itemize}
+
+\subsection{Subscription Tier Consideration}
+Lower-speed data points can be attributed to lower-tier subscriptions and not necessarily poor access. There can be multiple reasons for this which can include Consumer choice, economic constraints, Availability of ISP Plans and so on. There is no publicly available dataset which gives information on the subscription tier of each household in a region.
+For both OOKLA and M-LAB, to mitigate this risk, we do the following:
+\begin{enumerate}
+    \item \textbf{When analyzing the OOKLA dataset} in our low level analysis, we look the complete picture of all the subscription plans from the ISPs in that area when making conclusions.
+    \item \textbf{For M-LAB}, we use the NDT (Network Diagnostic Tool) data and extract network metrics using BigQueries. By design, the value of NDT data is the aggregation of many connection test results. Such aggregation dilutes the variance introduced by users subscribed to different service tiers, thereby allowing us to identify trends and patterns that are more indicative of the overall network accessibility rather than the individual user choices.
+\end{enumerate}
+
+\subsection{Discrepancies between OOKLA and M-Lab Measurements}
+The median throughput reported by Ookla speed tests can be up to two times greater than M-Lab measurements for the same subscription tier, city, and ISP due to M-Lab’s employment of different measurement methodologies \cite{5} \cite{6}. Hence to address this, we refrain from combining or taking an average of both the datasets into a single dataset. Instead we treat them as separate entities as seen in our high level methodology in Figure \ref{fig:high_level}. We only use the two datasets as means to cross-validate the results if necessary as mentioned under sub-section A.
+
+\subsection{Inherent Incompleteness in crowd-sourced data}
+While not all regions or demographic groups may be equally represented in crowd sourced datasets, due to varying levels of participation and access to testing tools, these gaps can inform researchers about the digital divide and areas lacking sufficient data coverage. We recognize this limitation and propose future research work to deploy targeted data collection efforts in such underrepresented areas.
+
+\subsection{Lack of up-to-date census information for India}
+The last collected official census data for India was in 2011 \cite{15}. So this was a hurdle during our large scale analysis. However, we mitigated this by calculating the projected census parameters we needed which was the population count of each state and acquired the Net State Domestic Product (NSDP) per-capita from the Ministry of Statistics and Programme Implementation \cite{16} \cite{17}
+
+\section{Execution}
+
+We have followed the detailed architecture of our Methodology referenced in Section~\ref{sec:methodology}, Figure~\ref{fig:arch} and frequently push our changes to our GitHub link \cite{9}. Please refer to our GitHub for our execution and results.
+
+\section{Results}
+
+
+\section{Data Presentation}
+
+\begin{figure*}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Term Project/US_21_Upload_Income.png}
+    \caption{US 2021 Average Upload Speed vs. Median Household Income}
+    \label{fig:US_21_Upload_Income}
+\end{figure*}
+
+
+
+\section{Analysis \& Discussion}
+
+\section{Future Work}
+
+\section*{Acknowledgment}
+
+We would like to thank Dr. Alexander Gamero-Garrido since this study was a product of the final paper for both ECS 252: Computer Networks and ECS 289I: Internet Measurement \& Policy. His support and direction throughout the process of this study was vital for getting it in the direction it has come.
+
+\begin{thebibliography}{00}
+
+
+\bibitem{1} Mehra, B., Merkel, C., & Bishop, A. P. (2004). The internet for empowerment of minority and marginalized users. New Media & Society, 6(6), 781-802. https://doi.org/10.1177/146144804047513
+
+\bibitem{2} Boris Bartikowski, Michel Laroche, Ahmad Jamal, Zhiyong Yang,
+The type-of-internet-access digital divide and the well-being of ethnic minority and majority consumers: A multi-country investigation, Journal of Business Research, Volume 82, 2018, Pages 373-380, ISSN 0148-2963,
+https://doi.org/10.1016/j.jbusres.2017.05.033.
+
+\bibitem{3} Nikolaos Chatzis, Georgios Smaragdakis, Anja Feldmann, and Walter Willinger. 2013. There is more to IXPs than meets the eye. SIGCOMM Comput. Commun. Rev. 43, 5 (October 2013), 19–28. https://doi.org/10.1145/2541468.2541473
+
+\bibitem{4} Nils B. Weidmann et al.x, Digital discrimination: Political bias in Internet service provision across ethnic groups. Science 353,1151-1155(2016). DOI:10.1126/science.aaf5062
+
+\bibitem{5} Udit Paul, Jiamo Liu, Mengyang Gu, Arpit Gupta, and Elizabeth Belding. 2022. The importance of contextualization of crowdsourced active speed test measurements. In Proceedings of the 22nd ACM Internet Measurement Conference (IMC '22). Association for Computing Machinery, New York, NY, USA, 274–289. https://doi.org/10.1145/3517745.3561441
+
+\bibitem{6} Kyle MacMillan, Tarun Mangla, James Saxon, Nicole P. Marwell, and Nick Feamster. 2023. A Comparative Analysis of Ookla Speedtest and Measurement Labs Network Diagnostic Test (NDT7). Proc. ACM Meas. Anal. Comput. Syst. 7, 1, Article 19 (March 2023), 26 pages. https://doi.org/10.1145/3579448
+
+\bibitem{7} Tripathi, Shivam. "2G SPECTRUM SCAM." GLOBAL FINANCIAL FRAUDS AND CRISES 1.1 (2018): 207-244.
+
+\bibitem{8} https://penntoday.upenn.edu/news/multi-layered-challenges-broadband-expansion
+
+\bibitem{9} https://github.com/AdityaKumarBej/Internet-Access-Disparities
+
+\bibitem{10} Phillipa Gill, Christophe Diot, Lai Yi Ohlsen, Matt Mathis, and Stephen Soltesz. 2022. M-Lab: user initiated internet data for the research community. SIGCOMM Comput. Commun. Rev. 52, 1 (January 2022), 34–37. https://doi.org/10.1145/3523230.3523236
+
+\bibitem{11} https://www.ookla.com/ookla-for-good/open-data
+
+\bibitem{12} Staff, RIPE Ncc. "Ripe atlas: A global internet measurement network." Internet Protocol Journal 18.3 (2015): 2-26.
+
+\bibitem{13} https://www.itu.int
+
+\bibitem{14} https://www.census.gov
+
+\bibitem{15} https://censusindia.gov.in
+
+\bibitem{16} https://en.wikipedia.org/wiki/List_of_Indian_states_and_union_territories_by_GDP_per_capita
+
+\bibitem{17} https://pib.gov.in/Pressreleaseshare.aspx?PRID=1942055+
+
+\bibitem{18} https://www.statista.com/topics/1145/internet-usage-worldwide/#topicOverview
+
+
+
+\end{thebibliography}
+\vspace{12pt}
+\end{document}
