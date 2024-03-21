@@ -1,7 +1,7 @@
 import csv
 import json
 
-with open('../../datasets/USA_state_fips.json') as f:
+with open('../../datasets/Regions/IN_state_codes.json') as f:
     state_codes = json.load(f)
 
 state_codes = {v: k for k, v in state_codes.items()}
@@ -14,8 +14,8 @@ def update_state_name(row):
         updated_row.insert(3, state_name)
     return updated_row
 
-with open('../../results/mlab/USA/Yearly Masters/2024_US_statecode_county.csv', newline='') as inputcsvfile,\
-     open('../../results/mlab/USA/Yearly Masters/2024_US_state_county.csv', 'w', newline='') as outputcsvfile:
+with open('../../datasets/M-LAB/IN/Master_2020_2024_IN_statecode.csv', newline='') as inputcsvfile,\
+     open('../../datasets/M-LAB/IN/Master_2020_2024_IN_state.csv', 'w', newline='') as outputcsvfile:
     reader = csv.reader(inputcsvfile)
     writer = csv.writer(outputcsvfile)
     for i, row in enumerate(reader):

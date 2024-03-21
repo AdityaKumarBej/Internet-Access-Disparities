@@ -1,0 +1,2 @@
+year,country,state,state_name,city,download_min,upload_min,download_avg,upload_avg,download_max,upload_max,download_minRTT_r1,download_minRTT_r2,upload_minRTT_r1,upload_minRTT_r2,num_of_measurements_daily_sampled
+2022,IN,IN-LA,Ladakh,Leh,3.5091923076923055,0.37326923076923091,13.320576923076924,2.3610769230769217,42.3811923076923,8.5667307692307659,42.053461538461541,41.7893076923077,44.166230769230765,44.079384615384633,208
