@@ -2,7 +2,7 @@
 Project scope - Conduct a large scale analysis of network measurements in USA, Europe and India and low-level analysis for a few select regions to understand if there are Internet Access Disparities among the general population for a given region. Socio-economic, geographic and political climate factors are taking into account when conducting the analysis.
 
 # System Design
-![Architecture](./system_design.png)
+![Architecture](./updatedsystem_design.png)
 
 Large Scale Data Analysis
 
