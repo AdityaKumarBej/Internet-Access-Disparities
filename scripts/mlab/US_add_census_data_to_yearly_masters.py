@@ -3,7 +3,7 @@ import pandas as pd
 # Paths to the input files
 population_estimates_path = "../../datasets/CENSUS/US/PopulationEstimates.xlsx"
 unemployment_path = "../../datasets/CENSUS/US/Unemployment.xlsx"
-master_csv_path = "../../results/mlab/US/Yearly Masters/2024_US_state_county.csv"
+master_csv_path = "../../datasets/M-LAB/US/2022_US_state_county.csv"
 
 # Read the data from the Excel and CSV files
 population_estimates = pd.read_excel(population_estimates_path)
@@ -16,7 +16,7 @@ unemployment['FIPS_Code'] = unemployment['FIPS_Code'].astype(str).str.lstrip('0'
 master_csv['geoid'] = master_csv['geoid'].astype(str).str.lstrip('0')
 
 # Extract the required columns
-population_data = population_estimates[['FIPStxt', 'POP_ESTIMATE_2021', 'NET_MIG_2021']]
+population_data = population_estimates[['FIPStxt', 'POP_ESTIMATE_2022', 'NET_MIG_2022']]
 unemployment_data = unemployment[['FIPS_Code', 'Median_Household_Income_2021', 'Med_HH_Income_Percent_of_State_Total_2021']]
 
 # Merge the population and unemployment data with the master CSV based on the FIPS/GEOID keys
@@ -27,5 +27,5 @@ merged_data = merged_data.merge(unemployment_data, left_on='geoid', right_on='FI
 merged_data.drop(['FIPStxt', 'FIPS_Code'], axis=1, inplace=True)
 
 # Save the merged data to a new CSV file
-output_path = "../../results/mlab/US/Yearly Masters/2024_US_state_county_census.csv"
+output_path = "../../results/mlab/US/Yearly Masters/2022_US_state_county_census.csv"
 merged_data.to_csv(output_path, index=False)
