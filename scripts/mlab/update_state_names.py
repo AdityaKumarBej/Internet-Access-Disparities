@@ -14,8 +14,8 @@ def update_state_name(row):
         updated_row.insert(3, state_name)
     return updated_row
 
-with open('../../datasets/M-LAB/IN/2024_IN_statecode_city.csv', newline='') as inputcsvfile,\
-     open('../../results/mlab/IN/Yearly Masters/2024_IN_state_city.csv', 'w', newline='') as outputcsvfile:
+with open('../../datasets/M-LAB/IN/Master_2020_2024_IN_statecode.csv', newline='') as inputcsvfile,\
+     open('../../datasets/M-LAB/IN/Master_2020_2024_IN_state.csv', 'w', newline='') as outputcsvfile:
     reader = csv.reader(inputcsvfile)
     writer = csv.writer(outputcsvfile)
     for i, row in enumerate(reader):
