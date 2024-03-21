@@ -3,9 +3,9 @@ import pandas as pd
 import json
 
 # Path to the JSON file with state FIPS codes
-STATE_FIPS_FILE_PATH = "/Users/beja/Desktop/Classes/Winter'24/project/Internet-Access-Disparities/datasets/USA_state_fips.json"
+STATE_FIPS_FILE_PATH = "/Users/beja/Desktop/Classes/Winter'24/project/Internet-Access-Disparities/datasets/Regions/USA_state_fips.json"
 # Base directory where state folders are located
-BASE_RESULTS_FOLDER = "/Users/beja/Desktop/Classes/Winter'24/project/Internet-Access-Disparities/results/ookla/USA"
+BASE_RESULTS_FOLDER = "/Users/beja/Desktop/Classes/Winter'24/project/Internet-Access-Disparities/results/ookla/USA/type=fixed"
 
 # Load state FIPS codes
 with open(STATE_FIPS_FILE_PATH, 'r') as f:
