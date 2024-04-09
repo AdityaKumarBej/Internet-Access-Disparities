@@ -1,9 +1,11 @@
 import pandas as pd
+import os
+print(os.getcwd())
 
 # Replace 'file1.csv' and 'file2.csv' with your actual file paths
-woodard_dataset_county_wise = '/Users/adityabej/Desktop/Projects/internet_access_disparities/Internet-Access-Disparities/datasets/Woodard nations/Woodard counties per nation.csv'  # This should be the path to your first file
+woodard_dataset_county_wise = '/Users/adityabej/Desktop/Projects/internet_access_disparities/Internet-Access-Disparities/datasets/Woodard_Nations/woodard_countywise.csv'  # This should be the path to your first file
 master_census_dataset_county_wise = '/Users/adityabej/Desktop/Projects/internet_access_disparities/Internet-Access-Disparities/results/ookla/USA/type=fixed/2019_2023_master_w_census.csv'  # This should be the path to your second file
-output_file_path = '/Users/adityabej/Desktop/Projects/internet_access_disparities/Internet-Access-Disparities/datasets/Woodard nations/merged_w_census__2019_2023_OOKLA_updated.csv'  # Path for the output file
+output_file_path = '/Users/adityabej/Desktop/Projects/internet_access_disparities/Internet-Access-Disparities/datasets/Woodard_Nations/OOKLA_Woodard.csv'  # Path for the output file
 
 # Reading the CSV files
 df1 = pd.read_csv(woodard_dataset_county_wise)
