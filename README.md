@@ -143,4 +143,58 @@ In his 2012 book, "American Nations: A History of the Eleven Rival Regional Cult
 
 - First Nation: Comprising parts of the far North and Arctic Canada, as well as Alaska, this region is home to Native American and First Nations communities, with a focus on sustainability and communal living in challenging environments.
 
-Reference code: All counties in each Woodard Nation - https://opendata.stackexchange.com/questions/17634/county-list-of-woodards-american-nations
+## Analysis of Internet Access Disparities in Woodard's American Nations
+
+This project aims to investigate internet access disparities across the eleven cultural regions defined by Colin Woodard in "American Nations". By overlaying cultural regions onto current internet access data, we seek to provide a new perspective on the digital divide in the United States.
+
+## Project Overview
+
+Woodard's cultural regions framework offers a lens to analyze internet access disparities that transcend state and county lines, providing a more nuanced understanding of the digital divide influenced by historical, cultural, and regional distinctions.
+
+## Benefits of Regional Analysis
+
+### 1. Cultural and Historical Context
+Evaluates how the cultural fabric of each region influences current internet access and adoption patterns.
+
+### 2. Policy and Governance
+Examines the impact of regional values on the success of broadband deployment and policy-making.
+
+### 3. Economic Development Strategies
+Aligns broadband deployment strategies with the economic activities and industry clusters in each region.
+
+### 4. Social Equity
+Uncovers systemic inequities in digital access that are tied to the unique history of each region.
+
+### 5. Customized Connectivity Solutions
+Informs infrastructure projects to address the specific geographical and demographic needs of each region.
+
+### 6. Collaborative Regional Efforts
+Fosters cross-state collaboration for large-scale infrastructure and policy initiatives.
+
+### 7. Education and Healthcare Delivery
+Highlights the need for investment in telecommunication infrastructure to support education and healthcare.
+
+## Methodology
+
+![Woodard's with our dataset combine methodology](./images/woodard_methodology.png)
+
+Our methodology integrates existing geospatial analysis with broadband performance data to categorize counties by Woodard's cultural regions and identify disparities in internet access.
+
+We utilize the existing dataset which contains all counties in each Woodard nation (https://opendata.stackexchange.com/questions/17634/county-list-of-woodards-american-nations) 
+
+Summary of the methodology:
+
+1. **Data Collection**: Downloaded US county polygons shapefile and georeferenced Woodard's American Nations map.
+2. **Geospatial Analysis**: Used QGIS to select and categorize counties based on their overlap with the cultural regions.
+3. **Data Enrichment**: Joined the county data with state boundaries to add state names and combined them with broadband data from M-Lab and Ookla.
+4. **Data Synthesis**: Employed a Python script to merge the datasets, ensuring each county's Woodard categorization was accurately reflected.
+5. **Data Output**: Exported a comprehensive table listing counties, states, American Nations, and broadband metrics for further analysis.
+
+## Results
+
+The analysis yielded two datasets:
+
+- M-Lab data with Woodard categorization for each county.
+- Ookla data with Woodard categorization for each county.
+
+These datasets are crucial for understanding the extent of internet access disparities within culturally distinct regions and for developing more targeted interventions to bridge the digital divide.
