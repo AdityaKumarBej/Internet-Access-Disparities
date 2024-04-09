@@ -2,7 +2,7 @@
 Project scope - Conduct a large scale analysis of network measurements in USA and India and low-level analysis for a few select regions to understand if there are Internet Access Disparities among the general population for a given region. Socio-economic, geographic and political climate factors are taking into account when conducting the analysis.
 
 # System Design
-![Architecture](./updatedsystem_design.png)
+![Architecture](./images/updatedsystem_design.png)
 
 Large Scale Data Analysis
 
@@ -114,3 +114,33 @@ Check tiers of ISP when checking for disparities using Reference [3]
 - [4] https://people.cs.umass.edu/~phillipa/papers/MLab_CCR.pdf - M-Lab: User initiated Internet data for the research community
 - [5] https://www.trai.gov.in/sites/default/files/QPIR_05122023_0.pdf - Telecom Regulatory Authority of India | The Indian Telecom Services Performance Indicators
 - [6] https://www.fcc.gov/oet/mba/raw-data-releases - MBA Datasets
+
+# Research work contd..
+
+![Woodard's Cultural Regions](./images/woodard_american_nations.png)
+
+In his 2012 book, "American Nations: A History of the Eleven Rival Regional Cultures of North America," Colin Woodard identifies the United States as being composed of eleven distinct cultural regions. These regions, according to Woodard, have their own unique historical roots and cultural characteristics that have persisted over time. The regions he identifies are:
+
+- Yankeedom: Encompassing New England, parts of the Midwest, and including cities like Detroit, Milwaukee, and Chicago. Founded by Puritans, this region values education, community involvement, and government regulation to serve the public interest.
+
+- New Netherland: Primarily present-day New York City and parts of New Jersey and Delaware. Founded by Dutch settlers, it's characterized by a history of commerce, ethnic diversity, and tolerance of differences.
+
+- The Midlands: Spreading across the middle of the country from Pennsylvania through parts of Ohio, Indiana, Illinois, and into Iowa and Nebraska. Influenced by English Quakers, it's known for its moderate politics, emphasis on the middle class, and an aversion to extremism.
+
+- Tidewater: Covering parts of Maryland, Virginia, North Carolina, and Delaware. Established by English gentry in the colonial era, it's known for its respect for authority and tradition.
+
+- Greater Appalachia: Extending from West Virginia through the Great Smoky Mountains into parts of Kentucky, Tennessee, and Texas. Settled by Scots-Irish, English, and Irish frontiersmen, it's characterized by a warrior ethic and a deep commitment to personal sovereignty and individual freedom.
+
+- Deep South: Developed by English slave lords from Barbados, it encompasses Alabama, Florida, Mississippi, Texas, Georgia, and South Carolina. It's known for its rigid social hierarchies, defense of traditional values, and a preference for low taxes and minimal government intervention.
+
+- El Norte: Covering the borderlands of the Spanish American empire, this region includes parts of Texas, Arizona, New Mexico, and California. It's marked by its Hispanic heritage, work ethic, and the blending of American and Mexican cultures.
+
+- The Left Coast: Running along the Pacific Coast from Monterey, California, to Juneau, Alaska. Influenced by settlers from the Northeast and Appalachian Midland, it combines the entrepreneurial spirit of the former with the social democracy ethos of the latter.
+
+- The Far West: Developing with the expansion of the railroads, extraction industries, and large-scale agriculture, it includes parts of California, Colorado, Nevada, and the Pacific Northwest. It's characterized by the conflict between small government ideals and the reality of federal government intervention in the economy.
+
+- New France: Located in parts of Louisiana and the Canadian Maritimes, this region is shaped by French colonial roots, with a culture that values social equality and a broad-minded approach to issues.
+
+- First Nation: Comprising parts of the far North and Arctic Canada, as well as Alaska, this region is home to Native American and First Nations communities, with a focus on sustainability and communal living in challenging environments.
+
+Reference code: All counties in each Woodard Nation - https://opendata.stackexchange.com/questions/17634/county-list-of-woodards-american-nations
