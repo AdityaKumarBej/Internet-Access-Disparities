@@ -1,19 +1,42 @@
-import os
 import pandas as pd
 
-files = [
-    '../../results/ookla/USA/type=mobile/Yearly Masters/2019_master_w_census.csv',
-    '../../results/ookla/USA/type=mobile/Yearly Masters/2021_master_w_census.csv',
-    '../../results/ookla/USA/type=mobile/Yearly Masters/2021_master_w_census.csv',
-    '../../results/ookla/USA/type=mobile/Yearly Masters/2022_master_w_census.csv',
-    '../../results/ookla/USA/type=mobile/Yearly Masters/2023_master_w_census.csv'
+csv_files = [
+    '../../results/mlab/US/Yearly Masters/2020_US_state_county_census.csv',
+    '../../results/mlab/US/Yearly Masters/2021_US_state_county_census.csv',
+    '../../results/mlab/US/Yearly Masters/2022_US_state_county_census.csv',
+    '../../results/mlab/US/Yearly Masters/2023_US_state_county_census.csv',
+    '../../results/mlab/US/Yearly Masters/2024_US_state_county_census.csv'
 ]
 
 combined_data = pd.DataFrame()
 
-for file in files:
+for file in csv_files:
     df = pd.read_csv(file)
-    combined_data = combined_data.append(df, ignore_index=True)
+    combined_data = pd.concat([combined_data, df])
+    print(f"Header of {file}:")
+    print(df.columns)
+    print()
 
-combined_data.to_csv('../../results/ookla/USA/type=mobile/2019_2023_master_w_census.csv', index=False)
+combined_data.to_csv('../../results/mlab/US/Yearly Masters/combined_data.csv', index=False)
+
+
+
+# import os
+# import pandas as pd
+
+# files = [
+#     '../../results/mlab/US/Yearly Masters/2020_US_state_county_census.csv',
+#     '../../results/mlab/US/Yearly Masters/2021_US_state_county_census.csv',
+#     '../../results/mlab/US/Yearly Masters/2022_US_state_county_census.csv',
+#     '../../results/mlab/US/Yearly Masters/2023_US_state_county_census.csv',
+#     '../../results/mlab/US/Yearly Masters/2024_US_state_county_census.csv'
+# ]
+
+# combined_data = pd.DataFrame()
+
+# for file in files:
+#     df = pd.read_csv(file)
+#     combined_data = combined_data.append(df, ignore_index=True)
+
+# combined_data.to_csv('../../results/mlab/US/Yearly Masters/combined_data.csv', index=False)
 
