@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
-<!-- build 20241.24.0208.0337                               -->
-<workbook original-version='18.1' source-build='2024.1.0 (20241.24.0208.0337)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<!-- build 20241.24.0308.0326                               -->
+<workbook original-version='18.1' source-build='2024.1.1 (20241.24.0308.0326)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
     <_.fcp.MarkAnimation.true...MarkAnimation />
@@ -25,7 +25,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='2023_master_w_census' name='textscan.0b0rqny1jdnoqu17pn3y80d8d5gd'>
-            <connection class='textscan' directory='/Users/shivani/Desktop/computer networks/project/Internet-Access-Disparities/results/ookla/USA/type=mobile/Yearly Masters' filename='2023_master_w_census.csv' password='' server='' />
+            <connection class='textscan' directory='/Users/shivani/Desktop/project/Internet-Access-Disparities/results/ookla/USA/type=mobile/Yearly Masters' filename='2023_master_w_census.csv' password='' server='' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0b0rqny1jdnoqu17pn3y80d8d5gd' name='2023_master_w_census.csv' table='[2023_master_w_census#csv]' type='table'>
@@ -454,7 +454,7 @@
     </worksheet>
   </worksheets>
   <windows source-height='30'>
-    <window class='worksheet' maximized='true' name='Sheet 1'>
+    <window class='worksheet' name='Sheet 1'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -489,7 +489,7 @@
       </viewpoint>
       <simple-id uuid='{7893210A-1266-401E-873E-852E9D703D79}' />
     </window>
-    <window class='worksheet' name='Sheet 2'>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
       <cards>
         <edge name='left'>
           <strip size='160'>
