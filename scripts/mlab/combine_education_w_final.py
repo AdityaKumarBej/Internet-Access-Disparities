@@ -4,10 +4,10 @@ df_excel = pd.read_excel(excel_file)
 csv_file = '/Users/beja/Desktop/personal/Internet Access Disparities/Internet-Access-Disparities/results/mlab/US/Woodard_research/MLAB_Woodard_w_census_2020_2024.csv'
 df_csv = pd.read_csv(csv_file)
 
-# Prepare the CSV data: convert 'FIPS Code' to string and remove trailing zeroes (if necessary)
+# Prepare the Excel data: convert 'FIPS Code' to string and remove trailing zeroes (if necessary)
 df_excel['FIPS'] = df_excel['FIPS'].astype(str).str.rstrip('.0')
 
-# Prepare the Excel data: convert 'geoid' to string and remove trailing zeroes
+# Prepare the CSV data: convert 'geoid' to string and remove trailing zeroes
 df_csv['geoid'] = df_csv['geoid'].astype(str).str.rstrip('.0')
 
 # Define the columns to merge from Excel
