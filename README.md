@@ -95,7 +95,9 @@ M-LAB hosts it's network data in a custom BigQuery link - https://www.measuremen
 
 -> Household income, Population details for all counties - https://www.ers.usda.gov/data-products/county-level-data-sets/county-level-data-sets-download-data/
 
--> Education Source: USDA, Economic Research Service using data from U.S. Department of Commerce, Bureau of the Census, 1970, 1980, 1990, 2000 Censuses of Population, and 2008–12 and 2017–21 American Community Survey 5-year period county-level estimates. Data as of January 24, 2023. For more information contact Austin Sanders.
+-> Education Source: USDA, Economic Research Service using data from U.S. Department of Commerce, Bureau of the Census, 1970, 1980, 1990, 2000 Censuses of Population, and 2008–12 and 2017–21 American Community Survey 5-year period county-level estimates. Data as of January 24, 2023.
+
+-> Race and Age groups - https://www.census.gov/data/tables/time-series/demo/popest/2020s-counties-detail.html
 
 - EUROPE
 The geometries of European territorial units (local administrative units (LAU) and regions/districts (NUTS2/NUTS3)) distributed by Eurostat for EU Member States, EU official candidate countries, and EFTA countries.
