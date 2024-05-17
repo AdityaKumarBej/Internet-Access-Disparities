@@ -28,12 +28,12 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='OOKLA_fixed_Woodard_w_census_2019_2023_nocounty' name='textscan.064lnjv1cj6gnp11fvjyt0rt8b5k'>
-            <connection class='textscan' directory='/Users/shivani/Desktop/project/Internet-Access-Disparities/results/ookla/USA' filename='ookla_fixed_woodard_w_popcount_hhincome_education_age.csv' password='' server='' />
+            <connection class='textscan' directory='/Users/shivani/Desktop/project/Internet-Access-Disparities/results/ookla/USA/Woodard_research' filename='ookla_fixed_woodard_race_gender_age.csv' password='' server='' />
           </named-connection>
         </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.064lnjv1cj6gnp11fvjyt0rt8b5k' name='ookla_fixed_woodard_w_popcount_hhincome_education_age.csv' table='[ookla_fixed_woodard_w_popcount_hhincome_education_age#csv]' type='table'>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.064lnjv1cj6gnp11fvjyt0rt8b5k' name='ookla_fixed_woodard_race_gender_age.csv' table='[ookla_fixed_woodard_race_gender_age#csv]' type='table'>
           <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-            <column datatype='integer' name='geoid' ordinal='0' />
+            <column datatype='integer' name='GEOID' ordinal='0' />
             <column datatype='string' name='NAMELSAD' ordinal='1' />
             <column datatype='real' name='avg_d_mbps_wt' ordinal='2' />
             <column datatype='real' name='avg_u_mbps_wt' ordinal='3' />
@@ -46,22 +46,29 @@
             <column datatype='real' name='Median_Household_Income_2021' ordinal='10' />
             <column datatype='real' name='Med_HH_Income_Percent_of_State_Total_2021' ordinal='11' />
             <column datatype='string' name='WOODARD NATION NAME' ordinal='12' />
-            <column datatype='real' name='Less_than_a_high_school_diploma_2017_21' ordinal='13' />
-            <column datatype='real' name='High_school_diploma_only_2017_21' ordinal='14' />
-            <column datatype='real' name='Some_college_or_associate_degree_2017_21' ordinal='15' />
-            <column datatype='real' name='Bachelor_degree_or_higher_2017_21' ordinal='16' />
-            <column datatype='real' name='Percent_of_adults_with_less_than_a_high_school_diploma_2017_21' ordinal='17' />
-            <column datatype='real' name='Percent_of_adults_with_a_high_school_diploma_only_2017_21' ordinal='18' />
-            <column datatype='real' name='Percent_of_adults_completing_some_college_or_associate_degree_2017_21' ordinal='19' />
-            <column datatype='real' name='Percent_of_adults_with_a_bachelor_degree_or_higher_2017_21' ordinal='20' />
-            <column datatype='real' name='MEDIAN_AGE_TOT' ordinal='21' />
-            <column datatype='real' name='MEDIAN_AGE_MALE' ordinal='22' />
-            <column datatype='real' name='MEDIAN_AGE_FEM' ordinal='23' />
+            <column datatype='real' name='TOT_POP' ordinal='13' />
+            <column datatype='real' name='TOT_MALE' ordinal='14' />
+            <column datatype='real' name='TOT_FEMALE' ordinal='15' />
+            <column datatype='real' name='percentage_white' ordinal='16' />
+            <column datatype='real' name='percentage_black_or_african' ordinal='17' />
+            <column datatype='real' name='percentage_american_indian_and_native_alaskan' ordinal='18' />
+            <column datatype='real' name='percentage_asian' ordinal='19' />
+            <column datatype='real' name='percentage_native_hawaiian_and_other_pacific_islander' ordinal='20' />
+            <column datatype='real' name='percentage_two_or_more_races' ordinal='21' />
+            <column datatype='real' name='percentage_hispanic' ordinal='22' />
+            <column datatype='real' name='percentage_male' ordinal='23' />
+            <column datatype='real' name='percentage_female' ordinal='24' />
+            <column datatype='real' name='geoid' ordinal='25' />
+            <column datatype='real' name='MEDIAN_AGE_TOT' ordinal='26' />
+            <column datatype='real' name='percentage_age_under_5' ordinal='27' />
+            <column datatype='real' name='percentage_age_5_17' ordinal='28' />
+            <column datatype='real' name='percentage_age_18_64' ordinal='29' />
+            <column datatype='real' name='percentage_age_over_65' ordinal='30' />
           </columns>
         </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.064lnjv1cj6gnp11fvjyt0rt8b5k' name='ookla_fixed_woodard_w_popcount_hhincome_education_age.csv' table='[ookla_fixed_woodard_w_popcount_hhincome_education_age#csv]' type='table'>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.064lnjv1cj6gnp11fvjyt0rt8b5k' name='ookla_fixed_woodard_race_gender_age.csv' table='[ookla_fixed_woodard_race_gender_age#csv]' type='table'>
           <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-            <column datatype='integer' name='geoid' ordinal='0' />
+            <column datatype='integer' name='GEOID' ordinal='0' />
             <column datatype='string' name='NAMELSAD' ordinal='1' />
             <column datatype='real' name='avg_d_mbps_wt' ordinal='2' />
             <column datatype='real' name='avg_u_mbps_wt' ordinal='3' />
@@ -74,24 +81,31 @@
             <column datatype='real' name='Median_Household_Income_2021' ordinal='10' />
             <column datatype='real' name='Med_HH_Income_Percent_of_State_Total_2021' ordinal='11' />
             <column datatype='string' name='WOODARD NATION NAME' ordinal='12' />
-            <column datatype='real' name='Less_than_a_high_school_diploma_2017_21' ordinal='13' />
-            <column datatype='real' name='High_school_diploma_only_2017_21' ordinal='14' />
-            <column datatype='real' name='Some_college_or_associate_degree_2017_21' ordinal='15' />
-            <column datatype='real' name='Bachelor_degree_or_higher_2017_21' ordinal='16' />
-            <column datatype='real' name='Percent_of_adults_with_less_than_a_high_school_diploma_2017_21' ordinal='17' />
-            <column datatype='real' name='Percent_of_adults_with_a_high_school_diploma_only_2017_21' ordinal='18' />
-            <column datatype='real' name='Percent_of_adults_completing_some_college_or_associate_degree_2017_21' ordinal='19' />
-            <column datatype='real' name='Percent_of_adults_with_a_bachelor_degree_or_higher_2017_21' ordinal='20' />
-            <column datatype='real' name='MEDIAN_AGE_TOT' ordinal='21' />
-            <column datatype='real' name='MEDIAN_AGE_MALE' ordinal='22' />
-            <column datatype='real' name='MEDIAN_AGE_FEM' ordinal='23' />
+            <column datatype='real' name='TOT_POP' ordinal='13' />
+            <column datatype='real' name='TOT_MALE' ordinal='14' />
+            <column datatype='real' name='TOT_FEMALE' ordinal='15' />
+            <column datatype='real' name='percentage_white' ordinal='16' />
+            <column datatype='real' name='percentage_black_or_african' ordinal='17' />
+            <column datatype='real' name='percentage_american_indian_and_native_alaskan' ordinal='18' />
+            <column datatype='real' name='percentage_asian' ordinal='19' />
+            <column datatype='real' name='percentage_native_hawaiian_and_other_pacific_islander' ordinal='20' />
+            <column datatype='real' name='percentage_two_or_more_races' ordinal='21' />
+            <column datatype='real' name='percentage_hispanic' ordinal='22' />
+            <column datatype='real' name='percentage_male' ordinal='23' />
+            <column datatype='real' name='percentage_female' ordinal='24' />
+            <column datatype='real' name='geoid' ordinal='25' />
+            <column datatype='real' name='MEDIAN_AGE_TOT' ordinal='26' />
+            <column datatype='real' name='percentage_age_under_5' ordinal='27' />
+            <column datatype='real' name='percentage_age_5_17' ordinal='28' />
+            <column datatype='real' name='percentage_age_18_64' ordinal='29' />
+            <column datatype='real' name='percentage_age_over_65' ordinal='30' />
           </columns>
         </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
         <metadata-records>
           <metadata-record class='capability'>
             <remote-name />
             <remote-type>0</remote-type>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
             <remote-alias />
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
@@ -105,11 +119,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>geoid</remote-name>
+            <remote-name>GEOID</remote-name>
             <remote-type>20</remote-type>
-            <local-name>[geoid]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
-            <remote-alias>geoid</remote-alias>
+            <local-name>[GEOID]</local-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
+            <remote-alias>GEOID</remote-alias>
             <ordinal>0</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
@@ -120,7 +134,7 @@
             <remote-name>NAMELSAD</remote-name>
             <remote-type>129</remote-type>
             <local-name>[NAMELSAD]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
             <remote-alias>NAMELSAD</remote-alias>
             <ordinal>1</ordinal>
             <local-type>string</local-type>
@@ -135,7 +149,7 @@
             <remote-name>avg_d_mbps_wt</remote-name>
             <remote-type>5</remote-type>
             <local-name>[avg_d_mbps_wt]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
             <remote-alias>avg_d_mbps_wt</remote-alias>
             <ordinal>2</ordinal>
             <local-type>real</local-type>
@@ -147,7 +161,7 @@
             <remote-name>avg_u_mbps_wt</remote-name>
             <remote-type>5</remote-type>
             <local-name>[avg_u_mbps_wt]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
             <remote-alias>avg_u_mbps_wt</remote-alias>
             <ordinal>3</ordinal>
             <local-type>real</local-type>
@@ -159,7 +173,7 @@
             <remote-name>avg_lat_ms_wt</remote-name>
             <remote-type>5</remote-type>
             <local-name>[avg_lat_ms_wt]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
             <remote-alias>avg_lat_ms_wt</remote-alias>
             <ordinal>4</ordinal>
             <local-type>real</local-type>
@@ -171,7 +185,7 @@
             <remote-name>tests</remote-name>
             <remote-type>5</remote-type>
             <local-name>[tests]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
             <remote-alias>tests</remote-alias>
             <ordinal>5</ordinal>
             <local-type>real</local-type>
@@ -183,7 +197,7 @@
             <remote-name>State</remote-name>
             <remote-type>129</remote-type>
             <local-name>[State]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
             <remote-alias>State</remote-alias>
             <ordinal>6</ordinal>
             <local-type>string</local-type>
@@ -198,7 +212,7 @@
             <remote-name>Year</remote-name>
             <remote-type>20</remote-type>
             <local-name>[Year]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
             <remote-alias>Year</remote-alias>
             <ordinal>7</ordinal>
             <local-type>integer</local-type>
@@ -210,7 +224,7 @@
             <remote-name>POP_ESTIMATE_2022</remote-name>
             <remote-type>5</remote-type>
             <local-name>[POP_ESTIMATE_2022]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
             <remote-alias>POP_ESTIMATE_2022</remote-alias>
             <ordinal>8</ordinal>
             <local-type>real</local-type>
@@ -222,7 +236,7 @@
             <remote-name>NET_MIG_2022</remote-name>
             <remote-type>5</remote-type>
             <local-name>[NET_MIG_2022]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
             <remote-alias>NET_MIG_2022</remote-alias>
             <ordinal>9</ordinal>
             <local-type>real</local-type>
@@ -234,7 +248,7 @@
             <remote-name>Median_Household_Income_2021</remote-name>
             <remote-type>5</remote-type>
             <local-name>[Median_Household_Income_2021]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
             <remote-alias>Median_Household_Income_2021</remote-alias>
             <ordinal>10</ordinal>
             <local-type>real</local-type>
@@ -246,7 +260,7 @@
             <remote-name>Med_HH_Income_Percent_of_State_Total_2021</remote-name>
             <remote-type>5</remote-type>
             <local-name>[Med_HH_Income_Percent_of_State_Total_2021]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
             <remote-alias>Med_HH_Income_Percent_of_State_Total_2021</remote-alias>
             <ordinal>11</ordinal>
             <local-type>real</local-type>
@@ -258,7 +272,7 @@
             <remote-name>WOODARD NATION NAME</remote-name>
             <remote-type>129</remote-type>
             <local-name>[WOODARD NATION NAME]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
             <remote-alias>WOODARD NATION NAME</remote-alias>
             <ordinal>12</ordinal>
             <local-type>string</local-type>
@@ -270,11 +284,11 @@
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[OOKLA_fixed_Woodard_w_census_2019_2023_nocounty.csv_CD45E8EDB99B42338C4706A2005E099D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Less_than_a_high_school_diploma_2017_21</remote-name>
+            <remote-name>TOT_POP</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[Less_than_a_high_school_diploma_2017_21]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
-            <remote-alias>Less_than_a_high_school_diploma_2017_21</remote-alias>
+            <local-name>[TOT_POP]</local-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
+            <remote-alias>TOT_POP</remote-alias>
             <ordinal>13</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -282,11 +296,11 @@
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[OOKLA_fixed_Woodard_w_census_2019_2023_nocounty.csv_CD45E8EDB99B42338C4706A2005E099D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>High_school_diploma_only_2017_21</remote-name>
+            <remote-name>TOT_MALE</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[High_school_diploma_only_2017_21]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
-            <remote-alias>High_school_diploma_only_2017_21</remote-alias>
+            <local-name>[TOT_MALE]</local-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
+            <remote-alias>TOT_MALE</remote-alias>
             <ordinal>14</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -294,11 +308,11 @@
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[OOKLA_fixed_Woodard_w_census_2019_2023_nocounty.csv_CD45E8EDB99B42338C4706A2005E099D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Some_college_or_associate_degree_2017_21</remote-name>
+            <remote-name>TOT_FEMALE</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[Some_college_or_associate_degree_2017_21]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
-            <remote-alias>Some_college_or_associate_degree_2017_21</remote-alias>
+            <local-name>[TOT_FEMALE]</local-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
+            <remote-alias>TOT_FEMALE</remote-alias>
             <ordinal>15</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -306,11 +320,11 @@
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[OOKLA_fixed_Woodard_w_census_2019_2023_nocounty.csv_CD45E8EDB99B42338C4706A2005E099D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Bachelor_degree_or_higher_2017_21</remote-name>
+            <remote-name>percentage_white</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[Bachelor_degree_or_higher_2017_21]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
-            <remote-alias>Bachelor_degree_or_higher_2017_21</remote-alias>
+            <local-name>[percentage_white]</local-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
+            <remote-alias>percentage_white</remote-alias>
             <ordinal>16</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -318,11 +332,11 @@
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[OOKLA_fixed_Woodard_w_census_2019_2023_nocounty.csv_CD45E8EDB99B42338C4706A2005E099D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Percent_of_adults_with_less_than_a_high_school_diploma_2017_21</remote-name>
+            <remote-name>percentage_black_or_african</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[Percent_of_adults_with_less_than_a_high_school_diploma_2017_21]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
-            <remote-alias>Percent_of_adults_with_less_than_a_high_school_diploma_2017_21</remote-alias>
+            <local-name>[percentage_black_or_african]</local-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
+            <remote-alias>percentage_black_or_african</remote-alias>
             <ordinal>17</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -330,11 +344,11 @@
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[OOKLA_fixed_Woodard_w_census_2019_2023_nocounty.csv_CD45E8EDB99B42338C4706A2005E099D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Percent_of_adults_with_a_high_school_diploma_only_2017_21</remote-name>
+            <remote-name>percentage_american_indian_and_native_alaskan</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[Percent_of_adults_with_a_high_school_diploma_only_2017_21]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
-            <remote-alias>Percent_of_adults_with_a_high_school_diploma_only_2017_21</remote-alias>
+            <local-name>[percentage_american_indian_and_native_alaskan]</local-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
+            <remote-alias>percentage_american_indian_and_native_alaskan</remote-alias>
             <ordinal>18</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -342,11 +356,11 @@
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[OOKLA_fixed_Woodard_w_census_2019_2023_nocounty.csv_CD45E8EDB99B42338C4706A2005E099D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Percent_of_adults_completing_some_college_or_associate_degree_2017_21</remote-name>
+            <remote-name>percentage_asian</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[Percent_of_adults_completing_some_college_or_associate_degree_2017_21]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
-            <remote-alias>Percent_of_adults_completing_some_college_or_associate_degree_2017_21</remote-alias>
+            <local-name>[percentage_asian]</local-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
+            <remote-alias>percentage_asian</remote-alias>
             <ordinal>19</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -354,12 +368,72 @@
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[OOKLA_fixed_Woodard_w_census_2019_2023_nocounty.csv_CD45E8EDB99B42338C4706A2005E099D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Percent_of_adults_with_a_bachelor_degree_or_higher_2017_21</remote-name>
+            <remote-name>percentage_native_hawaiian_and_other_pacific_islander</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[Percent_of_adults_with_a_bachelor_degree_or_higher_2017_21]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
-            <remote-alias>Percent_of_adults_with_a_bachelor_degree_or_higher_2017_21</remote-alias>
+            <local-name>[percentage_native_hawaiian_and_other_pacific_islander]</local-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
+            <remote-alias>percentage_native_hawaiian_and_other_pacific_islander</remote-alias>
             <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[OOKLA_fixed_Woodard_w_census_2019_2023_nocounty.csv_CD45E8EDB99B42338C4706A2005E099D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percentage_two_or_more_races</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percentage_two_or_more_races]</local-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
+            <remote-alias>percentage_two_or_more_races</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[OOKLA_fixed_Woodard_w_census_2019_2023_nocounty.csv_CD45E8EDB99B42338C4706A2005E099D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percentage_hispanic</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percentage_hispanic]</local-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
+            <remote-alias>percentage_hispanic</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[OOKLA_fixed_Woodard_w_census_2019_2023_nocounty.csv_CD45E8EDB99B42338C4706A2005E099D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percentage_male</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percentage_male]</local-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
+            <remote-alias>percentage_male</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[OOKLA_fixed_Woodard_w_census_2019_2023_nocounty.csv_CD45E8EDB99B42338C4706A2005E099D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percentage_female</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percentage_female]</local-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
+            <remote-alias>percentage_female</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[OOKLA_fixed_Woodard_w_census_2019_2023_nocounty.csv_CD45E8EDB99B42338C4706A2005E099D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geoid</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[geoid]</local-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
+            <remote-alias>geoid</remote-alias>
+            <ordinal>25</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -369,33 +443,57 @@
             <remote-name>MEDIAN_AGE_TOT</remote-name>
             <remote-type>5</remote-type>
             <local-name>[MEDIAN_AGE_TOT]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
             <remote-alias>MEDIAN_AGE_TOT</remote-alias>
-            <ordinal>21</ordinal>
+            <ordinal>26</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[OOKLA_fixed_Woodard_w_census_2019_2023_nocounty.csv_CD45E8EDB99B42338C4706A2005E099D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>MEDIAN_AGE_MALE</remote-name>
+            <remote-name>percentage_age_under_5</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[MEDIAN_AGE_MALE]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
-            <remote-alias>MEDIAN_AGE_MALE</remote-alias>
-            <ordinal>22</ordinal>
+            <local-name>[percentage_age_under_5]</local-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
+            <remote-alias>percentage_age_under_5</remote-alias>
+            <ordinal>27</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[OOKLA_fixed_Woodard_w_census_2019_2023_nocounty.csv_CD45E8EDB99B42338C4706A2005E099D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>MEDIAN_AGE_FEM</remote-name>
+            <remote-name>percentage_age_5_17</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[MEDIAN_AGE_FEM]</local-name>
-            <parent-name>[ookla_fixed_woodard_w_popcount_hhincome_education_age.csv]</parent-name>
-            <remote-alias>MEDIAN_AGE_FEM</remote-alias>
-            <ordinal>23</ordinal>
+            <local-name>[percentage_age_5_17]</local-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
+            <remote-alias>percentage_age_5_17</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[OOKLA_fixed_Woodard_w_census_2019_2023_nocounty.csv_CD45E8EDB99B42338C4706A2005E099D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percentage_age_18_64</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percentage_age_18_64]</local-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
+            <remote-alias>percentage_age_18_64</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[OOKLA_fixed_Woodard_w_census_2019_2023_nocounty.csv_CD45E8EDB99B42338C4706A2005E099D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percentage_age_over_65</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percentage_age_over_65]</local-name>
+            <parent-name>[ookla_fixed_woodard_race_gender_age.csv]</parent-name>
+            <remote-alias>percentage_age_over_65</remote-alias>
+            <ordinal>30</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -490,9 +588,9 @@
         <objects>
           <object caption='OOKLA_fixed_Woodard_w_census_2019_2023_nocounty.csv' id='OOKLA_fixed_Woodard_w_census_2019_2023_nocounty.csv_CD45E8EDB99B42338C4706A2005E099D'>
             <properties context=''>
-              <relation connection='textscan.064lnjv1cj6gnp11fvjyt0rt8b5k' name='ookla_fixed_woodard_w_popcount_hhincome_education_age.csv' table='[ookla_fixed_woodard_w_popcount_hhincome_education_age#csv]' type='table'>
+              <relation connection='textscan.064lnjv1cj6gnp11fvjyt0rt8b5k' name='ookla_fixed_woodard_race_gender_age.csv' table='[ookla_fixed_woodard_race_gender_age#csv]' type='table'>
                 <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-                  <column datatype='integer' name='geoid' ordinal='0' />
+                  <column datatype='integer' name='GEOID' ordinal='0' />
                   <column datatype='string' name='NAMELSAD' ordinal='1' />
                   <column datatype='real' name='avg_d_mbps_wt' ordinal='2' />
                   <column datatype='real' name='avg_u_mbps_wt' ordinal='3' />
@@ -505,17 +603,24 @@
                   <column datatype='real' name='Median_Household_Income_2021' ordinal='10' />
                   <column datatype='real' name='Med_HH_Income_Percent_of_State_Total_2021' ordinal='11' />
                   <column datatype='string' name='WOODARD NATION NAME' ordinal='12' />
-                  <column datatype='real' name='Less_than_a_high_school_diploma_2017_21' ordinal='13' />
-                  <column datatype='real' name='High_school_diploma_only_2017_21' ordinal='14' />
-                  <column datatype='real' name='Some_college_or_associate_degree_2017_21' ordinal='15' />
-                  <column datatype='real' name='Bachelor_degree_or_higher_2017_21' ordinal='16' />
-                  <column datatype='real' name='Percent_of_adults_with_less_than_a_high_school_diploma_2017_21' ordinal='17' />
-                  <column datatype='real' name='Percent_of_adults_with_a_high_school_diploma_only_2017_21' ordinal='18' />
-                  <column datatype='real' name='Percent_of_adults_completing_some_college_or_associate_degree_2017_21' ordinal='19' />
-                  <column datatype='real' name='Percent_of_adults_with_a_bachelor_degree_or_higher_2017_21' ordinal='20' />
-                  <column datatype='real' name='MEDIAN_AGE_TOT' ordinal='21' />
-                  <column datatype='real' name='MEDIAN_AGE_MALE' ordinal='22' />
-                  <column datatype='real' name='MEDIAN_AGE_FEM' ordinal='23' />
+                  <column datatype='real' name='TOT_POP' ordinal='13' />
+                  <column datatype='real' name='TOT_MALE' ordinal='14' />
+                  <column datatype='real' name='TOT_FEMALE' ordinal='15' />
+                  <column datatype='real' name='percentage_white' ordinal='16' />
+                  <column datatype='real' name='percentage_black_or_african' ordinal='17' />
+                  <column datatype='real' name='percentage_american_indian_and_native_alaskan' ordinal='18' />
+                  <column datatype='real' name='percentage_asian' ordinal='19' />
+                  <column datatype='real' name='percentage_native_hawaiian_and_other_pacific_islander' ordinal='20' />
+                  <column datatype='real' name='percentage_two_or_more_races' ordinal='21' />
+                  <column datatype='real' name='percentage_hispanic' ordinal='22' />
+                  <column datatype='real' name='percentage_male' ordinal='23' />
+                  <column datatype='real' name='percentage_female' ordinal='24' />
+                  <column datatype='real' name='geoid' ordinal='25' />
+                  <column datatype='real' name='MEDIAN_AGE_TOT' ordinal='26' />
+                  <column datatype='real' name='percentage_age_under_5' ordinal='27' />
+                  <column datatype='real' name='percentage_age_5_17' ordinal='28' />
+                  <column datatype='real' name='percentage_age_18_64' ordinal='29' />
+                  <column datatype='real' name='percentage_age_over_65' ordinal='30' />
                 </columns>
               </relation>
             </properties>
@@ -1157,7 +1262,7 @@
     </worksheet>
   </worksheets>
   <windows source-height='30'>
-    <window class='worksheet' name='US Nations and Counties'>
+    <window class='worksheet' maximized='true' name='US Nations and Counties'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1415,7 +1520,7 @@
       </viewpoint>
       <simple-id uuid='{9A0D81AE-3A3B-4F66-83C2-C789EDDF7B68}' />
     </window>
-    <window class='worksheet' maximized='true' name='Variability in State'>
+    <window class='worksheet' name='Variability in State'>
       <cards>
         <edge name='left'>
           <strip size='160'>
