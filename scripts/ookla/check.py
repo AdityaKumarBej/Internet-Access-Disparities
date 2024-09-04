@@ -6,10 +6,10 @@ csv_file = '/Users/beja/Desktop/personal/Internet Access Disparities/Internet-Ac
 df_csv = pd.read_csv(csv_file)
 
 # Prepare the Excel data: convert 'FIPS' to string and remove trailing zeroes
-df_excel['FIPS'] = df_excel['FIPS'].astype(str).str.rstrip('.0')
+# df_excel['FIPS'] = df_excel['FIPS'].astype(str).str.rstrip('.0')
 
-# Prepare the CSV data: convert 'geoid' to string and remove trailing zeroes (if necessary)
-df_csv['GEOID'] = df_csv['GEOID'].astype(str).str.rstrip('.0')
+# # Prepare the CSV data: convert 'geoid' to string and remove trailing zeroes (if necessary)
+# df_csv['GEOID'] = df_csv['GEOID'].astype(str).str.rstrip('.0')
 
 # Perform an outer join to find non-matching entries
 df_outer = pd.merge(df_csv[['GEOID']], df_excel[['FIPS']], left_on='GEOID', right_on='FIPS', how='outer', indicator=True)

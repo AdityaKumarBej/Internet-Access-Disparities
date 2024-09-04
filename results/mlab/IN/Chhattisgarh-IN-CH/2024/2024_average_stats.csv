@@ -1,2 +1,0 @@
-year,country,state,state_name,city,download_min,upload_min,download_avg,upload_avg,download_max,upload_max,download_minRTT_r1,download_minRTT_r2,upload_minRTT_r1,upload_minRTT_r2,num_of_measurements_daily_sampled
-2024,IN,IN-CH,Chhattisgarh,Chandigarh,0.019849315068493155,0.0068904109589041085,67.935958904109583,24.963328767123294,841.27617808219179,794.64879452054811,35.377273972602751,35.385095890410945,35.194493150684927,35.196328767123283,584
