@@ -1,10 +1,10 @@
 import pandas as pd
 excel_file = "../../../datasets/CENSUS/US/Education.xlsx"
 df_excel = pd.read_excel(excel_file)
-csv_file = "../../../results/mlab/US/Woodard_research/mlab_woodard_race_gender_age.csv"
+csv_file = "../../../results/ookla/USA/Woodard_research/ookla_mobile_woodard_race_gender_age.csv"
 df_csv = pd.read_csv(csv_file)
 
-# Prepare the Excel data: convert 'FIPS Code' to string and remove trailing zeroes (if necessary)
+# # Prepare the Excel data: convert 'FIPS Code' to string and remove trailing zeroes (if necessary)
 # df_excel['FIPS'] = df_excel['FIPS'].astype(str).str.rstrip('.0')
 
 # # Prepare the CSV data: convert 'geoid' to string and remove trailing zeroes
@@ -25,7 +25,7 @@ df_merged = pd.merge(df_csv, df_excel[['FIPS'] + columns_to_merge], left_on='geo
 df_merged.drop('FIPS', axis=1, inplace=True)
 
 # Save the merged data to a new CSV file
-output_file = 'merged_output.csv'  # You can choose a different file name
+output_file = "../../../results/ookla/USA/Woodard_research/ookla_fixed_woodard_race_gender_age_edu.csv"  
 df_merged.to_csv(output_file, index=False)
 
 print('Merge completed and saved to:', output_file)
