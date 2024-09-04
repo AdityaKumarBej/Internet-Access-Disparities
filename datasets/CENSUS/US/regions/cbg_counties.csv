@@ -1,0 +1,46 @@
+state_fips,state_name,county_code,county_name,woodard_nation,region
+06,California,001,Alameda,THE LEFT COAST, Bay Area
+06,California,013,Contra Costa,THE LEFT COAST, Bay Area
+06,California,041,Marin,THE LEFT COAST, Bay Area
+06,California,055,Napa,THE LEFT COAST, Bay Area
+06,California,081,San Mateo,THE LEFT COAST, Bay Area
+06,California,085,Santa Clara,THE LEFT COAST, Bay Area
+06,California,095,Solano,THE LEFT COAST, Bay Area
+06,California,097,Sonoma,THE LEFT COAST, Bay Area
+06,California,075,San Fransisco,THE LEFT COAST, Bay Area
+06,California,097,Sonoma,THE LEFT COAST, Bay Area
+06,California,025,Imperial,EL NORTE, Los Angeles Area
+06,California,037,Los Angeles,EL NORTE, Los Angeles Area
+06,California,059,Orange,EL NORTE, Los Angeles Area
+06,California,065,Riverside,EL NORTE, Los Angeles Area
+06,California,073,San Diego,EL NORTE, Los Angeles Area
+06,California,079,San Louis,EL NORTE, Los Angeles Area
+06,California,083,Santa Barbara,EL NORTE, Los Angeles Area
+06,California,111,Ventura,EL NORTE, Los Angeles Area
+06,California,019,Fresno,THE FAR WEST, Middle California Area
+06,California,029,Kern,THE FAR WEST, Middle California Area
+06,California,031,Kings,THE FAR WEST, Middle California Area
+06,California,039,Madera,THE FAR WEST, Middle California Area
+06,California,043,Mariposa,THE FAR WEST, Middle California Area
+06,California,047,Merced,THE FAR WEST, Middle California Area
+06,California,099,Stanislaus,THE FAR WEST, Middle California Area
+06,California,107,Tulare,THE FAR WEST, Middle California Area
+48,Texas,085,Collin,GREATER APPALACHIA, Dallas Area
+48,Texas,097,Cooke,GREATER APPALACHIA, Dallas Area
+48,Texas,113,Dallas,GREATER APPALACHIA, Dallas Area
+48,Texas,121,Denton,GREATER APPALACHIA, Dallas Area
+48,Texas,139,Ellis,GREATER APPALACHIA, Dallas Area
+48,Texas,143,Erath,GREATER APPALACHIA, Dallas Area
+48,Texas,147,Fannin,GREATER APPALACHIA, Dallas Area
+48,Texas,181,Grayson,GREATER APPALACHIA, Dallas Area
+48,Texas,221,Hood,GREATER APPALACHIA, Dallas Area
+48,Texas,231,Hunt,GREATER APPALACHIA, Dallas Area
+48,Texas,251,Johnson,GREATER APPALACHIA, Dallas Area
+48,Texas,257,Kaufman,GREATER APPALACHIA, Dallas Area
+48,Texas,349,Navarro,GREATER APPALACHIA, Dallas Area
+48,Texas,363,Palo Pinto,GREATER APPALACHIA, Dallas Area
+48,Texas,367,Parker,GREATER APPALACHIA, Dallas Area
+48,Texas,397,Rockwall,GREATER APPALACHIA, Dallas Area
+48,Texas,425,Somervell,GREATER APPALACHIA, Dallas Area
+48,Texas,439,Tarrant,GREATER APPALACHIA, Dallas Area
+48,Texas,497,Wise,GREATER APPALACHIA, Dallas Area

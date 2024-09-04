@@ -5,10 +5,10 @@ csv_file = "../../../results/mlab/US/Woodard_research/mlab_woodard_race_gender_a
 df_csv = pd.read_csv(csv_file)
 
 # Prepare the Excel data: convert 'FIPS Code' to string and remove trailing zeroes (if necessary)
-df_excel['FIPS'] = df_excel['FIPS'].astype(str).str.rstrip('.0')
+# df_excel['FIPS'] = df_excel['FIPS'].astype(str).str.rstrip('.0')
 
-# Prepare the CSV data: convert 'geoid' to string and remove trailing zeroes
-df_csv['geoid'] = df_csv['geoid'].astype(str).str.rstrip('.0')
+# # Prepare the CSV data: convert 'geoid' to string and remove trailing zeroes
+# df_csv['geoid'] = df_csv['geoid'].astype(str).str.rstrip('.0')
 
 # Define the columns to merge from Excel
 columns_to_merge = [
