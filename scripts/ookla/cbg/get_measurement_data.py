@@ -72,27 +72,27 @@ def combine_same_cbg_rows(state_fips: str, county_fips: str):
     df = pd.read_csv(input_csv)
 
     grouped_df = df.groupby('GEOID').agg({
-        'avg_d_mbps': 'mean',
-        'avg_u_mbps': 'mean',
-        'avg_lat_ms': 'mean',
+        'avg_d_mbps': ['mean', 'median'],
+        'avg_u_mbps': ['mean', 'median'],
+        'avg_lat_ms': ['mean', 'median'],
         'tests'     : 'sum',
         'devices'   : 'sum'
     }).reset_index()
 
-    # Rename columns
+    # Flatten the multi-level columns resulting from the aggregation
+    grouped_df.columns = ['_'.join(col).strip() if col[1] else col[0] for col in grouped_df.columns.values]
+
+    # Rename columns for clarity
     grouped_df.rename(columns={
-        'avg_d_mbps': 'avg_d_mbps_avg',
-        'avg_u_mbps': 'avg_u_mbps_avg',
-        'avg_lat_ms': 'avg_lat_ms_avg',
-        'tests': 'total_tests',
-        'devices': 'total_devices'
+        'tests_sum': 'total_tests',
+        'devices_sum': 'total_devices'
     }, inplace=True)
 
     # Merge the non-aggregated columns
     non_agg_columns = df[['GEOID', 'year', 'STATEFP', 'COUNTYFP', 'TRACTCE', 'BLKGRPCE', 'ALAND']].drop_duplicates(subset=['GEOID'])
     final_df = pd.merge(non_agg_columns, grouped_df, on='GEOID')
 
-    subset_columns_df = final_df[['GEOID','year','STATEFP', 'COUNTYFP', 'TRACTCE', 'BLKGRPCE','ALAND', 'avg_d_mbps_avg', 'avg_u_mbps_avg', 'avg_lat_ms_avg', 'total_tests', 'total_devices']]
+    subset_columns_df = final_df[['GEOID','year','STATEFP', 'COUNTYFP', 'TRACTCE', 'BLKGRPCE','ALAND', 'avg_d_mbps_mean', 'avg_d_mbps_median', 'avg_u_mbps_mean', 'avg_u_mbps_median', 'avg_lat_ms_mean', 'avg_lat_ms_median', 'total_tests', 'total_devices']]
 
     # remove sorting if needed
     subset_columns_df = subset_columns_df.sort_values(by='GEOID')
