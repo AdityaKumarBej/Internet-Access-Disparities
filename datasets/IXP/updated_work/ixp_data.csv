@@ -1,0 +1,458 @@
+id,org_id,name,aka,name_long,city,country,region_continent,media,notes,proto_unicast,proto_multicast,proto_ipv6,website,social_media,url_stats,tech_email,tech_phone,policy_email,policy_phone,sales_phone,sales_email,net_count,fac_count,ixf_net_count,ixf_last_import,ixf_import_request,ixf_import_request_status,service_level,terms,status_dashboard,created,updated,status
+1,2,Equinix Ashburn,,Equinix Internet Exchange Ashburn,Ashburn,US,North America,Ethernet,,True,False,True,https://ix.equinix.com,"[{'service': 'website', 'identifier': 'https://ix.equinix.com'}]",https://ix.equinix.com/home/locations-and-traffic/#traffic,support@equinix.com,,support@equinix.com,,,,343,3,0,,,queued,24/7 Support,Recurring Fees,,2010-07-29T00:00:00Z,2024-07-26T15:34:35Z,ok
+2,2,Equinix Chicago,,Equinix Internet Exchange Chicago,Chicago,US,North America,Ethernet,,True,False,True,https://ix.equinix.com,"[{'service': 'website', 'identifier': 'https://ix.equinix.com'}]",https://ix.equinix.com/home/locations-and-traffic/#traffic,support@equinix.com,,support@equinix.com,,,,255,3,0,,,queued,24/7 Support,Recurring Fees,,2010-07-29T00:00:00Z,2024-07-26T15:35:01Z,ok
+3,2,Equinix Dallas,,Equinix Internet Exchange Dallas,Dallas,US,North America,Ethernet,,True,False,True,https://ix.equinix.com,"[{'service': 'website', 'identifier': 'https://ix.equinix.com'}]",https://ix.equinix.com/home/locations-and-traffic/#traffic,support@equinix.com,,support@equinix.com,,,,197,6,0,,,queued,24/7 Support,Recurring Fees,,2010-07-29T00:00:00Z,2024-07-26T15:35:07Z,ok
+4,2,Equinix Los Angeles,,Equinix Internet Exchange Los Angeles,Los Angeles,US,North America,Ethernet,,True,False,True,https://ix.equinix.com,"[{'service': 'website', 'identifier': 'https://ix.equinix.com'}]",https://ix.equinix.com/home/locations-and-traffic/#traffic,support@equinix.com,,support@equinix.com,,,,97,3,0,,,queued,24/7 Support,Recurring Fees,,2010-07-29T00:00:00Z,2024-07-26T15:36:49Z,ok
+5,2,Equinix San Jose,,Equinix Internet Exchange San Jose (Bay Area),San Jose,US,North America,Ethernet,,True,False,True,https://ix.equinix.com,"[{'service': 'website', 'identifier': 'https://ix.equinix.com'}]",https://ix.equinix.com/home/locations-and-traffic/#traffic,support@equinix.com,,support@equinix.com,,,,201,5,0,,,queued,24/7 Support,Recurring Fees,,2010-07-29T00:00:00Z,2024-07-26T15:38:33Z,ok
+7,2,Equinix Palo Alto,,Equinix Internet Exchange Palo Alto,Palo Alto,US,North America,Ethernet,Formerly PAIX,True,False,True,https://ix.equinix.com,"[{'service': 'website', 'identifier': 'https://ix.equinix.com'}]",https://ix.equinix.com/home/locations-and-traffic/#traffic,support@equinix.com,,support@equinix.com,,,,82,3,0,,,queued,24/7 Support,Recurring Fees,,2010-07-29T00:00:00Z,2024-07-26T15:38:10Z,ok
+9,2,Equinix Atlanta,,Equinix Internet Exchange Atlanta,Atlanta,US,North America,Ethernet,,True,False,True,https://ix.equinix.com,"[{'service': 'website', 'identifier': 'https://ix.equinix.com'}]",https://ix.equinix.com/home/locations-and-traffic/#traffic,servicesupport@equinix.com,+18668118720,servicesupport@equinix.com,,,,29,3,0,,,queued,24/7 Support,Recurring Fees,,2010-07-29T00:00:00Z,2024-07-26T15:34:41Z,ok
+11,2,Equinix Seattle,,Equinix Internet Exchange Seattle,Seattle,US,North America,Ethernet,,True,False,True,https://ix.equinix.com,"[{'service': 'website', 'identifier': 'https://ix.equinix.com'}]",https://ix.equinix.com/home/locations-and-traffic/#traffic,servicesupport@equinix.com,,servicesupport@equinix.com,,,,34,2,0,,,queued,24/7 Support,Recurring Fees,,2010-07-29T00:00:00Z,2024-07-26T15:38:45Z,ok
+12,2,Equinix New York,,Equinix Internet Exchange New York,New York,US,North America,Ethernet,,True,False,True,https://ix.equinix.com,"[{'service': 'website', 'identifier': 'https://ix.equinix.com'}]",https://ix.equinix.com/home/locations-and-traffic/#traffic,servicesupport@equinix.com,+18668118720,servicesupport@equinix.com,,,,111,5,0,,,queued,24/7 Support,Recurring Fees,,2010-07-29T00:00:00Z,2024-07-26T15:37:57Z,ok
+13,29,SIX Seattle,,Seattle Internet Exchange (MTU 1500),Seattle,US,North America,Ethernet,"SIX port fees:
+
+- 400G: $15k NRC, no MRC
+- 100G: $7.5k NRC, no MRC
+- 10G: $1.5k NRC, no MRC
+- 1G: $100 NRC, no MRC
+- Extension port: $100 NRC, no MRC",True,False,True,https://www.seattleix.net/,"[{'service': 'website', 'identifier': 'https://www.seattleix.net/'}]",https://www.seattleix.net/statistics/,info@seattleix.net,+12063674320,info@seattleix.net,+12063674320,,,370,15,445,2024-11-12T00:00:16Z,2021-09-16T20:16:27Z,finished,24/7 Support,Non-recurring Fees Only,,2010-07-29T00:00:00Z,2023-12-22T17:45:29Z,ok
+14,32,NYIIX New York,,New York International Internet eXchange,New York,US,North America,Ethernet,"For 24 x 7 support, please contact our Customer Assistance Center at cac@telehouse.com. For technical inquiries, please contact at iixeng@telehouse.com",True,False,True,https://www.nyiix.net/locations/nyiix-new-york/,"[{'service': 'website', 'identifier': 'https://www.nyiix.net/locations/nyiix-new-york/'}]",https://www.nyiix.net/mrtg/sum.html,cac@telehouse.com,+17183552525,iixeng@telehouse.com,,,iixsales@telehouse.com,196,7,0,,,queued,Not Disclosed,Not Disclosed,,2010-07-29T00:00:00Z,2023-03-07T18:44:03Z,ok
+17,2,Equinix Miami,,Equinix Internet Exchange Miami,Miami,US,North America,Ethernet,fka: NAP Of The Americas,True,False,True,http://www.equinix.com,"[{'service': 'website', 'identifier': 'http://www.equinix.com'}]",https://ix.equinix.com/home/locations-and-traffic/#traffic,support@equinix.com,,support@equinix.com,,,,171,2,0,,,queued,24/7 Support,Recurring Fees,,2010-07-29T00:00:00Z,2024-07-26T15:37:23Z,ok
+22,8592,Digital Realty Atlanta,,Digital Realty Atlanta Internet Exchange,Atlanta,US,North America,Ethernet,"fka: Telx Internet Exchange (TIE)
+fka: Atlanta-IX",True,False,True,https://ix.digitalrealty.com,"[{'service': 'website', 'identifier': 'https://ix.digitalrealty.com'}]",,ix@digitalrealty.com,+18888359832,ix@digitalrealty.com,+18888359832,,,152,2,0,,,queued,Not Disclosed,Not Disclosed,,2010-07-29T00:00:00Z,2021-11-01T23:23:30Z,ok
+23,32,NYIIX Los Angeles,,New York International Internet eXchange - Los Angeles,Los Angeles,US,North America,Ethernet,,True,False,True,https://www.nyiix.net/locations/nyiix-la/,"[{'service': 'website', 'identifier': 'https://www.nyiix.net/locations/nyiix-la/'}]",https://www.nyiix.net/LA-mrtg/sum.html,iixeng@telehouse.com,,,,,iixsales@telehouse.com,32,2,0,,,queued,Not Disclosed,Not Disclosed,,2010-07-29T00:00:00Z,2023-03-07T18:44:33Z,ok
+82,461,Pacific Wave,,"Pacific Wave Exchange in LA, Sunnyvale and Seattle",West Coast,US,North America,Ethernet,Distributed exchange composed of site-local and inter-site VLAN's focused on international research & education data exchange.,True,True,True,http://www.pacificwave.net/,"[{'service': 'website', 'identifier': 'http://www.pacificwave.net/'}]",,noc@pacificwave.net,,,,,,14,5,0,,,queued,Not Disclosed,Not Disclosed,,2010-07-29T00:00:00Z,2020-07-20T22:59:58Z,ok
+89,199,MadIX,,Madison Internet Exchange,Madison,US,North America,Ethernet,,True,True,True,http://kb.wisc.edu/ns/page.php?id=6636,"[{'service': 'website', 'identifier': 'http://kb.wisc.edu/ns/page.php?id=6636'}]",http://kb.wisc.edu/ns/page.php?id=6636,noc@uwsys.net,+16082634188,peering@uwsys.net,+16082634188,,,16,2,0,,,queued,Not Disclosed,Not Disclosed,,2010-07-29T00:00:00Z,2024-02-15T20:10:03Z,ok
+127,283,Oregon Internet Exchange (OIX),,Oregon-IX,"Eugene, Oregon",US,North America,Ethernet,,True,False,False,http://www.oregon-ix.net/,"[{'service': 'website', 'identifier': 'http://www.oregon-ix.net/'}]",http://www.oregon-ix.net/stat-frme.html,oix-maintainer@ns.uoregon.edu,,,,,,2,1,0,,,queued,Not Disclosed,Not Disclosed,,2010-07-29T00:00:00Z,2017-05-16T10:52:23Z,ok
+141,309,TampaIX,,Tampa Internet Exchange,Tampa,US,North America,Ethernet,,True,False,False,http://tampaix.net,"[{'service': 'website', 'identifier': 'http://tampaix.net'}]",,support@tampaix.net,+18136766666,info@tampaix.net,,,,1,1,0,,,queued,Not Disclosed,Not Disclosed,,2010-07-29T00:00:00Z,2020-01-22T04:24:06Z,ok
+142,34,Any2West,,CoreSite - Any2West,Los Angeles and Silicon Valley,US,North America,Ethernet,,True,False,True,http://www.coresite.com,"[{'service': 'website', 'identifier': 'http://www.coresite.com'}]",,osc@coresite.com,+18667772673,any2@coresite.com,+18667772673,,info@coresite.com,272,9,0,,,queued,24/7 Support,Not Disclosed,,2010-07-29T00:00:00Z,2022-10-14T17:01:41Z,ok
+151,331,BigApe,,The Big Apple Peering Exchange,New York,US,North America,Ethernet,,True,False,True,http://www.bigape.us,"[{'service': 'website', 'identifier': 'http://www.bigape.us'}]",,info@bigape.us,,info@bigape.us,,,,1,2,0,,,queued,Not Disclosed,Not Disclosed,,2010-07-29T00:00:00Z,2016-03-14T21:37:54Z,ok
+155,340,SFMIX,,San Francisco Metropolitan Internet Exchange,San Francisco,US,North America,Ethernet,"[Public looking glass](http://lg.sfmix.org/cgi-bin/bgplg?cmd=show+ip+bgp+summary&req=)
+
+[Route Browser](https://alice.sfmix.org/)",True,False,True,https://sfmix.org/,"[{'service': 'website', 'identifier': 'https://sfmix.org/'}]",https://sfmix.org/statistics,tech-c@sfmix.org,,tech-c@sfmix.org,,,,92,12,98,2024-04-23T21:40:26Z,2024-04-23T21:40:06Z,finished,Not Disclosed,Not Disclosed,,2010-07-29T00:00:00Z,2024-03-05T20:48:18Z,ok
+165,352,NWAX,NWAX,"Northwest Access Exchange, Inc.",Portland,US,North America,Ethernet,,True,False,True,http://www.nwax.net,"[{'service': 'website', 'identifier': 'http://www.nwax.net'}]",http://www.nwax.net,noc@nwax.net,+15039140700,info@nwax.net,+15039140700,,,105,10,0,,,queued,Not Disclosed,Not Disclosed,,2010-07-29T00:00:00Z,2023-02-08T00:11:33Z,ok
+189,411,HIX,,Hawai`i Internet Exchange,Honolulu,US,North America,Ethernet,Exchange offers routes from Hawaii facilities to Hawaii facilities only.,True,False,True,http://www.hawaii.edu/hix/Hawaii_Internet_Exchange/Home.html,"[{'service': 'website', 'identifier': 'http://www.hawaii.edu/hix/Hawaii_Internet_Exchange/Home.html'}]",,neteng-l@lists.hawaii.edu,,neteng-l@lists.hawaii.edu,,,,2,0,0,,,queued,Not Disclosed,Not Disclosed,,2010-07-29T00:00:00Z,2023-02-02T22:46:03Z,ok
+199,439,YRIX,,Yellowstone Regional Internet eXchange,"Billings, MT",US,North America,Ethernet,,True,False,False,http://www.yrix.org/,"[{'service': 'website', 'identifier': 'http://www.yrix.org/'}]",,apply@yrix.org,,apply@yrix.org,,,,1,1,0,,,queued,Not Disclosed,Not Disclosed,,2010-07-29T00:00:00Z,2020-08-01T05:52:19Z,ok
+204,34,Any2East,,CoreSite - Any2East,"Washington DC, Reston, Boston, New York, Atlanta",US,North America,Ethernet,,True,False,True,http://www.coresite.com,"[{'service': 'website', 'identifier': 'http://www.coresite.com'}]",,osc@coresite.com,+18667772673,any2@coresite.com,+18667772673,,info@coresite.com,48,10,0,,,queued,24/7 Support,Not Disclosed,,2010-07-29T00:00:00Z,2022-11-12T20:49:50Z,ok
+205,34,Any2Florida,,CoreSite - Any2Florida,Miami/Orlando,US,North America,Ethernet,,True,False,True,http://www.coresite.com,"[{'service': 'website', 'identifier': 'http://www.coresite.com'}]",,osc@coresite.com,+18667772673,any2@coresite.com,+18667772673,,info@coresite.com,0,4,0,,,queued,24/7 Support,Not Disclosed,,2010-07-29T00:00:00Z,2022-12-19T17:27:51Z,ok
+226,34,Any2Chicago,,CoreSite - Any2Chicago,Chicago,US,North America,Ethernet,,True,False,True,http://www.coresite.com,"[{'service': 'website', 'identifier': 'http://www.coresite.com'}]",,osc@coresite.com,+18667772673,any2@coresite.com,+18667772673,,info@coresite.com,14,2,0,,,queued,24/7 Support,Not Disclosed,,2010-07-29T00:00:00Z,2022-10-14T17:02:18Z,ok
+239,10843,ChIX,,Chicago Internet Exchange,Chicago,US,North America,Ethernet,,True,True,True,https://unitedix.net/location/chicago,"[{'service': 'website', 'identifier': 'https://unitedix.net/location/chicago'}]",https://unitedix.net/location/chicago/networks,neteng@unitedix.net,+18774322656,peering@unitedix.net,,,,66,5,85,2024-04-18T20:35:26Z,2024-04-18T20:35:19Z,finished,24/7 Support,Not Disclosed,,2010-07-29T00:00:00Z,2023-09-06T02:52:28Z,ok
+249,15749,KCIX,KCIXP,Kansas City Internet Exchange,Kansas City,US,North America,Ethernet,"### How to participate?
+Please visit http://kcix.net and fill out the small form on the front page or email peering@kcix.net to connect. 
+
+Now offering 100G/40G ports in 1102 Grand and 1530 Swift.
+
+### Max Prefix Settings
+Recommended limits to allow for future growth  
+IPv4: 200000  
+IPv6: 100000  
+
+### Route Server Communities:
+ 0:$peerasn to exclude your routes to $peerasn
+40542:$peerasn to include your routes to $peerasn
+0:40542 to exclude your routes from all peers
+
+### Official KCIX Extensions:
+St. Louis, Missouri via [STLIX.net](http://stlix.net)  
+[https://www.peeringdb.com/ix/2585](https://www.peeringdb.com/ix/2585)
+
+Houston, Texas via [HOUIX.net](http://houix.net)  
+[https://peeringdb.com/ix/2835](https://peeringdb.com/ix/2835)
+
+Springfield, Missouri via [SpringIX.net](http://springix.net)  
+[https://www.peeringdb.com/ix/3195](https://www.peeringdb.com/ix/3195)
+
+Minneapolis, Minnesota via [MNVoIP.com](http://mnvoip.com)  
+[https://www.peeringdb.com/net/4044](https://www.peeringdb.com/net/4044)
+
+### Mailing List:
+Please email info@kcix.net if you wish to be subscribed to the KCIX members mailing list.",True,False,True,http://www.kcix.net/,"[{'service': 'website', 'identifier': 'http://www.kcix.net/'}]",https://kcix.net/stats.php,noc@kcix.net,,peering@kcix.net,,,info@kcix.net,181,12,0,,,queued,Best Effort (no SLA),No Commercial Terms,,2010-07-29T00:00:00Z,2024-10-15T16:01:30Z,ok
+254,34,Any2Denver,,CoreSite - Any2Denver,Denver,US,North America,Ethernet,,True,False,True,http://www.coresite.com,"[{'service': 'website', 'identifier': 'http://www.coresite.com'}]",,osc@coresite.com,+18667772673,any2@coresite.com,+18667772673,,info@coresite.com,76,2,0,,,queued,24/7 Support,Not Disclosed,,2010-07-29T00:00:00Z,2024-02-22T18:10:01Z,ok
+256,8592,Digital Realty Phoenix,,Digital Realty Phoenix Internet Exchange,Phoenix,US,North America,Ethernet,fka: Telx Internet Exchange (TIE),True,False,True,http://ix.digitalrealty.com,"[{'service': 'website', 'identifier': 'http://ix.digitalrealty.com'}]",,ix@digitalrealty.com,+18888359832,ix@digitalrealty.com,+18888359832,,,6,1,0,,,queued,Not Disclosed,Not Disclosed,,2010-07-29T00:00:00Z,2021-11-01T23:25:47Z,ok
+267,5311,DRF IX,,DRFortress Exchange,Honolulu,US,North America,Ethernet,,True,False,True,http://www.drfortress.com,"[{'service': 'website', 'identifier': 'http://www.drfortress.com'}]",,peering@drfortress.com,+18085287500,peering@drfortress.com,+18085287500,,,32,1,0,,,queued,Not Disclosed,Not Disclosed,,2010-07-29T00:00:00Z,2020-01-22T04:24:06Z,ok
+322,8592,Digital Realty Dallas,,Digital Realty Dallas Internet Exchange,Dallas,US,North America,Ethernet,fka: Telx Internet Exchange (TIE),True,False,True,https://ix.digitalrealty.com,"[{'service': 'website', 'identifier': 'https://ix.digitalrealty.com'}]",,ix@digitalrealty.com,+18888359832,ix@digitalrealty.com,+18888359832,,,11,2,0,,,queued,Not Disclosed,Not Disclosed,,2010-07-29T00:00:00Z,2021-11-01T23:24:30Z,ok
+325,8592,Digital Realty New York,,Digital Realty New York Internet Exchange,New York/New Jersey,US,North America,Ethernet,fka: Telx Internet Exchange (TIE),True,False,True,https://ix.digitalrealty.com,"[{'service': 'website', 'identifier': 'https://ix.digitalrealty.com'}]",,ix@digitalrealty.com,+18888359832,ix@digitalrealty.com,+18888359832,,,63,6,0,,,queued,Not Disclosed,Not Disclosed,,2010-07-29T00:00:00Z,2021-11-01T23:25:13Z,ok
+357,7072,SOAX,,Southern Oregon Access Exchange,Medford,US,North America,Ethernet,,True,False,True,http://soax.org/,"[{'service': 'website', 'identifier': 'http://soax.org/'}]",,,,,,,,3,1,0,,,queued,Not Disclosed,Not Disclosed,,2012-11-14T00:00:00Z,2022-08-27T13:09:46Z,ok
+363,762,SUPRnet,,Southern Utah Peering Regional Network,Saint George,US,North America,Ethernet,,True,False,True,https://suprnet.net,"[{'service': 'website', 'identifier': 'https://suprnet.net'}]",,peering@suprnet.net,+14357736073,peering@suprnet.net,+14357736073,,,20,1,23,2024-11-12T00:36:00Z,,queued,Not Disclosed,Not Disclosed,,2010-07-29T00:00:00Z,2020-01-22T04:24:06Z,ok
+428,2737,NASA-AIX,,NASA Ames Internet eXchange,"Mountain View, CA",US,North America,Ethernet,,True,True,True,http://www.nasa.gov/centers/ames,"[{'service': 'website', 'identifier': 'http://www.nasa.gov/centers/ames'}]",,noc@nren.nasa.gov,,bobby.g.cates@nasa.gov,,,,2,1,0,,,queued,Not Disclosed,Not Disclosed,,2010-08-28T00:00:00Z,2020-01-28T17:49:05Z,ok
+446,15188,MICE,MICE,Midwest Internet Cooperative Exchange,"Minneapolis, MN",US,North America,Ethernet,"Passive BFD is enabled for all route server participants.
+
+Route Server MICE Communities:
+
+[Black List]
+0:peerAS     -- Do not announce the route to the specified peer.
+
+[White List]
+0:53679      -- Only announce the route to specified peers (see below).
+53679:peerAS -- Announce the route to the specified peer.",True,False,True,https://micemn.net,"[{'service': 'website', 'identifier': 'https://micemn.net'}]",http://micelg.usinternet.com/export/,peering@micemn.net,,peering@micemn.net,,,peering@micemn.net,146,5,171,2024-11-12T00:43:27Z,2021-10-19T01:32:00Z,finished,Best Effort (no SLA),Recurring Fees,,2010-10-09T00:00:00Z,2023-05-23T21:08:22Z,ok
+476,3644,AZIX,,Arizona Internet Exchange,Phoenix,US,North America,Ethernet,,True,False,True,,[],,info@arizonaix.net,+18665444830,info@arizonaix.net,,,,2,1,0,,,queued,Not Disclosed,Not Disclosed,,2011-03-05T00:00:00Z,2020-01-22T04:24:06Z,ok
+496,4011,BNIIX,,Buffalo Niagara International Internet Exchange,Buffalo,US,North America,Ethernet,,True,False,True,http://www.bniix.net,"[{'service': 'website', 'identifier': 'http://www.bniix.net'}]",,support@bniix.net,+18558585853,peering@bniix.net,+17169869860,,,3,0,0,,,queued,Not Disclosed,Not Disclosed,,2011-05-04T00:00:00Z,2024-11-07T02:34:48Z,ok
+499,4185,MKE-IX,,The Milwaukee IX,Milwaukee,US,North America,Ethernet,,True,True,True,http://www.mkeix.net,"[{'service': 'website', 'identifier': 'http://www.mkeix.net'}]",http://www.mkeix.net/stats,discuss@lists.mkeix.net,,discuss@lists.mkeix.net,,,,11,1,0,,,queued,Not Disclosed,Not Disclosed,,2011-06-02T00:00:00Z,2016-03-14T20:33:44Z,ok
+514,4079,Central Oregon Internet Exchange,COIX,Central Oregon Internet eXchange,Bend,US,North America,Ethernet,,True,False,True,https://www.centraloregonix.org,"[{'service': 'website', 'identifier': 'https://www.centraloregonix.org'}]",,noc@centraloregonix.org,,policy@centraloregonix.org,,,,10,2,11,2024-11-12T00:49:52Z,2024-02-22T03:54:58Z,finished,Not Disclosed,Recurring Fees,,2011-05-14T00:00:00Z,2023-08-23T19:01:40Z,ok
+563,5570,JXIX,,Jacksonville Internet Exchange,Jacksonville,US,North America,Ethernet,JXIX is now being operated by UnitedIX.,True,True,True,http://jxix.org,"[{'service': 'website', 'identifier': 'http://jxix.org'}]",,support@unitedix.net,,support@unitedix.net,,,,13,2,0,,,queued,24/7 Support,Not Disclosed,,2012-01-30T00:00:00Z,2021-08-31T14:09:42Z,ok
+565,373,Boston Internet Exchange,BOSIX,Boston Internet Exchange,"Boston, Massachusetts",US,North America,Ethernet,,True,False,True,http://www.bostonix.net/,"[{'service': 'website', 'identifier': 'http://www.bostonix.net/'}]",,neteng@markleygroup.com,+16174516464,neteng@markleygroup.com,+16174516464,,,62,2,0,,,queued,Not Disclosed,Not Disclosed,,2012-02-03T00:00:00Z,2023-05-17T21:58:51Z,ok
+624,5380,TP-IX,,Twin Ports Internet Exchange,Duluth,US,North America,Ethernet,,True,True,True,http://tp-ix.net,"[{'service': 'website', 'identifier': 'http://tp-ix.net'}]",,peering@tp-ix.net,,peering@tp-ix.net,,,,2,1,0,,,queued,Not Disclosed,Not Disclosed,,2012-11-05T00:00:00Z,2019-06-14T22:56:04Z,ok
+640,7202,GCIIX,,Greater Chicago International Internet Exchange,Chicago,US,North America,Ethernet,,True,False,True,http://www.gciix.net,"[{'service': 'website', 'identifier': 'http://www.gciix.net'}]",,noc@gciix.net,+18558585497,peering@gciix.net,+18558585497,,,1,1,0,,,queued,Not Disclosed,Not Disclosed,,2012-12-22T00:00:00Z,2020-01-22T04:24:06Z,ok
+662,7483,Ninja-IX Phoenix,,Ninja-IX Phoenix,Phoenix,US,North America,Ethernet,"SLA is available
+OPEN-IX certified since March 2021
+We operate switches at 9 sites / campuses plus offer remote connections via layer 2 providers.",True,False,True,http://www.phoenix-ix.net,"[{'service': 'website', 'identifier': 'http://www.phoenix-ix.net'}]",,peering@phoenix-ix.net,+16026886414,peering@phoenix-ix.net,+16026886414,,,61,18,69,2022-05-26T00:09:07Z,,queued,Best Effort (no SLA),Recurring Fees,,2013-03-12T00:00:00Z,2023-04-04T17:12:26Z,ok
+672,7625,CyrusOne IX Dallas,,CyrusOne Internet Exchange,Dallas,US,North America,Ethernet,,True,False,True,http://www.cyrusone.com,"[{'service': 'website', 'identifier': 'http://www.cyrusone.com'}]",,peering@cyrusone.com,+1-786-493-4764 (Bill Williams Cell),peering@cyrusone.com,+1-786-493-4764 (Bill Williams Cell),,,3,0,0,,,queued,Not Disclosed,Not Disclosed,,2013-04-09T00:00:00Z,2019-06-10T13:10:47Z,ok
+673,2680,Databank IX Houston,,Databank Internet Exchange,Houston,US,North America,Ethernet,,True,False,True,http://www.databank.com,"[{'service': 'website', 'identifier': 'http://www.databank.com'}]",,networking@databank.com,,networking@databank.com,,,,15,2,0,,,queued,Not Disclosed,Not Disclosed,,2013-04-09T00:00:00Z,2022-06-22T18:33:13Z,ok
+674,7625,CyrusOne IX Austin,,CyrusOne Internet Exchange,Austin,US,North America,Ethernet,,True,False,True,http://www.cyrusone.com,"[{'service': 'website', 'identifier': 'http://www.cyrusone.com'}]",,peering@cyrusone.com,+17864934764,peering@cyrusone.com,+17864934764,+18555643198,,1,1,0,,,queued,Not Disclosed,Not Disclosed,,2013-04-09T00:00:00Z,2024-11-07T02:36:04Z,ok
+675,7625,CyrusOne IX San Antonio,,CyrusOne Internet Exchange,San Antonio,US,North America,Ethernet,,True,False,True,http://www.cyrusone.com,"[{'service': 'website', 'identifier': 'http://www.cyrusone.com'}]",,peering@cyrusone.com,+1-786-493-4764 (Bill Williams Cell),peering@cyrusone.com,+1-786-493-4764 (Bill Williams Cell),,,0,0,0,,,queued,Not Disclosed,Not Disclosed,,2013-04-09T00:00:00Z,2019-06-10T18:38:14Z,ok
+760,7625,CyrusOne IX Phoenix,,CyrusOne Internet Exchange,Phoenix,US,North America,Ethernet,,True,False,True,http://www.cyrusone.com,"[{'service': 'website', 'identifier': 'http://www.cyrusone.com'}]",,peering@cyrusone.com,+17864934764,peering@cyrusone.com,+17864934764,,,2,0,0,,,queued,Not Disclosed,Not Disclosed,,2013-09-09T00:00:00Z,2024-11-07T02:36:52Z,ok
+777,791,LINX NoVA,,"LINX Northern Virginia, Ashburn, Reston and Manassas",Northern Virginia,US,North America,Ethernet,,True,True,True,https://www.linx.net/about/our-network/linx-nova/,"[{'service': 'website', 'identifier': 'https://www.linx.net/about/our-network/linx-nova/'}]",https://portal.linx.net,support@linx.net,+442076453535,mikeh@linx.net,+442076453500,,,47,12,0,,,queued,Not Disclosed,Not Disclosed,,2013-10-10T00:00:00Z,2020-08-25T13:38:12Z,ok
+804,1187,DE-CIX New York,DE-CIX NYC,,New York,US,North America,Ethernet,"For peering with the DE-CIX New York route servers, please see:
+
+[DE-CIX New York Route Servers](https://www.peeringdb.com/net/6978)",True,False,True,https://www.de-cix.net/locations/new-york,"[{'service': 'website', 'identifier': 'https://www.de-cix.net/locations/new-york'}]",https://www.de-cix.net/locations/new-york/statistics,support@de-cix.net,+12127966914,sales@de-cix.net,+12127966914,,,264,31,0,,,queued,24/7 Support,Recurring Fees,,2013-11-13T00:00:00Z,2021-11-17T11:47:54Z,ok
+809,8583,OmahaIX,,Omaha Internet Exchange,Omaha,US,North America,Ethernet,,True,False,True,http://www.omahaix.com,"[{'service': 'website', 'identifier': 'http://www.omahaix.com'}]",,oix@1623farnam.com,+15073275341,oix@1623farnam.com,+15073275341,,,43,1,0,,,queued,Not Disclosed,Not Disclosed,,2013-11-26T00:00:00Z,2022-03-29T18:35:20Z,ok
+829,8808,SLIX - Salt Lake City Internet Exchange,,Salt Lake Internet Exchange,Salt Lake City,US,North America,Ethernet,,True,False,True,http://slix.net,"[{'service': 'website', 'identifier': 'http://slix.net'}]",https://ixp.slix.net/statistics/ixp,info@slix.net,+18015390852,info@slix.net,+18015390852,,,35,5,47,2024-11-12T01:08:47Z,,queued,24/7 Support,Recurring Fees,,2014-02-16T00:00:00Z,2021-06-03T21:25:23Z,ok
+833,6705,TPAIX,,Tampa Internet Exchange,Tampa,US,North America,Ethernet,,True,False,True,http://www.tpaix.net,"[{'service': 'website', 'identifier': 'http://www.tpaix.net'}]",,ixsupport@wowinc.com,+18133012620,ixsupport@wowinc.com,+18133012620,,,22,2,0,,,queued,Not Disclosed,Not Disclosed,,2014-02-22T00:00:00Z,2020-01-22T04:24:06Z,ok
+869,9300,Ohio IX,,Ohio IX,Columbus,US,North America,Ethernet,Ohio's largest IXP!,True,False,True,http://ohioix.net/,"[{'service': 'x', 'identifier': 'ohioixp'}, {'service': 'website', 'identifier': 'http://ohioix.net/'}]",https://ixpmanager.ohioix.net/statistics/ixp,noc@ohioix.net,+16143793330,info@ohioix.net,,,info@ohioix.net,49,16,58,2024-11-12T01:09:32Z,2022-09-01T14:26:08Z,finished,Normal Business Hours,Not Disclosed,https://ixpmanager.ohioix.net/public-content/support,2014-05-26T00:00:00Z,2023-09-15T18:33:39Z,ok
+935,2634,AMS-IX Bay Area,AMS-IX BA,AMS-IX Bay Area,"San Francisco, San Jose",US,North America,Ethernet,,True,False,True,https://www.ams-ix.net/bay,"[{'service': 'website', 'identifier': 'https://www.ams-ix.net/bay'}]",https://stats-ba.us.ams-ix.net/,noc@us.ams-ix.net,+12124614815,info@us.ams-ix.net,+12124614768,,,22,3,27,2024-11-12T01:10:24Z,2024-04-10T13:14:56Z,finished,Not Disclosed,Not Disclosed,,2014-09-18T00:00:00Z,2024-04-15T11:33:17Z,ok
+938,10007,TahoeIX,,Tahoe Internet Exchange,Reno,US,North America,Ethernet,,True,False,True,https://www.tahoeix.org,"[{'service': 'website', 'identifier': 'https://www.tahoeix.org'}]",https://www.tahoeix.org#stats,info@tahoeix.org,+17755252539,info@tahoeix.org,+17755252539,+17755252539,info@tahoeix.org,12,2,0,,,queued,Best Effort (no SLA),No Commercial Terms,,2014-09-29T00:00:00Z,2021-12-11T17:45:26Z,ok
+944,2634,AMS-IX Chicago,,AMS-IX Chicago,Chicago,US,North America,Ethernet,,True,False,True,https://www.ams-ix.net/chi,"[{'service': 'website', 'identifier': 'https://www.ams-ix.net/chi'}]",https://stats-chi.us.ams-ix.net/,noc@us.ams-ix.net,+12124614815,info@us.ams-ix.net,+12124614768,,,29,1,34,2024-11-12T01:11:16Z,2024-06-25T12:05:54Z,finished,Not Disclosed,Not Disclosed,,2014-09-29T00:00:00Z,2024-04-15T11:31:28Z,ok
+954,14386,FL-IX,FL-IX,FL-IX - The Florida Internet Exchange / Community IX - Florida,Miami,US,North America,Ethernet,Looking Glass: https://my.fl-ix.net/lg/,True,True,True,http://www.communityix.org/index.php/about-fl-ix/,"[{'service': 'website', 'identifier': 'http://www.communityix.org/index.php/about-fl-ix/'}]",https://my.fl-ix.net/grapher/ixp?period=month,noc@fl-ix.net,+18889254678,info@fl-ix.net,+18889254678,+1 888-925-4678,info@fl-ix.net,181,11,0,,,queued,24/7 Support,Recurring Fees,,2014-10-08T00:00:00Z,2024-05-20T12:29:30Z,ok
+957,10111,MiamiIX,,Miami Internet Exchange,"Miami, Florida",US,North America,Ethernet,,True,False,True,http://www.miamiix.net,"[{'service': 'website', 'identifier': 'http://www.miamiix.net'}]",,noc@miamiix.net,+130566355186784662,info@miamiix.net,+13056635518232,,,5,3,0,,,queued,Not Disclosed,Not Disclosed,,2014-10-16T00:00:00Z,2020-01-22T04:24:06Z,ok
+986,11225,FD-IX - Indianapolis,MidWest-IX Indianapolis,MidWest-IX / FD-IX Indianapolis,"Indianapolis, Indiana",US,North America,Ethernet,"How to participate?
+Please visit https://fd-ix.com to learn more—email peering@fd-ix.com to connect.
+We currently offer 1/10/40G ports in all locations with select availability of 25/100.
+
+Max Prefix Settings
+Recommended limits to allow for future growth 
+IPv4: 90000
+IPv6: 50000
+
+Our route servers have an open peering policy. 
+PNI Interconnects are available across the IX fabric.",True,True,True,http://www.fd-ix.com,"[{'service': 'website', 'identifier': 'http://www.fd-ix.com'}]",,helpdesk@fd-ix.com,+13176442224,peering@fd-ix.com,+13176442224,,sales@fd-ix.com,40,13,0,,,queued,24/7 Support,Not Disclosed,,2014-11-26T00:00:00Z,2024-03-29T03:44:44Z,ok
+1002,1187,DE-CIX Richmond,DE-CIX RIC,,Ashland,US,North America,Ethernet,"For peering with the DE-CIX Richmond route servers, please see:
+
+[DE-CIX Richmond Route Servers](https://www.peeringdb.com/net/7681)",True,False,True,https://www.de-cix.net/locations/richmond,"[{'service': 'website', 'identifier': 'https://www.de-cix.net/locations/richmond'}]",https://www.de-cix.net/locations/richmond/statistics,support@de-cix.net,,sales@de-cix.net,,,,21,3,0,,,queued,24/7 Support,Recurring Fees,,2014-12-29T00:00:00Z,2023-10-06T22:55:09Z,ok
+1006,10602,DET-iX,,Detroit Internet Exchange,Detroit,US,North America,Ethernet,"DET-iX is fee free. No MRC or NRC charges. 1,10, 25 and 100G ports are supported.",True,False,True,http://www.detroitix.com,"[{'service': 'website', 'identifier': 'http://www.detroitix.com'}]",http://stats.detroitix.com,noc@detroitix.com,+18002271957,info@detroitix.com,+18002271957,,,73,5,0,,,queued,Not Disclosed,Not Disclosed,,2015-01-12T00:00:00Z,2022-05-12T14:33:03Z,ok
+1038,11201,NashIX,,Nashville Internet Exchange,Nashville,US,North America,Ethernet,,True,False,True,http://nashix.net,"[{'service': 'website', 'identifier': 'http://nashix.net'}]",,peering@nashix.net,+14153077324,peering@nashix.net,+14153077324,,,6,1,0,,,queued,Not Disclosed,Not Disclosed,,2015-03-12T00:00:00Z,2020-01-22T04:24:06Z,ok
+1086,8978,MASS-IX,MASS IX,"MASS IX, Boston/Massachusetts Internet Exchange",Boston,US,North America,Ethernet,"### Primary Service Area:
+
+Boston, MA metro and Massachusetts
+
+### MASS IX port fees for CDNs and Network Partners:
+
+100GE: $500 MRC, $0 NRC  
+10GE: $0 MRC, $500 NRC
+
+The connecting member is solely responsible for costs of any cross connects and local loops to support their IX connection. MASS-IX can offer to organize a local loop to be delivered at the member's desired location, however in that instance, monthly fees will need to be quoted ICB to include loop costs.",True,False,True,https://www.mass-ix.net,"[{'service': 'website', 'identifier': 'https://www.mass-ix.net'}]",https://www.mass-ix.net/peering.html#stats,ops@mass-ix.net,+16178497278,ops@mass-ix.net,+16178497278,+16178497278,sales@mass-ix.net,69,8,0,,,queued,24/7 Support,Recurring Fees,,2015-05-12T00:00:00Z,2024-02-01T18:00:43Z,ok
+1117,7625,CyrusOne IX Sterling,,CyrusOne Internet Exchange,Sterling,US,North America,Ethernet,,True,False,True,http://www.cyrusone.com,"[{'service': 'website', 'identifier': 'http://www.cyrusone.com'}]",,peering@cyrusone.com,+1-786-493-4764 (Bill Williams Cell),peering@cyrusone.com,+1-786-493-4764 (Bill Williams Cell),,,0,2,0,,,queued,Not Disclosed,Not Disclosed,,2015-07-29T00:00:00Z,2019-06-10T18:37:33Z,ok
+1142,7625,CyrusOne IX Chicago,,CyrusOne Internet Exchange,Chicago,US,North America,Ethernet,,True,False,True,http://www.cyrusone.com,"[{'service': 'website', 'identifier': 'http://www.cyrusone.com'}]",,peering@cyrusone.com,+17864934764,peering@cyrusone.com,+17864934764,,,0,1,0,,,queued,Not Disclosed,Not Disclosed,,2015-09-22T00:00:00Z,2024-11-07T02:36:32Z,ok
+1174,13167,MegaIX Seattle,,Megaport MegaIX Seattle,Seattle,US,North America,Ethernet,,True,False,True,https://megaport.com,"[{'service': 'website', 'identifier': 'https://megaport.com'}]",https://www.megaport.com/services/ix-statistics/,support@megaport.com,+14259542777,ix@megaport.com,+61730885996,,,16,8,20,2024-11-12T01:20:37Z,,queued,Not Disclosed,Not Disclosed,,2015-12-08T00:00:00Z,2023-07-09T22:19:24Z,ok
+1175,13167,MegaIX Los Angeles,,Megaport MegaIX Los Angeles,Los Angeles,US,North America,Ethernet,,True,False,True,https://megaport.com,"[{'service': 'website', 'identifier': 'https://megaport.com'}]",https://www.megaport.com/services/ix-statistics/,support@megaport.com,+14259542777,ix@megaport.com,+61730885996,,,29,15,37,2024-11-12T01:21:37Z,,queued,Not Disclosed,Not Disclosed,,2015-12-08T00:00:00Z,2023-07-09T22:19:22Z,ok
+1178,13167,MegaIX Ashburn,,Megaport MegaIX Ashburn,Ashburn,US,North America,Ethernet,,True,False,True,https://www.megaport.com,"[{'service': 'website', 'identifier': 'https://www.megaport.com'}]",https://www.megaport.com/services/ix-statistics/,support@megaport.com,+14259542777,ix@megaport.com,+61730885996,,,45,34,57,2024-11-12T01:22:41Z,,queued,Not Disclosed,Not Disclosed,,2015-12-08T00:00:00Z,2023-07-09T22:19:20Z,ok
+1180,13167,MegaIX Dallas,,Megaport MegaIX Dallas,Dallas,US,North America,Ethernet,,True,False,True,https://megaport.com,"[{'service': 'website', 'identifier': 'https://megaport.com'}]",https://www.megaport.com/services/ix-statistics/,support@megaport.com,+14259542777,ix@megaport.com,+61730885996,,,28,29,33,2024-11-12T01:23:45Z,,queued,Not Disclosed,Not Disclosed,,2015-12-08T00:00:00Z,2023-07-09T22:19:21Z,ok
+1207,13253,IX-Denver,,Interconnection eXchange Denver,Denver,US,North America,Ethernet,"IX-Denver operates secure route servers with ingress filtering based on ARIN bulk whois DB import, and/or valid IRRDB as-set+route-set records for the connecting network.",True,False,True,https://ix-denver.org,"[{'service': 'website', 'identifier': 'https://ix-denver.org'}]",https://portal.ix-denver.org/statistics/ixp,peering@ix-denver.org,+13033511539,peering@ix-denver.org,+13033511539,,,88,10,106,2024-11-12T01:24:39Z,2024-10-24T18:17:53Z,finished,Not Disclosed,Not Disclosed,https://weathermap.ix-denver.org/,2016-01-10T00:00:00Z,2023-09-18T22:53:23Z,ok
+1212,13363,MGMix Montgomery,MGMix,Montgomery Internet Exchange,Montgomery,US,North America,Ethernet,,True,False,True,http://www.mgmix.net,"[{'service': 'website', 'identifier': 'http://www.mgmix.net'}]",,support@mgmix.net,+13346252424,info@mgmix.net,+13346252424,+13346252424,sales@mgmix.net,21,1,0,,,queued,Not Disclosed,Not Disclosed,,2016-01-24T00:00:00Z,2024-01-30T15:32:42Z,ok
+1249,1187,DE-CIX Dallas,DE-CIX DFW,,Dallas,US,North America,Ethernet,"For peering with the DE-CIX Dallas route servers, please see:
+
+[DE-CIX Dallas Route Servers](https://www.peeringdb.com/net/9841)",True,False,True,https://www.de-cix.net/en/locations/dallas,"[{'service': 'website', 'identifier': 'https://www.de-cix.net/en/locations/dallas'}]",https://www.de-cix.net/en/locations/dallas/statistics,support@de-cix.net,+12127966914,sales@de-cix.net,+12127966914,,,140,18,0,,,queued,24/7 Support,Recurring Fees,,2016-03-22T15:29:10Z,2021-11-17T11:38:28Z,ok
+1285,29,SIX Seattle (Jumbo),,Seattle Internet Exchange (MTU 9000),Seattle,US,North America,Ethernet,"SIX port fees:
+
+- 400G: $15k NRC, no MRC
+- 100G: $7.5k NRC, no MRC
+- 10G: $1.5k NRC, no MRC
+- 1G: $100 NRC, no MRC
+- Extension port: $100 NRC, no MRC",True,True,True,https://www.seattleix.net/,"[{'service': 'website', 'identifier': 'https://www.seattleix.net/'}]",https://www.seattleix.net/statistics/,info@seattleix.net,+12063674320,info@seattleix.net,+12063674320,,,57,15,72,2024-11-12T01:28:12Z,2023-07-18T14:44:06Z,finished,24/7 Support,Non-recurring Fees Only,,2016-04-21T14:40:58Z,2023-12-22T17:45:38Z,ok
+1488,7483,Ninja-IX Las Vegas,Ninja-IX Las Vegas,,Las Vegas,US,North America,Ethernet,SLA is available OPEN-IX certified since June 2021,True,False,True,http://www.vegas-ix.net,"[{'service': 'website', 'identifier': 'http://www.vegas-ix.net'}]",,peering@ninja-ix.net,+16026886414,peering@ninja-ix.net,+16026886414,,,6,1,0,,,queued,Not Disclosed,Not Disclosed,,2016-10-16T15:53:28Z,2024-05-09T23:11:47Z,ok
+1490,7483,Ninja-IX Richmond,Ninja-IX Richmond,Ninja-IX Richmond,Richmond,US,North America,Ethernet,"This IX is owned by Richmond-IX Corporation and managed by Ninja-IX Corporation
+
+Open-IX Certified since April 2021",True,False,True,http://www.richmond-ix.net,"[{'service': 'website', 'identifier': 'http://www.richmond-ix.net'}]",,peering@ninja-ix.net,+16026886414,peering@ninja-ix.net,+16026886414,,,8,1,0,,,queued,Best Effort (no SLA),Recurring Fees,,2016-10-16T15:56:10Z,2022-11-06T04:24:24Z,ok
+1519,11225,FD-IX - St. Louis,MidWest-IX St. Louis,St. Louis Regional Internet Exchange,"St. Louis, MO",US,North America,Ethernet,visit https://fd-ix.com for more informatiom,True,False,True,https://www.fd-ix.com,"[{'service': 'website', 'identifier': 'https://www.fd-ix.com'}]",,helpdesk@fd-ix.com,+13176442224,peering@midwest-ix.com,,,sales@fd-ix.com,12,4,0,,,queued,Not Disclosed,Recurring Fees,,2016-11-17T15:14:16Z,2022-02-27T22:28:18Z,ok
+1628,13167,MegaIX Las Vegas,,Megaport MegaIX Las Vegas,Las Vegas,US,North America,Ethernet,,True,False,True,https://megaport.com,"[{'service': 'website', 'identifier': 'https://megaport.com'}]",https://www.megaport.com/services/ix-statistics/,support@megaport.com,+14259542777,ix@megaport.com,+61730885996,,,5,2,7,2024-11-12T01:34:37Z,,queued,Not Disclosed,Not Disclosed,,2017-02-09T04:23:24Z,2023-07-09T22:19:26Z,ok
+1668,14386,CIX-ATL,CIX-ATL,Community IX - Atlanta,Atlanta,US,North America,Ethernet,Limited time promotion: First year is currently free on a two-year commitment. Does not include 400G ports.,True,True,True,http://www.communityix.org,"[{'service': 'website', 'identifier': 'http://www.communityix.org'}]",https://atl.communityix.org/grapher/ixp?period=month,noc@communityix.org,+18889254678,info@communityix.org,+18889254678,+1 888-925-4678,info@communityix.org,75,11,0,,,queued,24/7 Support,Recurring Fees,,2017-03-16T17:11:36Z,2024-05-20T12:29:43Z,ok
+1679,16557,NNENIX,,Northern New England Neutral Internet Exchange,Portland,US,North America,Ethernet,,True,False,True,http://www.nnenix.net,"[{'service': 'website', 'identifier': 'http://www.nnenix.net'}]",https://ixp.nnenix.net/statistics/ixp,noc@nnenix.net,,info@nnenix.net,,,,10,3,13,2024-11-12T01:36:29Z,2024-01-19T10:33:36Z,finished,Normal Business Hours,Recurring Fees,,2017-03-28T18:37:21Z,2023-07-28T15:40:11Z,ok
+1999,18417,PIT-IX,PIT-IX,Pittsburgh Internet Exchange,Pittsburgh,US,North America,Ethernet,,True,False,True,https://pit-ix.net,"[{'service': 'website', 'identifier': 'https://pit-ix.net'}]",https://portal.pit-ix.net/statistics/ixp,noc@pit-ix.net,+14129457045,peering@pit-ix.net,+14129457045,,,34,3,41,2024-11-12T01:45:32Z,2024-05-08T14:13:07Z,finished,Not Disclosed,Not Disclosed,,2017-11-07T18:08:16Z,2022-01-05T18:37:23Z,ok
+2032,7483,Ninja-IX Sacramento,,Ninja-IX Sacramento,Sacramento,US,North America,Ethernet,"Available Now at QTS
+
+
+AS 5118 is used for Route Server for Public Peering LAN . Please also peer with the route viewer /looking glass AS65000 on .1 / ::1. Peering with AS5118 will include all participants connected to the route servers plus ROOT Servers and AS112.
+
+AS 53698 is for transit service of the IX'es services such as statistics, website and other services. Also behind it maybe management blocks for root servers.",True,False,True,http://www.sacramento-ix.net,"[{'service': 'website', 'identifier': 'http://www.sacramento-ix.net'}]",http://www.sacramento-ix.net,peering@ninja-ix.net,+16026886414,peering@ninja-ix.net,+16026886414,,,6,1,0,,,queued,Not Disclosed,Not Disclosed,,2017-12-08T02:22:00Z,2022-11-06T03:53:11Z,ok
+2036,10277,MEX-IX McAllen,,MEX-IX McAllen,McAllen,US,North America,Ethernet,,True,False,True,http://www.mdcdatacenters.com,"[{'service': 'website', 'identifier': 'http://www.mdcdatacenters.com'}]",,noc@mdcdatacenters.com,+19564293400,peering@mdcdatacenters.com,,,,19,1,0,,,queued,Not Disclosed,Not Disclosed,,2017-12-11T21:46:58Z,2023-02-13T15:14:12Z,ok
+2050,18562,GPIEX,,Global Peering Managed Services Provider,Albany,US,North America,Ethernet,Global Peering Managed Services Provider,True,False,True,http://gpiex.net/,"[{'service': 'website', 'identifier': 'http://gpiex.net/'}]",,noc@gpiex.net,,peering@gpiex.net,,,,2,3,0,,,queued,Not Disclosed,Not Disclosed,,2017-12-19T21:21:51Z,2017-12-29T20:37:41Z,ok
+2088,23597,PhillyIX,,Philadelphia Internet Exchange,Philadelphia,US,North America,Ethernet,,True,False,True,http://phillyix.net,"[{'service': 'website', 'identifier': 'http://phillyix.net'}]",http://phillyix.net/services/statistics,admin@phillyix.net,+14844835964,admin@phillyix.net,+14844835964,,,21,2,0,,,queued,Best Effort (no SLA),Not Disclosed,,2018-02-07T20:34:38Z,2023-01-29T17:20:58Z,ok
+2124,34,CFLIX (Central Florida Internet Exchange),CFLIX,Central Florida Internet Exchange,Orlando,US,North America,Ethernet,CFLIX will be merged into Any2Miami in Mid-November.,True,False,False,http://www.cflix.org,"[{'service': 'website', 'identifier': 'http://www.cflix.org'}]",,osc@coresite.com,+18667772673,any2@coresite.com,+18667772673,,info@coresite.com,1,1,0,,,queued,24/7 Support,Not Disclosed,,2018-03-15T12:18:44Z,2022-10-21T20:27:13Z,ok
+2163,19672,FCIX,,Fremont Cabal Internet Exchange,Fremont,US,North America,Ethernet,FCIX is a free IXP targeted at growing the peering community in the east bay of the Silicon Valley. We are funded by our corporate sponsors and donations from the members to keep FCIX free.,True,False,True,http://fcix.net/,"[{'service': 'website', 'identifier': 'http://fcix.net/'}]",,noc@fcix.net,,,,,,149,2,0,,,queued,Not Disclosed,Not Disclosed,,2018-04-16T14:56:27Z,2019-09-17T03:53:19Z,ok
+2182,2,Equinix Denver,,Equinix Internet Exchange Denver,Denver,US,North America,Ethernet,,True,False,True,https://www.equinix.com,"[{'service': 'website', 'identifier': 'https://www.equinix.com'}]",https://ix.equinix.com/home/locations-and-traffic/#traffic,support@equinix.com,,,,,,5,2,0,,,queued,24/7 Support,Recurring Fees,,2018-05-07T21:23:04Z,2024-07-26T15:35:21Z,ok
+2183,2,Equinix Houston,,Equinix Internet Exchange Houston,Houston,US,North America,Ethernet,,True,False,True,https://www.equinix.com,"[{'service': 'website', 'identifier': 'https://www.equinix.com'}]",https://ix.equinix.com/home/locations-and-traffic/#traffic,support@equinix.com,,,,,,0,1,0,,,queued,24/7 Support,Recurring Fees,,2018-05-07T21:23:57Z,2024-07-26T15:35:53Z,ok
+2186,19922,Baltimore IX,,Baltimore Internet Exchange,Baltimore,US,North America,Ethernet,,True,False,False,https://baltimoreix.net,"[{'service': 'website', 'identifier': 'https://baltimoreix.net'}]",https://baltimoreix.net/stats,support@baltimoreix.net,,,,,,3,2,0,,,queued,Not Disclosed,Not Disclosed,,2018-05-13T21:54:50Z,2019-03-29T20:03:55Z,ok
+2274,24424,EVIX,,Experimental Virtual Internet Exchange,Fremont,US,North America,Ethernet,"Virtual Internet Exchange offering automated tunneled connectivity for holders of public resources.
+
+Tunnel connections are generally via OpenVPN, EoIP, VXLAN or ZeroTier (but other options may be available)",True,False,True,https://evix.org,"[{'service': 'website', 'identifier': 'https://evix.org'}]",https://evix.org,peering@evix.org,,peering@evix.org,,,,80,2,86,2024-11-12T01:51:52Z,,queued,Not Disclosed,Not Disclosed,,2018-07-19T16:24:58Z,2019-11-21T20:45:11Z,ok
+2286,11225,FD-IX - Ohio,FD-IX Ohio,MidWest-IX - Ohio,"Cleveland, Ohio",US,North America,Ethernet,"Visit us at fd-ix.com for more details.  Certain locations in Ohio qualify, dependent on latency, for peering on our Indianapolis fabric as well.",True,True,True,http://www.fd-ix.com,"[{'service': 'website', 'identifier': 'http://www.fd-ix.com'}]",,support@fd-ix.com,+13176442224,peering@fd-ix.com,+13176442224,,sales@fd-ix.com,5,10,0,,,queued,Not Disclosed,Not Disclosed,,2018-07-31T19:45:44Z,2022-02-27T22:26:53Z,ok
+2317,7483,Ninja-IX Charlotte,Ninja-IX Charlotte,,Charlotte,US,North America,Ethernet,Open-IX Certified since June 2021,True,False,True,http://www.charlotte-ix.net,"[{'service': 'website', 'identifier': 'http://www.charlotte-ix.net'}]",,peering@ninja-ix.net,+16026886414,peering@ninja-ix.net,+16026886414,,,3,2,0,,,queued,Not Disclosed,Not Disclosed,,2018-08-20T17:11:54Z,2024-05-09T23:10:36Z,ok
+2318,7483,Ninja-IX Dallas,Ninja-IX Dallas,,Dallas,US,North America,Ethernet,Open-IX Certified since June 2021,True,False,True,http://www.dallas-ix.net,"[{'service': 'website', 'identifier': 'http://www.dallas-ix.net'}]",,peering@ninja-ix.net,+16026886414,peering@ninja-ix.net,+16026886414,,,7,2,0,,,queued,Best Effort (no SLA),Non-recurring Fees Only,,2018-08-20T17:27:42Z,2024-05-09T23:11:18Z,ok
+2319,7483,Ninja-IX Houston,,Ninja-IX Houston,Houston,US,North America,Ethernet,SLA is available OPEN-IX certified since May 2022,True,False,True,http://www.houston-ix.net,"[{'service': 'website', 'identifier': 'http://www.houston-ix.net'}]",,peering@ninja-ix.net,+16026886414,peering@ninja-ix.net,+16026886414,,,3,1,0,,,queued,Not Disclosed,Not Disclosed,,2018-08-20T17:35:59Z,2022-11-06T03:52:52Z,ok
+2486,21648,CMH-IX,,Columbus Internet Exchange,Columbus,US,North America,Ethernet,,True,False,True,http://www.cmh-ix.net,"[{'service': 'website', 'identifier': 'http://www.cmh-ix.net'}]",,peering@cmh-ix.net,,peering@cmh-ix.net,,,,8,1,0,,,queued,Not Disclosed,Not Disclosed,,2019-01-19T18:25:59Z,2019-01-19T18:36:36Z,ok
+2551,8592,Digital Realty Chicago,,,Chicago,US,North America,Ethernet,,True,False,True,https://ix.digitalrealty.com,"[{'service': 'website', 'identifier': 'https://ix.digitalrealty.com'}]",,ix@digitalrealty.com,+18888359832,ix@digitalrealty.com,+18888359832,,,7,3,0,,,queued,Not Disclosed,Not Disclosed,,2019-03-29T11:02:59Z,2021-11-01T23:26:03Z,ok
+2558,32,NYIIX Philadelphia,,New York International Internet eXchange - Philadelphia,Philadelphia,US,North America,Ethernet,,True,False,True,https://www.nyiix.net/locations/nyiix-philadelphia/,"[{'service': 'website', 'identifier': 'https://www.nyiix.net/locations/nyiix-philadelphia/'}]",https://www.nyiix.net/PHI-mrtg/sum.html,iixeng@telehouse.com,+17183552525,,,,iixsales@telehouse.com,5,1,0,,,queued,Not Disclosed,Not Disclosed,,2019-04-08T13:44:34Z,2023-03-07T18:45:17Z,ok
+2564,19739,iX-OKC,,Internet Exchange Oklahoma City,Oklahoma City,US,North America,Ethernet,,True,False,True,https://www.iX-OKC.net,"[{'service': 'website', 'identifier': 'https://www.iX-OKC.net'}]",https://ixp.onenet.net/statistics/ixp,info@iX-OKC.net,+14054433667,info@iX-OKC.net,+14054433667,,,14,1,0,,,queued,Not Disclosed,Not Disclosed,,2019-04-15T17:30:19Z,2020-10-21T17:09:48Z,ok
+2572,8592,Digital Realty Ashburn,,Digital Realty Ashburn Internet Exchange,Ashburn,US,North America,Ethernet,,True,False,True,https://ix.digitalrealty.com,"[{'service': 'website', 'identifier': 'https://ix.digitalrealty.com'}]",,ix@digitalrealty.com,+18888359832,ix@digitalrealty.com,+18888359832,,,9,2,0,,,queued,Not Disclosed,Not Disclosed,,2019-04-28T00:04:54Z,2020-01-22T04:24:07Z,ok
+2585,22760,STLIX,STLIX,Saint Louis Internet Exchange,"Saint Louis, MO",US,North America,Ethernet,"### How to participate?
+Please visit http://stlix.net and click the application up top or email peering@stlix.net to connect. 
+
+1/10/40/100 Gb ports available in all sites 
+
+### Max Prefix Settings
+Recommended limits to allow for future growth  
+IPv4: 120000  
+IPv6: 50000  
+
+### Route Server Communities:
+0:$peerasn to exclude your routes to $peerasn
+46389:$peerasn to include your routes to $peerasn
+0:46389 to exclude your routes from all peers
+
+### Official STLIX Extensions:
+Kansas City via KCIX - http://kcix.net  
+https://www.peeringdb.com/ix/249
+
+Houston via HOUIX - http://houix.net
+https://www.peeringdb.com/ix/2835
+
+### Mailing List:
+Please email info@stlix.net if you wish to be subscribed to the STLIX members mailing list.",True,False,True,http://www.stlix.net,"[{'service': 'website', 'identifier': 'http://www.stlix.net'}]",https://www.stlix.net/stats.php,noc@stlix.net,,peering@stlix.net,,,,67,6,0,,,queued,Best Effort (no SLA),No Commercial Terms,,2019-05-09T01:40:13Z,2024-10-15T16:03:20Z,ok
+2612,14515,SAT-IX,,San Antonio Internet Exchange,"San Antonio, TX",US,North America,Ethernet,,True,False,True,https://h5datacenters.com/h5-sat-ix.html,"[{'service': 'website', 'identifier': 'https://h5datacenters.com/h5-sat-ix.html'}]",,internet.exchange@h5datacenters.com,,internet.exchange@h5datacenters.com,,,internet.exchange@h5datacenters.com,5,1,0,,,queued,Not Disclosed,Not Disclosed,,2019-06-16T01:31:37Z,2024-04-03T20:16:21Z,ok
+2672,18339,DACS-IX East,,DACS-IX East Region,Baltimore,US,North America,Ethernet,,True,False,True,http://www.dacs-ix.com,"[{'service': 'website', 'identifier': 'http://www.dacs-ix.com'}]",,noc@thestpaulgroup.com,+14437495471,noc@thestpaulgroup.com,,,,12,8,0,,,queued,Not Disclosed,Not Disclosed,,2019-08-22T03:19:55Z,2024-06-11T23:01:38Z,ok
+2741,23528,QCIX,,Quad Cities Internet eXchange,Davenport,US,North America,Ethernet,"Route Servers require IRR records to accept prefixes. RPKI invalids are dropped on route servers.
+
+Please load your AS-SET in peeringDB prior to requesting a connection.
+
+Main Switch located in SFN IA-Davenport has no port fees (Data center xconn fees only). Remote switches determine port fees.",True,False,True,http://www.qcix.net,"[{'service': 'website', 'identifier': 'http://www.qcix.net'}]",https://ixpmgr.qcix.net/statistics/ixp,peering@southfront.io,+16122040000,peering@southfront.io,+16122040000,,sales@southfront.io,59,5,67,2024-11-12T02:06:53Z,,queued,Best Effort (no SLA),No Commercial Terms,,2019-11-26T22:43:16Z,2023-02-09T16:02:30Z,ok
+2746,19041,IXP US FRE,,,Fremont,US,North America,Ethernet,,False,False,True,https://www.ixp.cat,"[{'service': 'website', 'identifier': 'https://www.ixp.cat'}]",,info@ixp.cat,,info@ixp.cat,,,,26,0,0,,,queued,Not Disclosed,Not Disclosed,,2019-11-28T07:07:30Z,2021-07-29T11:54:34Z,ok
+2783,21966,Gig IX Ashburn,,,Ashburn,US,North America,Ethernet,,True,False,True,https://gigix.org,"[{'service': 'website', 'identifier': 'https://gigix.org'}]",,peering@gigix.org,+17788171006,peering@gigix.org,+17788171006,,,4,0,0,,,queued,Not Disclosed,Not Disclosed,,2019-12-19T02:29:32Z,2020-01-22T04:24:07Z,ok
+2830,25144,MUS-IX,,MIDSOUTH U.S. Internet Exchange,"Dallas, TX",US,North America,Ethernet,,True,True,True,http://www.mus-ix.net/index.php,"[{'service': 'website', 'identifier': 'http://www.mus-ix.net/index.php'}]",,noc@mus-ix.net,+18666478728,noc@mus-ix.net,+18666478728,,,11,2,0,,,queued,Not Disclosed,Not Disclosed,,2020-02-11T20:32:29Z,2024-11-06T21:21:58Z,ok
+2835,25053,HOUIX,,Houston Internet Exchange,Houston,US,North America,Ethernet,"### How to participate?
+Please visit http://houix.net and fill out the small form on the front page or email peering@houix.net to connect. 
+
+We currently offer 100/40/10/1G ports in Netrality 1301 Fannin
+
+### Max Prefix Settings
+Recommended limits to allow for future growth  
+IPv4: 200000  
+IPv6: 100000  
+
+### Route Server Communities:
+0:$peerasn to exclude your routes to $peerasn
+35920:$peerasn to include your routes to $peerasn
+0:35920 to exclude your routes to all peers
+
+### Official HOUIX Extensions:
+St. Louis via STLIX - http://stlix.net  
+https://www.peeringdb.com/ix/2585
+
+Kansas City via KCIX - http://kcix.net
+https://www.peeringdb.com/ix/249
+
+### Mailing List:
+Please email info@houix.net if you wish to be subscribed to the HOUIX members mailing list.",True,False,True,http://www.houix.net,"[{'service': 'website', 'identifier': 'http://www.houix.net'}]",http://www.houix.net/stats.php,noc@houix.net,,info@houix.net,,,,49,3,0,,,queued,Best Effort (no SLA),No Commercial Terms,,2020-02-18T00:40:03Z,2024-10-15T16:04:12Z,ok
+3069,25190,ARIX,,Amateur Radio Internet Exchange,"Fremont, Portland, Flagstaff",US,North America,Ethernet,"ARIX is an experimental IXP for amateur radio operators for the use of networking research, development, and education.",True,False,True,https://arix.dev/,"[{'service': 'website', 'identifier': 'https://arix.dev/'}]",https://arix.dev/,info@arix.dev,,info@arix.dev,,,,18,1,21,2024-11-12T02:11:48Z,,queued,Not Disclosed,Not Disclosed,,2020-02-19T04:07:13Z,2023-02-02T22:49:22Z,ok
+3081,22155,Statewide NC-IX,NC-IX,Statewide North Carolina Internet Exchange,Charlotte,US,North America,Ethernet,Speeds: 1GE/10GE/100GE,True,False,True,http://northcarolina-ix.org/,"[{'service': 'website', 'identifier': 'http://northcarolina-ix.org/'}]",https://www.deepedgetech.com,ixpadmins@deepedgetech.com,+18887023343,ixpadmins@deepedgetech.com,+18887023343,+17817892084,sales@deepedgetech.com,3,1,0,,,queued,Not Disclosed,Not Disclosed,,2020-03-04T18:53:08Z,2024-02-12T20:14:25Z,ok
+3090,25400,SpokaneIX,SpokaneIX,Spokane Internet Exchange,Spokane,US,North America,Ethernet,"### How to participate?
+Please visit http://spokaneix.net/join and fill out the form or email peering@spokaneix.net to connect.
+
+### Where can I connect?
+You can connect at either of the following locations: US Bank Building - Suite 1401, or TierPoint SPO. Feel free to reach out and we can help coordinate crossconnects!",True,False,True,https://spokaneix.net/,"[{'service': 'website', 'identifier': 'https://spokaneix.net/'}]",https://spokaneix.net/stats/,peering@spokaneix.net,,peering@spokaneix.net,,,,13,4,12,2023-02-16T00:27:18Z,2022-10-25T21:56:40Z,finished,Not Disclosed,Not Disclosed,,2020-03-11T17:37:30Z,2021-04-23T20:04:24Z,ok
+3105,18339,DACS-IX Central,,DACS-IX Central Region,Chicago,US,North America,Ethernet,,True,False,True,http://www.dacs-ix.com,"[{'service': 'website', 'identifier': 'http://www.dacs-ix.com'}]",,noc@thestpaulgroup.com,+14437495471,noc@thestpaulgroup.com,+14437495471,,,6,1,0,,,queued,Not Disclosed,Not Disclosed,,2020-03-24T23:06:32Z,2024-06-11T23:02:50Z,ok
+3106,18339,DACS-IX West,,DACS-IX West Region,Silicon Valley,US,North America,Ethernet,,True,False,True,http://www.dacs-ix.com,"[{'service': 'website', 'identifier': 'http://www.dacs-ix.com'}]",,noc@thestpaulgroup.com,+14437495471,noc@thestpaulgroup.com,+14437495471,,,5,1,0,,,queued,Not Disclosed,Not Disclosed,,2020-03-25T02:42:10Z,2024-06-11T23:02:15Z,ok
+3148,20853,HPT1-IX,,Hawaii Pacific Teleport IX-1,honolulu,US,Asia Pacific,Ethernet,,True,False,False,http://www.hawaiiteleport.com,"[{'service': 'website', 'identifier': 'http://www.hawaiiteleport.com'}]",http://support.hawaiiteleport.com/?hpt1ix,support@hawaiiteleport.com,+18086749154,abuse@hawaiiteleport.com,+18086749157,,,1,1,0,,,queued,Not Disclosed,Not Disclosed,,2020-05-29T17:00:51Z,2020-06-02T17:33:32Z,ok
+3160,26363,NEO-IX,,North East Ohio Internet Exchange,"Akron, Ohio",US,North America,Ethernet,"NEO-IX is a non-profit Internet Exchange Point in North East Ohio. NEO-IX exists to address the connectivity needs of its regional members.
+
+In total the region is home to nearly 5 million residents and a labor force of almost 2.2 million. With an economic impact of $195 billion, North East Ohio is comparable to New Zealand or the Republic of Ireland.",True,False,True,http://www.neo-ix.com,"[{'service': 'website', 'identifier': 'http://www.neo-ix.com'}]",http://ixpmanager.neo-ix.com/statistics/ixp,peering@neo-ix.com,,peering@neo-ix.com,,,,7,3,8,2024-11-12T02:13:46Z,2024-10-14T23:10:57Z,finished,Not Disclosed,Not Disclosed,,2020-06-14T03:05:25Z,2020-07-17T01:11:40Z,ok
+3179,26147,48 IX,,,Phoenix,US,North America,Ethernet,Arizona’s Open Internet Exchange,True,False,True,https://48ix.net,"[{'service': 'website', 'identifier': 'https://48ix.net'}]",https://48ix.net/participants,noc@48ix.net,,peering@48ix.net,,,,5,1,5,2024-04-30T13:06:28Z,2024-04-30T13:05:52Z,finished,Not Disclosed,Not Disclosed,,2020-06-30T05:33:29Z,2020-06-30T19:17:58Z,ok
+3185,8440,BBIX US-West,,BroadBand Internet eXchange US-West,West Coast,US,North America,Ethernet,,True,False,True,https://www.bbix.net/en/,"[{'service': 'website', 'identifier': 'https://www.bbix.net/en/'}]",https://www.bbix.net/service/ix/traffic-graph/,bbix-sales@bbix.net,+81368899257,bbix-sales@bbix.net,+81368899257,,,68,2,0,,,queued,Not Disclosed,Not Disclosed,,2020-07-02T05:20:36Z,2023-12-19T08:20:45Z,ok
+3186,8440,BBIX Dallas,,BroadBand Internet eXchange Dallas,Dallas,US,North America,Ethernet,,True,False,True,https://www.bbix.net/en/,"[{'service': 'website', 'identifier': 'https://www.bbix.net/en/'}]",https://www.bbix.net/service/ix/traffic-graph/,bbix-sales@bbix.net,+81368899257,bbix-sales@bbix.net,+81368899257,,,3,1,0,,,queued,Not Disclosed,Not Disclosed,,2020-07-02T05:48:04Z,2023-12-19T08:08:07Z,ok
+3187,8440,BBIX Chicago,,BroadBand Internet eXchange Chicago,Chicago,US,North America,Ethernet,,True,False,True,https://www.bbix.net/en/,"[{'service': 'website', 'identifier': 'https://www.bbix.net/en/'}]",https://www.bbix.net/service/ix/traffic-graph/,bbix-sales@bbix.net,+81368899257,bbix-sales@bbix.net,+81368899257,,,3,1,0,,,queued,Not Disclosed,Not Disclosed,,2020-07-02T05:51:10Z,2023-12-19T08:08:21Z,ok
+3188,8440,BBIX Miami,,BroadBand Internet eXchange Miami,Miami,US,North America,Ethernet,,True,False,True,https://www.bbix.net/en/,"[{'service': 'website', 'identifier': 'https://www.bbix.net/en/'}]",https://www.bbix.net/service/ix/traffic-graph/,bbix-sales@bbix.net,+81368899257,bbix-sales@bbix.net,+81368899257,,,1,1,0,,,queued,Not Disclosed,Not Disclosed,,2020-07-02T05:53:19Z,2023-12-19T08:21:40Z,ok
+3195,15749,SpringIX,SpringIX,Springfield Internet eXchange,"Springfield, MO",US,North America,Ethernet,,True,False,True,http://www.springix.net,"[{'service': 'website', 'identifier': 'http://www.springix.net'}]",http://www.springix.net/stats/php,info@springix.net,,info@springix.net,,,,12,2,0,,,queued,Not Disclosed,Not Disclosed,,2020-07-02T16:17:08Z,2021-07-21T17:23:53Z,ok
+3226,25443,IX42 LAS,,Internet eXchange 42 Las Vegas,Las Vegas,US,North America,Ethernet,"## Internet eXchange 42
+
+Currently we **only accept peers via tunnels**(currently support VXLAN(Up to 1Gbps) and Zerotier) due to insufficient fund for switch colocation.",False,False,True,https://ix42.org,"[{'service': 'website', 'identifier': 'https://ix42.org'}]",https://ix42.org/stats/las,tech@ix42.org,+13185231435,policy@ix42.org,+13185231435,,,13,0,25,2024-11-12T02:14:27Z,,queued,Not Disclosed,Not Disclosed,,2020-07-21T05:32:10Z,2020-08-08T11:47:16Z,ok
+3247,11225,FD-IX - Iowa,FD-IX - IOWA,Fiber Data Internet Exchange,Altoona,US,North America,Ethernet,Visit FD-iX.com for details,True,True,True,https://fd-ix.com,"[{'service': 'website', 'identifier': 'https://fd-ix.com'}]",https://fd-ix.com,peering@fd-ix.com,+13176442224,peering@fd-ix.com,+13176442224,,sales@fd-ix.com,2,6,0,,,queued,24/7 Support,Not Disclosed,,2020-08-10T18:37:07Z,2022-01-17T03:30:02Z,ok
+3264,11225,FD-IX - Texas,Texas IX,Texas-IX,"Houston, San Antonio, Austin, Dallas",US,North America,Ethernet,Visit https://fd-ix.com for more details.,True,True,True,https://www.fd-ix.com,"[{'service': 'website', 'identifier': 'https://www.fd-ix.com'}]",,peering@fd-ix.com,+13176442224,peering@fd-ix.com,+13176442224,,sales@fd-ix.com,7,16,0,,,queued,24/7 Support,Not Disclosed,,2020-08-24T14:38:08Z,2022-02-27T22:35:28Z,ok
+3286,21284,SBIX FRE,,Securebit Internet Exchange Fremont,Fremont / Neuheim,US,Europe,Ethernet,"Internet Exchange:
+https://www.securebit.ch/internet/exchange
+
+Virtual Server with Layer2 VLAN:
+https://www.securebit.ch/server/internet_exchange",True,False,True,https://www.securebit.ch/internet/exchange,"[{'service': 'website', 'identifier': 'https://www.securebit.ch/internet/exchange'}]",,noc@sbix.eu,+41415190040,noc@sbix.eu,+41415190040,,,9,0,0,,,queued,Not Disclosed,Not Disclosed,,2020-09-14T09:31:52Z,2024-01-02T10:40:28Z,ok
+3322,27159,ABQIX,,,Albuquerque,US,North America,Ethernet,"ABQIX is free IXP in multiple facilities in Albuquerque, NM and exists due to corporate sponsors and donations from members.",True,False,True,http://www.abqix.net,"[{'service': 'website', 'identifier': 'http://www.abqix.net'}]",,info@abqix.net,,,,,,8,4,0,,,queued,Not Disclosed,Not Disclosed,,2020-10-25T20:47:30Z,2020-11-03T17:13:54Z,ok
+3378,1187,DE-CIX Chicago,DE-CIX ORD,,Chicago,US,North America,Ethernet,"For peering with the DE-CIX Chicago route servers, please see:
+
+[DE-CIX Chicago Route Servers](https://www.peeringdb.com/net/25462)",True,False,True,https://www.de-cix.net/en/locations/united-states/chicago,"[{'service': 'website', 'identifier': 'https://www.de-cix.net/en/locations/united-states/chicago'}]",https://www.de-cix.net/en/locations/chicago/statistics,support@de-cix.net,+12127966914,sales@de-cix.net,+12127966914,,,54,11,0,,,queued,24/7 Support,Recurring Fees,,2020-12-16T09:08:41Z,2024-08-06T22:49:48Z,ok
+3407,39277,PaducahIX,,Paducah Internet Exchange,Paducah,US,North America,Ethernet,"The first Internet Exchange Point in Paducah, Kentucky! Keep traffic local and developing our community by creating the first open interconnect for network operators in the Western Kentucky region.",True,False,True,https://paducahix.net,"[{'service': 'website', 'identifier': 'https://paducahix.net'}]",https://paducahix.net/traffic,preston@paducahix.net,,,+18553473476,,,8,1,0,,,queued,24/7 Support,Non-recurring Fees Only,,2021-01-13T22:35:43Z,2024-09-26T00:16:07Z,ok
+3445,7483,Ninja-IX Raleigh,Ninja-IX Raleigh,,"Raleigh, NC",US,North America,Ethernet,,True,False,True,http://ninja-ix.net,"[{'service': 'website', 'identifier': 'http://ninja-ix.net'}]",,peering@ninja-ix.net,+16026686414,peering@ninja-ix.net,+16026686414,,,2,1,0,,,queued,Not Disclosed,Not Disclosed,,2021-02-18T19:52:47Z,2024-05-09T23:10:55Z,ok
+3464,25443,IX42 NYC,,Internet eXchange 42 New York City,New York City,US,North America,Ethernet,,False,False,True,https://ix42.org,"[{'service': 'website', 'identifier': 'https://ix42.org'}]",https://ix42.org/stats/nyc,tech@ix42.org,+13185231435,policy@ix42.org,+13185231435,,,0,0,0,2024-11-12T02:20:56Z,,queued,Not Disclosed,Not Disclosed,,2021-03-16T11:49:43Z,2021-03-16T21:13:41Z,ok
+3466,28249,Willamette Internet Exchange,,,Eugene,US,North America,Ethernet,,True,False,True,http://thewix.net,"[{'service': 'website', 'identifier': 'http://thewix.net'}]",,noc@thewix.net,,info@thewix.net,,,info@thewix.net,13,1,0,,,queued,Not Disclosed,Not Disclosed,,2021-03-17T17:04:36Z,2023-02-21T23:43:23Z,ok
+3476,365,Global Peer Exchange,GPE,Global Peer Exchange,Washington,US,North America,Ethernet,,True,False,False,https://globalpeerexchange.com/home,"[{'service': 'website', 'identifier': 'https://globalpeerexchange.com/home'}]",https://globalpeerexchange.com/home,hkilmer@cogentco.com,+12022954340,vteissier@cogentco.com,+33149031930,,,5,115,0,,,queued,Not Disclosed,Not Disclosed,,2021-04-02T16:59:10Z,2021-09-01T15:27:50Z,ok
+3496,29216,Denver IX,Denver Internet Exchange,,Denver,US,North America,Ethernet,"# No Port or XC Fees
+To celebrate the opening of Denver IX, we are waiving all fees on our 1G and 10G ports, including facility cross-connect fees. Contact us for additional information and to take advantage of this limited-time offer.
+
+# How to participate?
+Please visit https://www.denverix.com/membership/application and fill out the form or send us an email to connect.
+
+# Where can I connect?
+You can connect at any of our on-net facilities. Feel free to reach out and we can help coordinate cross-connects!",True,False,True,https://www.denverix.com,"[{'service': 'website', 'identifier': 'https://www.denverix.com'}]",,peering@denverix.com,+17209277770,peering@denverix.com,+17209277770,,,4,1,7,2024-06-02T02:05:48Z,,queued,Not Disclosed,Not Disclosed,,2021-04-21T16:17:43Z,2021-06-19T19:56:30Z,ok
+3540,27398,OPTIX,,Open Peering & Transit Internet Exchange,Fremont,US,North America,Ethernet,,False,False,True,https://www.optix.co.rs,"[{'service': 'website', 'identifier': 'https://www.optix.co.rs'}]",,noc@optix.co.rs,,noc@optix.co.rs,,,,5,0,1,2021-06-17T00:11:25Z,,queued,Not Disclosed,Not Disclosed,,2021-06-06T12:01:19Z,2022-04-16T15:19:02Z,ok
+3560,15749,DesMoinesIX,DesMoines Internet eXchange,DesMoines Internet eXchange,Des Moines,US,North America,Ethernet,,True,False,True,http://www.desmoinesix.net,"[{'service': 'website', 'identifier': 'http://www.desmoinesix.net'}]",http://www.desmoinesix.net,info@desmoinesix.net,,info@desmoinesix.net,,,,8,2,0,,,queued,Best Effort (no SLA),No Commercial Terms,,2021-07-01T21:59:35Z,2021-07-21T17:23:58Z,ok
+3573,9553,FMIX,,Fargo-Moorhead Internet Exchange,"Fargo, ND",US,North America,Ethernet,,True,False,True,https://fmix.net,"[{'service': 'website', 'identifier': 'https://fmix.net'}]",,peering@fmix.net,,info@fmix.net,,,,4,1,4,2024-11-12T02:25:59Z,2024-05-10T02:29:31Z,finished,Not Disclosed,Not Disclosed,,2021-07-15T19:04:46Z,2021-07-15T22:42:46Z,ok
+3634,27311,Lambda-IX,,Lambda Internet Exchange,Fremont,US,North America,Ethernet,"A new, segmented, not-for-profit Internet Exchange Point (IXP) in Fremont, US. Lambda Internet Exchange was created to provide a low-barrier, easy to access Internet Exchange in the US which improves routing performance for all installed parties.",True,False,True,https://lambda-ix.net,"[{'service': 'website', 'identifier': 'https://lambda-ix.net'}]",,noc@lambda-ix.net,,peering@lambda-ix.net,,,,26,1,27,2023-09-04T01:44:53Z,,queued,Best Effort (no SLA),No Commercial Terms,,2021-09-23T16:06:33Z,2023-04-15T14:18:42Z,ok
+3685,36689,FREMIX,FREMIX.Exchange,Fremont Metro Internet Exchange,Fremont,US,North America,Ethernet,"**FREMIX (Fremont Metro Internet Exchange)**
+
+FREMIX (Fremont Metro Internet Exchange) is a Free Internet Exchange Point (IXP) based in Fremont, California. We are committed to enhancing internet connectivity and performance by facilitating efficient and cost-effective interconnections between local and global networks.
+
+**Locations:**
+- Hurricane Electric Fremont 2 ( 48233 Warm Springs Blvd )
+
+**Port Sizes Available:**
+- 100mbit / 1G (Via Sponsor Ports)
+- 1G Copper / RJ45
+- 10G-LR
+- 40G-LR4
+- 100G-LR4
+
+**Benefits of Peering at FREMIX:**
+- Reduced latency
+- Improved redundancy
+- Lower transit costs
+- Enhanced network performance
+
+For more information, visit our website at [www.fremix.exchange](http://www.fremix.exchange)",True,False,True,https://www.fremix.exchange,"[{'service': 'website', 'identifier': 'https://www.fremix.exchange'}]",https://www.fremix.exchange,support@fremix.exchange,,provisioning@fremix.exchange,,,provisioning@fremix.exchange,109,1,124,2024-11-12T02:28:39Z,2022-09-17T12:33:37Z,finished,Best Effort (no SLA),No Commercial Terms,,2021-11-22T05:07:06Z,2024-07-30T09:20:55Z,ok
+3761,7483,Ninja-IX Norfolk,,Ninja-IX Norfolk,Norfolk,US,North America,Ethernet,SLA is available OPEN-IX certified since May 2022,True,False,True,http://norfolk-ix.net,"[{'service': 'website', 'identifier': 'http://norfolk-ix.net'}]",https://portal.ninja-ix.net/statistics/infrastructure/13/bits,peering@ninja-ix.net,+16026886414,peering@ninja-ix.net,+16026886414,+1 602 688-6414,peering@ninja-ix.net,3,1,0,,,queued,Not Disclosed,Not Disclosed,,2022-03-05T23:10:17Z,2022-11-06T04:00:40Z,ok
+3769,31461,Skywolf IX US,,Skywolf Internet Exchange United States,Fremont,US,North America,Ethernet,,True,False,True,https://www.skywolf-ix.net,"[{'service': 'website', 'identifier': 'https://www.skywolf-ix.net'}]",,noc@skywolftech.net,,,,,,7,1,0,,,queued,Not Disclosed,Not Disclosed,,2022-03-11T13:19:04Z,2022-04-22T16:47:56Z,ok
+3775,1187,DE-CIX Phoenix,DE-CIX PHX,,Phoenix,US,North America,Ethernet,"For peering with the DE-CIX Phoenix route servers, please see:
+
+[DE-CIX Phoenix Route Servers](https://www.peeringdb.com/net/29492)",True,False,True,https://www.de-cix.net/en/locations/phoenix,"[{'service': 'website', 'identifier': 'https://www.de-cix.net/en/locations/phoenix'}]",https://www.de-cix.net/locations/phoenix/statistics,support@de-cix.net,+12127966914,sales@de-cix.net,+12127966914,,,29,7,0,,,queued,24/7 Support,Recurring Fees,,2022-03-16T17:34:17Z,2024-08-02T14:30:47Z,ok
+3785,26067,Dartpoints Bridge-IX Columbia,Dartpoints Bridge IX CAE,,Columbia,US,North America,Ethernet,"For peering with Bridge IX route servers, please see:
+
+https://lg.bridgeix.dartpoints.io/",True,False,False,https://dartpoints.com/solutions/edge-interconnection/internet-exchange,"[{'service': 'website', 'identifier': 'https://dartpoints.com/solutions/edge-interconnection/internet-exchange'}]",,peering@dartpoints.com,+18002652461,netops@dartpoints.com,+18002652461,+18882577462,info@dartpoints.com,0,0,0,,,queued,24/7 Support,Recurring Fees,https://lg.bridgeix.dartpoints.io,2022-04-05T17:35:57Z,2022-06-20T16:07:52Z,ok
+3786,26067,Dartpoints Bridge-IX Dublin,Dartpoints Bridge IX CMH,,Dublin,US,North America,Ethernet,"For peering with Bridge IX route servers, please see:
+
+https://lg.bridgeix.dartpoints.io/",True,False,False,https://dartpoints.com/solutions/edge-interconnection/internet-exchange,"[{'service': 'website', 'identifier': 'https://dartpoints.com/solutions/edge-interconnection/internet-exchange'}]",,peering@dartpoints.com,+18002652461,netops@dartpoints.com,+18002652461,+18882577462,info@dartpoints.com,0,0,0,,,queued,24/7 Support,Recurring Fees,https://lg.bridgeix.dartpoints.io,2022-04-05T17:40:44Z,2022-06-20T16:08:22Z,ok
+3787,26067,Dartpoints Bridge-IX North Liberty,Dartpoints Bridge IX CID,,North Liberty,US,North America,Ethernet,"For peering with Bridge IX route servers, please see:
+
+https://lg.bridgeix.dartpoints.io/",True,False,False,https://dartpoints.com/solutions/edge-interconnection/internet-exchange,"[{'service': 'website', 'identifier': 'https://dartpoints.com/solutions/edge-interconnection/internet-exchange'}]",,peering@dartpoints.com,+18002652461,netops@dartpoints.com,+18002652461,+18882577462,info@dartpoints.com,0,0,0,,,queued,24/7 Support,Recurring Fees,https://lg.bridgeix.dartpoints.io,2022-04-05T17:43:16Z,2022-06-20T16:08:43Z,ok
+3818,27398,BGP.Exchange - Los Angeles,,,Los Angeles,US,North America,Ethernet,,False,False,True,https://bgp.exchange,"[{'service': 'website', 'identifier': 'https://bgp.exchange'}]",,noc@bgp.exchange,,,,,,18,0,21,2024-11-12T02:39:54Z,,queued,Not Disclosed,Not Disclosed,,2022-05-21T14:09:54Z,2023-08-05T09:10:21Z,ok
+3828,27398,BGP.Exchange - Fremont,,,Fremont,US,North America,Ethernet,,False,False,True,https://bgp.exchange,"[{'service': 'website', 'identifier': 'https://bgp.exchange'}]",,noc@bgp.exchange,,,,,,10,0,0,2024-04-13T02:17:43Z,2024-03-31T20:34:58Z,finished,Not Disclosed,Not Disclosed,,2022-05-22T01:15:07Z,2022-05-22T08:41:07Z,ok
+3834,27398,BGP.Exchange - Houston,,,Houston,US,North America,Ethernet,,False,False,True,https://bgp.exchange,"[{'service': 'website', 'identifier': 'https://bgp.exchange'}]",,noc@bgp.exchange,,,,,,4,0,0,2024-11-12T02:45:22Z,,queued,Not Disclosed,Not Disclosed,,2022-05-22T01:23:51Z,2022-05-22T08:41:07Z,ok
+3835,27398,BGP.Exchange - Kansas,,,Kansas,US,North America,Ethernet,,False,False,True,https://bgp.exchange,"[{'service': 'website', 'identifier': 'https://bgp.exchange'}]",,noc@bgp.exchange,,,,,,37,0,44,2024-10-19T02:46:16Z,,queued,Not Disclosed,Not Disclosed,,2022-05-22T01:23:53Z,2022-05-22T08:41:07Z,ok
+3839,27398,BGP.Exchange - Atlanta,,,Atlanta,US,North America,Ethernet,,False,False,True,https://bgp.exchange,"[{'service': 'website', 'identifier': 'https://bgp.exchange'}]",,noc@bgp.exchange,,,,,,0,0,0,2024-11-12T02:48:41Z,,queued,Not Disclosed,Not Disclosed,,2022-05-22T01:24:00Z,2022-05-22T08:41:07Z,ok
+3845,27398,BGP.Exchange - Jacksonville,,,Jacksonville,US,North America,Ethernet,,False,False,True,https://bgp.exchange,"[{'service': 'website', 'identifier': 'https://bgp.exchange'}]",,noc@bgp.exchange,,,,,,3,0,0,2024-11-12T02:53:04Z,,queued,Not Disclosed,Not Disclosed,,2022-05-22T01:29:21Z,2022-05-22T08:41:07Z,ok
+3846,27398,BGP.Exchange - Las Vegas,,,Las Vegas,US,North America,Ethernet,,False,False,True,https://bgp.exchange,"[{'service': 'website', 'identifier': 'https://bgp.exchange'}]",,noc@bgp.exchange,,,,,,2,0,0,2024-11-12T02:53:49Z,,queued,Not Disclosed,Not Disclosed,,2022-05-22T01:29:23Z,2022-05-22T08:41:07Z,ok
+3847,27398,BGP.Exchange - Seattle,,,Seattle,US,North America,Ethernet,,False,False,True,https://bgp.exchange,"[{'service': 'website', 'identifier': 'https://bgp.exchange'}]",,noc@bgp.exchange,,,,,,0,0,0,2024-11-12T02:54:37Z,,queued,Not Disclosed,Not Disclosed,,2022-05-22T01:29:25Z,2022-05-22T08:41:07Z,ok
+3848,27398,BGP.Exchange - New York,,,New York,US,North America,Ethernet,,False,False,True,https://bgp.exchange,"[{'service': 'website', 'identifier': 'https://bgp.exchange'}]",,noc@bgp.exchange,,,,,,2,0,0,,,queued,Not Disclosed,Not Disclosed,,2022-05-22T01:29:26Z,2022-05-22T08:41:07Z,ok
+3909,27398,BGP.Exchange - Jersey City,,,Jersey City,US,North America,Ethernet,,False,False,True,https://bgp.exchange,"[{'service': 'website', 'identifier': 'https://bgp.exchange'}]",,noc@bgp.exchange,,,,,,0,0,0,,,queued,Not Disclosed,Not Disclosed,,2022-07-27T10:58:06Z,2022-07-28T14:35:54Z,ok
+3922,27398,BGP.Exchange - Chicago,,,Chicago,US,North America,Ethernet,,False,False,True,https://bgp.exchange,"[{'service': 'website', 'identifier': 'https://bgp.exchange'}]",,noc@bgp.exchange,,,,,,16,0,13,2024-08-11T02:46:14Z,,queued,Not Disclosed,Not Disclosed,,2022-07-27T11:07:06Z,2022-07-28T14:35:54Z,ok
+3923,27398,BGP.Exchange - Miami,,,Miami,US,North America,Ethernet,,False,False,True,https://bgp.exchange,"[{'service': 'website', 'identifier': 'https://bgp.exchange'}]",,noc@bgp.exchange,,,,,,20,0,23,2024-11-12T02:57:58Z,,queued,Not Disclosed,Not Disclosed,,2022-07-27T11:07:34Z,2022-07-28T14:35:54Z,ok
+3946,33030,TheSCAX,TheSCAX,The South Coast Access Exchange,Brookings,US,North America,Ethernet,,True,False,True,https://thescax.net,"[{'service': 'website', 'identifier': 'https://thescax.net'}]",,noc@thescax.net,+15414691000,,,+15414691000x2,noc@thescax.net,2,1,1,2024-07-11T03:25:20Z,2024-07-11T03:25:03Z,finished,24/7 Support,Not Disclosed,,2022-08-05T08:37:06Z,2024-07-26T06:18:07Z,ok
+3973,7483,Ninja-IX Bay Area,,,Unassigned,US,North America,Ethernet,,False,False,False,https://www.ninja-ix.net/Market-Store,"[{'service': 'website', 'identifier': 'https://www.ninja-ix.net/Market-Store'}]",,peering@ninja-ix.net,+16026886414,,,,,0,0,0,,,queued,Not Disclosed,Not Disclosed,,2022-09-06T18:38:34Z,2024-05-22T05:13:07Z,ok
+3974,7483,Ninja-IX Auburn,Ninja-IX Auburn,,Auburn,US,North America,Ethernet,,True,False,True,https://ninja-ix.net/Market-Store/Auburn.html,"[{'service': 'website', 'identifier': 'https://ninja-ix.net/Market-Store/Auburn.html'}]",,peering@ninja-ix.net,+16026886414,,,,,6,1,0,,,queued,Not Disclosed,Not Disclosed,,2022-09-06T18:39:58Z,2024-05-09T23:10:12Z,ok
+3991,31528,Port IX,,Port pOrt poRt porT INTERNET EXCHANGE,"Fremont, CA",US,North America,Ethernet,,True,False,True,http://ix.daoport.net,"[{'service': 'website', 'identifier': 'http://ix.daoport.net'}]",,noc@dao.com.ee,,,,,,4,1,0,,,queued,Best Effort (no SLA),Non-recurring Fees Only,,2022-09-20T15:50:05Z,2023-07-08T07:57:56Z,ok
+3995,33411,Mountain West Internet Exchange,MWestIX,Mountain West Internet Exchange,Salt Lake City,US,North America,Ethernet,,True,False,True,https://www.mwestix.net/,"[{'service': 'website', 'identifier': 'https://www.mwestix.net/'}]",https://www.mwestix.net/,mat@instavps.com,,mat@instavps.com,,,mat@instavps.com,6,9,0,,,queued,Not Disclosed,Not Disclosed,,2022-09-28T12:40:34Z,2022-09-28T13:23:40Z,ok
+4082,21047,MoeIX SEA,MoeIX,Moe Internet Exchange - Seattle,Seattle,US,North America,Ethernet,,True,False,True,https://moeix.top,"[{'service': 'website', 'identifier': 'https://moeix.top'}]",,noc@moeqing.com,,noc@moeqing.com,,,noc@moeqing.com,32,0,51,2023-05-18T00:36:32Z,,queued,Best Effort (no SLA),Not Disclosed,,2023-02-03T19:09:25Z,2023-03-12T15:48:52Z,ok
+4091,10277,MEX-IX El Paso,,,El Paso,US,North America,Ethernet,,True,False,True,https://mdcdatacenters.com/,"[{'service': 'website', 'identifier': 'https://mdcdatacenters.com/'}]",,noc@mdcdatacenters.com,+19563404245,peering@mdcdatacenters.com,+19563404245,,,6,1,0,,,queued,Not Disclosed,Not Disclosed,,2023-02-10T21:26:53Z,2023-02-10T22:40:49Z,ok
+4092,34469,Miaowoo Ashburn,,Miaowoo Internet Exchange Ashburn,Ashburn,US,North America,Ethernet,,False,False,True,https://ix.wjy.me,"[{'service': 'website', 'identifier': 'https://ix.wjy.me'}]",,wjy@wjy.me,,wjy@wjy.me,,,,7,0,7,2024-11-11T03:17:29Z,,queued,24/7 Support,No Commercial Terms,,2023-02-13T13:29:44Z,2023-02-14T18:01:47Z,ok
+4097,32724,GPC Missouri,,Great Plains Connect,North Kansas City,US,North America,Ethernet,"Great Plains Connect is free.
+
+You can connect via single-mode fiber. Available speeds are GigE, 10GbE, 40GbE, 100GbE and port-channel multiples. LACP is supported.",True,False,True,https://greatplains.io,"[{'service': 'website', 'identifier': 'https://greatplains.io'}]",,noc@greatplains.io,,info@greatplains.io,,,,58,1,73,2024-09-29T03:17:57Z,,queued,Best Effort (no SLA),No Commercial Terms,,2023-02-15T20:52:29Z,2023-02-15T23:44:22Z,ok
+4132,15749,SIOUIX,,Sioux City Internet eXchange,Sioux City,US,North America,Ethernet,,True,False,False,http://www.siouix.net,"[{'service': 'website', 'identifier': 'http://www.siouix.net'}]",http://www.siouix.net/stats.php,noc@siouix.net,,,,,,1,2,0,,,queued,Best Effort (no SLA),No Commercial Terms,http://www.siouix.net,2023-03-24T16:29:11Z,2024-10-15T16:06:07Z,ok
+4228,39022,TUSIX,,Tucson Internet Exchange,Tucson,US,North America,Ethernet,,True,False,True,https://tusix.net,"[{'service': 'website', 'identifier': 'https://tusix.net'}]",https://portal.tusix.net/statistics/ixp,suport@tusix.net,+18772594955,support@tusix.net,,,support@tusix.net,2,1,0,,,queued,Best Effort (no SLA),No Commercial Terms,,2023-06-20T19:43:52Z,2024-09-30T13:49:50Z,ok
+4242,33460,Zero Internet eXchange San Jose,ZeroIX SJC,,San Jose,US,North America,Ethernet,,True,False,True,https://IX.TimKevin.us/,"[{'service': 'website', 'identifier': 'https://IX.TimKevin.us/'}]",,admin@lyyousa.net,+15155192199,admin@lyyousa.net,+15155192199,,,36,3,0,,,queued,Best Effort (no SLA),Not Disclosed,,2023-07-14T11:37:17Z,2023-08-07T09:07:49Z,ok
+4260,10627,Grand Rapids Internet Exchange (GRR-iX),GRR-iX,Grand Rapids Internet Exchange,"Grand Rapids, MI",US,North America,Ethernet,,True,False,True,https://www.grr-ix.com,"[{'service': 'website', 'identifier': 'https://www.grr-ix.com'}]",,noc@grr-ix.com,+18002271957,info@grr-ix.com,+18002271957,,,7,1,0,,,queued,Not Disclosed,Not Disclosed,,2023-08-15T17:57:54Z,2023-10-14T00:46:24Z,ok
+4286,36369,SLCIX,SLCIX - Salt Lake City Internet Exchange,,Salt Lake City,US,North America,Ethernet,"SLCIX is a new Internet Exchange Point based in Salt Lake City, UT and is currently onboarding peers for deployment. If you are interested in participating and being a founding peer, we're offering ports at no cost and free cross-connects into the exchange fabric.
+
+After deployment, we plan to charge a port fee for any new peers to help cover the upkeep of the exchange.
+
+Exchange Points: FIBERSTATE SLC1 106 E 13200 S Draper, Utah 84020 USA",False,False,False,https://slcix.com,"[{'service': 'website', 'identifier': 'https://slcix.com'}]",https://ixp.slcix.com/statistics/,noc@slcix.com,+18005758921,noc@slcix.com,+18005758921,+1 (800) 575-8921,sales@slcix.com,0,1,0,,,queued,Not Disclosed,Not Disclosed,,2023-09-23T17:54:46Z,2024-01-05T22:31:50Z,ok
+4298,13167,MegaIX Charlotte,,Megaport MegaIX Charlotte,Charlotte,US,North America,Ethernet,,True,False,True,https://megaport.com,"[{'service': 'website', 'identifier': 'https://megaport.com'}]",https://www.megaport.com/services/ix-statistics/,support@megaport.com,+14259542777,ix@megaport.com,+61730885996,,ix@megaport.com,3,3,0,2023-11-09T02:20:40Z,,queued,Not Disclosed,Not Disclosed,,2023-10-12T05:26:50Z,2023-10-13T03:47:11Z,ok
+4309,36666,MorePeering Los Angeles,,,Los Angeles,US,North America,Ethernet,Launched June 2024!,True,False,True,https://morepeering.net/,[],,peering@morepeering.net,,,,,,2,4,0,,,queued,Not Disclosed,Not Disclosed,,2023-10-31T21:05:36Z,2024-06-09T15:22:16Z,ok
+4315,35024,XSIX FMT,Xentain Solutions IX Fremont,Xentain Solutions Internet Exchange Point - Fremont,Fremont,US,North America,Ethernet,,False,False,True,https://xentain.exchange,"[{'service': 'website', 'identifier': 'https://xentain.exchange'}]",,noc@xentain.exchange,,support@xentain.exchange,,,support@xentain.exchange,1,1,1,2023-11-12T02:25:00Z,2023-11-11T15:06:42Z,finished,Best Effort (no SLA),Not Disclosed,,2023-11-07T23:24:13Z,2023-11-07T23:25:50Z,ok
+4318,13167,MegaIX New York,,Megaport MegaIX New York,New York,US,North America,Ethernet,,True,False,True,https://megaport.com,"[{'service': 'website', 'identifier': 'https://megaport.com'}]",https://www.megaport.com/services/ix-statistics/,support@megaport.com,,ix@megaport.com,,,ix@megaport.com,13,22,17,2024-11-11T03:27:46Z,2024-07-17T22:26:55Z,finished,Not Disclosed,Not Disclosed,,2023-11-16T14:37:15Z,2024-01-18T19:12:08Z,ok
+4339,36888,Lightboard Springfield IX (Massachusetts),Massachusetts and Connecticut IX,,"Springfield, MA Hartford CT New Haven, CT",US,North America,Ethernet,"**[Clean. Friendly. Secure. ](https://lightboardrealty.com)**
+
+Primary Service Area:
+
+- Springfield, MA
+- Hartford, CT 
+- New Haven, CT
+- New England
+
+Springfield IX port fees:
+
++ 100GE: $1K NRC, no MRC
++ 10GE: $500 NRC, no MRC
+
+Springfield IX is a connector-less IX.
+
+
+**Updates**
+
+None at this time.",True,False,True,https://springfield-ix.net,"[{'service': 'x', 'identifier': 'SpringfieldIX'}, {'service': 'facebook', 'identifier': 'LightboardUS'}, {'service': 'website', 'identifier': 'https://springfield-ix.net'}]",https://springfield-ix.net,noc@lightboardrealty.com,,noc@lightboardrealty.com,,+16178216079,marty@lightboardrealty.com,1,2,0,,,queued,24/7 Support,Non-recurring Fees Only,,2023-12-13T22:39:38Z,2024-02-02T23:20:00Z,ok
+4340,36888,Lightboard Burlington IX (Vermont),Vermont IX,,"Burlington, VT. Montpelier, VT. White River Junction, VT.",US,North America,Ethernet,"**[Clean. Friendly. Secure. ](https://lightboardrealty.com)**
+
+Primary Service Area:
+
+- State of Vermont
+- Northeast
+- Quebec, Canada
+- North America
+
+Vermont IX port fees:
+
++ 100GE: no NRC, no MRC
++ 10GE: no NRC, no MRC
+
+Vermont IX is a connector-less IX.",True,False,True,https://vermont-ix.net,"[{'service': 'x', 'identifier': 'VermontIXP'}, {'service': 'linkedin', 'identifier': 'LightboardUS'}, {'service': 'website', 'identifier': 'https://vermont-ix.net'}]",https://vermont-ix.net,noc@lightboardrealty.com,,noc@lightboardrealty.com,,+16178216079,marty@lightboardrealty.com,1,1,0,,,queued,24/7 Support,Non-recurring Fees Only,,2023-12-15T22:03:41Z,2024-02-29T14:22:59Z,ok
+4352,36637,DartNode IXP - Houston,DartIXP,DartNode IXP,"Houston, Texas",US,North America,Ethernet,"DartNode IXP is a Houston IXP with the following switch locations:
+
+TRG Houston --
+2626 Spring Cypress Rd, Spring, TX 77388",True,False,False,https://dartnode.com/ixp,"[{'service': 'website', 'identifier': 'https://dartnode.com/ixp'}]",,zackary@snaju.com,,zackary@snaju.com,,,zackary@snaju.com,1,1,0,,,queued,Best Effort (no SLA),Recurring Fees,,2024-01-03T20:23:53Z,2024-01-25T17:59:35Z,ok
+4361,13167,MegaIX Atlanta,,Megaport MegaIX Atlanta,Atlanta,US,North America,Ethernet,,True,False,True,https://www.megaport.com,"[{'service': 'website', 'identifier': 'https://www.megaport.com'}]",https://www.megaport.com/services/ix-statistics/,support@megaport.com,+14259542777,ix@megaport.com,+61730885996,,ix@megaport.com,5,7,0,,,queued,Not Disclosed,Not Disclosed,,2024-01-17T16:59:34Z,2024-01-18T17:43:22Z,ok
+4362,13167,MegaIX Miami,,Megaport MegaIX Miami,Miami,US,North America,Ethernet,,True,False,True,https://www.megaport.com,"[{'service': 'website', 'identifier': 'https://www.megaport.com'}]",https://www.megaport.com/services/ix-statistics/,support@megaport.com,+14259542777,ix@megaport.com,+61730885996,,ix@megaport.com,4,5,0,,,queued,Not Disclosed,Not Disclosed,,2024-01-17T17:01:54Z,2024-01-18T17:45:18Z,ok
+4363,13167,MegaIX Denver,,Megaport MegaIX Denver,Denver,US,North America,Ethernet,,True,False,True,https://www.megaport.com,"[{'service': 'website', 'identifier': 'https://www.megaport.com'}]",https://www.megaport.com/services/ix-statistics/,support@megaport.com,+14259542777,ix@megaport.com,+61730885996,,ix@megaport.com,4,8,0,,,queued,Not Disclosed,Not Disclosed,,2024-01-17T17:02:48Z,2024-01-18T17:35:52Z,ok
+4366,39104,CM-IX,,Central Michigan Internet Exchange,Mount Pleasant,US,North America,Ethernet,"CM-IX is fee free. No cross connect charges. 1G, 10G, 25G and 100G ports available.",True,False,True,https://www.cm-ix.com,"[{'service': 'website', 'identifier': 'https://www.cm-ix.com'}]",,peering@cm-ix.com,+18442642649,peering@cm-ix.com,+18442642649,,,1,1,0,,,queued,Not Disclosed,Not Disclosed,,2024-01-22T06:39:04Z,2024-08-29T16:56:43Z,ok
+4378,36461,F4IX MCI,F4IX,F4 Internet Exchange,Kansas City,US,North America,Ethernet,,True,False,True,https://f4ix.com,"[{'service': 'website', 'identifier': 'https://f4ix.com'}]",https://ixm.f4ix.com,noc@f4ix.com,,hello@f4ix.com,,,hello@f4ix.com,74,1,86,2024-11-11T03:31:41Z,2024-03-12T00:27:49Z,finished,Best Effort (no SLA),No Commercial Terms,,2024-02-07T02:03:43Z,2024-03-21T21:02:21Z,ok
+4379,36261,Hyper Group Internet Exchange (HNIX),HNIX,Hyper Group vInternet Exchange,North Kansas City,US,North America,Ethernet,"The Hyper Group Network Internet Exchange (HNIX) is a virtual IXP that operates for non-commercial, neutral BGP learning and experimental platforms which operates as a collaborative effort. We currently only support IPv6 traffic and peering. The following guidelines are established to ensure the overall well-being of the exchange fabric, both in the short and long term.",False,False,True,https://ix.hnhost.net/,"[{'service': 'website', 'identifier': 'https://ix.hnhost.net/'}]",https://ixpm.hnhost.net/,ixp@hypernology.com,,ixp@hypernology.com,,,ixp@hypernology.com,14,1,0,,2024-06-27T13:33:53Z,error,Best Effort (no SLA),No Commercial Terms,https://ixlg.hnhost.net/,2024-02-07T07:04:40Z,2024-08-12T03:12:08Z,ok
+4380,37098,West Virginia Internet Exchange,WVIX,West Virginia Internet Exchange,South Charleston,US,North America,Ethernet,"1,10,40 gig ports available
+1 & 10 gig port fees waived.",True,False,True,https://www.wvix.us,"[{'service': 'website', 'identifier': 'https://www.wvix.us'}]",https://www.wvix.us,noc@wvix.us,+13047866073,peering@wvix.us,,,info@wvix.us,1,2,0,,,queued,24/7 Support,No Commercial Terms,,2024-02-09T00:05:20Z,2024-04-12T17:29:32Z,ok
+4431,35652,FlooydIX Kansas,FlooydIX - Kansas City,Flooyd Internet Exchange for Kansas,Kansas City,US,North America,Ethernet,"**FLOOYDIX FOR KANSAS**
+
+We are a sponsored neutral internet exchange for customers of Flooyd services who need to send their traffic to an exchange without exceeding traffic limits.
+
+We are free and open for everyone connect with us. 
+
+**REQUIREMENTS**
+
+- Cross-connection.
+- vLANs.",False,False,True,https://flooyd.link,"[{'service': 'website', 'identifier': 'https://flooyd.link'}]",,noc@flooyd.link,,abuse@flooyd.link,,,sac@flooyd.link,5,1,9,2024-07-18T03:11:36Z,2024-05-19T00:05:04Z,finished,Normal Business Hours,Bundled With Other Services,,2024-04-02T15:59:26Z,2024-10-22T01:30:39Z,ok
+4460,38114,DFW-IX,DFW-IX,Dallas Internet Exange Point,Dallas,US,North America,Ethernet,,True,False,True,https://dfw-ix.net,"[{'service': 'website', 'identifier': 'https://dfw-ix.net'}]",https://portal.dfw-ix.net,peering@dfw-ix.net,,peering@dfw-ix.net,,+1 786 309 7847,peering@dfw-ix.net,12,8,13,2024-11-11T03:35:55Z,2024-05-09T16:19:37Z,finished,Not Disclosed,Not Disclosed,,2024-05-09T13:21:03Z,2024-11-02T03:09:07Z,ok
+4462,38100,NVIX,Northern Virginia Internet Exchange,,Ashburn,US,North America,Ethernet,"**NVIX (Northern Virginia Internet Exchange)**
+
+NVIX (Northern Virginia Internet Exchange) is a Free Internet Exchange Point (IXP) based in Ashburn, Virginia. We are committed to enhancing internet connectivity and performance by facilitating efficient and cost-effective interconnections between local and global networks.
+
+**Locations:**
+- Equinix DC3 ( 44470 Chilum Place )
+
+**Port Sizes Available:**
+- 100mbit / 1G (Via Sponsor Ports)
+- 10G-LR
+- 40G-LR4
+- 100G-LR4
+
+**Benefits of Peering at NVIX:**
+- Reduced latency
+- Improved redundancy
+- Lower transit costs
+- Enhanced network performance
+
+For more information, visit our website at [www.nvix.us](http://www.nvix.us).",True,False,True,https://www.nvix.us,"[{'service': 'website', 'identifier': 'https://www.nvix.us'}]",https://ixpm.nvix.us,support@nvix.us,,support@nvix.us,,,provisioning@nvix.us,29,1,31,2024-11-11T03:36:40Z,2024-05-13T07:54:44Z,finished,Best Effort (no SLA),No Commercial Terms,,2024-05-11T23:44:02Z,2024-07-19T09:15:23Z,ok
+4476,33149,PEER1-IX,PEER-1,PEER-1 Global Internet Exchange,New York,US,North America,Ethernet,,True,False,False,http://peer-1.com,"[{'service': 'website', 'identifier': 'http://peer-1.com'}]",,noc@peer-1.com,,noc@peer-1.com,,,sales@peer-1.com,1,0,0,,,queued,24/7 Support,Recurring Fees,,2024-05-20T21:41:24Z,2024-05-21T06:01:54Z,ok
+4491,14515,CL-IX,,Cleveland Internet Exchange,"Cleveland, OH",US,North America,Ethernet,,True,False,True,https://h5datacenters.com/h5-cl-ix.html,"[{'service': 'website', 'identifier': 'https://h5datacenters.com/h5-cl-ix.html'}]",,internet.exchange@h5datacenters.com,,internet.exchange@h5datacenters.com,,,internet.exchange@h5datacenters.com,3,1,0,,,queued,Not Disclosed,Not Disclosed,,2024-06-05T03:10:02Z,2024-06-05T03:24:32Z,ok
+4507,13167,MegaIX Chicago,,,Chicago,US,North America,Ethernet,,True,False,True,https://megaport.com,"[{'service': 'website', 'identifier': 'https://megaport.com'}]",https://megaport.com,support@megaport.com,+61730627601,ix@megaport.com,+61730627601,,ix@megaport.com,3,14,0,,,queued,Not Disclosed,Not Disclosed,,2024-07-05T01:45:54Z,2024-07-05T19:09:11Z,ok
+4508,13167,MegaIX Bay Area,,,San Francisco,US,North America,Ethernet,,True,False,True,http://megaport.com,"[{'service': 'website', 'identifier': 'http://megaport.com'}]",https://www.megaport.com/services/ix-statistics/,support@megaport.com,+61730627601,ix@megaport.com,,,ix@megaport.com,12,11,0,,,queued,Not Disclosed,Not Disclosed,,2024-07-05T01:47:08Z,2024-07-05T19:10:15Z,ok
+4520,38700,AlaskaIX,AlaskaIX,,Anchorage,US,North America,Ethernet,,True,False,True,https://alaskaix.net/,"[{'service': 'website', 'identifier': 'https://alaskaix.net/'}]",,noc@alaskaix.net,+19077597998,,,,,2,1,0,,,queued,Not Disclosed,Not Disclosed,,2024-07-26T16:08:35Z,2024-07-31T15:09:01Z,ok
+4534,11225,FD-IX - Amarillo,,,Amarillo,US,North America,Ethernet,A limited number of free peering ports available.  Visit FD-IX.com.  Website updates are coming soon.  In the meantime reach out to peering@fd-ix.com,True,False,False,https://fd-ix.com,"[{'service': 'website', 'identifier': 'https://fd-ix.com'}]",,peering@fd-ix.com,+14632097100,peering@fd-ix.com,+14632097100,+14632097100,sales@fd-ix.com,2,1,0,,,queued,Not Disclosed,Not Disclosed,,2024-08-16T22:04:30Z,2024-11-07T02:41:16Z,ok
+4574,39439,IdahoIX,,Idaho Internet Exchange,Boise,US,North America,Ethernet,,True,False,True,http://idahoix.net,"[{'service': 'website', 'identifier': 'http://idahoix.net'}]",,support@idahoix.net,+18772594955,support@idahoix.net,+18772594955,+18772594955,support@idahoix.net,2,1,0,,,queued,Best Effort (no SLA),No Commercial Terms,,2024-10-15T15:23:59Z,2024-10-15T15:27:00Z,ok
