@@ -1,6 +1,7 @@
 from datetime import datetime
 import geopandas as gpd
 import pandas as pd
+import os
 
 def quarter_start(year: int, q: int) -> datetime:
     if not 1 <= q <= 4:
@@ -16,6 +17,20 @@ def get_tile_url(service_type: str, year: int, q: int) -> str:
     url = f"{base_url}/type%3D{service_type}/year%3D{dt:%Y}/quarter%3D{q}/{dt:%Y-%m-%d}_performance_{service_type}_tiles.zip"
     return url
 
+def download_and_save_shapefile(url: str, filename: str):
+    if os.path.exists(filename):
+        print(f"Parquet file {filename} already exists. Loading...")
+        data = gpd.read_parquet(filename)
+        return data
+
+    # Otherwise, download the shapefile and save as Parquet
+    print(f"Downloading data from {url}...")
+    data = gpd.read_file(url)
+    print(f"File downloaded. Converting to Parquet format at {filename}...")
+    data.to_parquet(filename)
+
+    return data
+
 def ookla_county_at_cbg(service_type: str, state_fips: str, county_fips: str, year: int):
 
     all_tiles_in_county_block_groups = pd.DataFrame()
@@ -24,10 +39,11 @@ def ookla_county_at_cbg(service_type: str, state_fips: str, county_fips: str, ye
     output_file = f"../../../datasets/ookla/US/cbg/raw/ookla_fixed_cbg_{state_fips}_{county_fips}_raw.csv"
 
     # Construct the block group URL using the state FIPS code
-    block_group_url = f"https://www2.census.gov/geo/tiger/TIGER{year}/BG/tl_{year}_{state_fips}_bg.zip"
+    # block_group_url = f"https://www2.census.gov/geo/tiger/TIGER{year}/BG/tl_{year}_{state_fips}_bg.zip"
     # print(block_group_url)
+    block_file = f"../../../datasets/census/US/cbg/regions/tl_{year}_{state_fips}_bg.zip"
 
-    block_groups = gpd.read_file(block_group_url)
+    block_groups = gpd.read_file(block_file)
 
     # Filter block groups by state and county FIPS code
     county_block_groups = block_groups.loc[(block_groups['STATEFP'] == state_fips) & (block_groups['COUNTYFP'] == county_fips)]
@@ -38,16 +54,20 @@ def ookla_county_at_cbg(service_type: str, state_fips: str, county_fips: str, ye
         print(f'Quarter = {quarter}')
         
         tile_url = get_tile_url(service_type, year, quarter)
+        tile_filename = f"ookla_tiles_{service_type}_{year}_Q{quarter}.parquet"
         # print(f'Tile URL = {tile_url}')
 
-        tiles = gpd.read_file(tile_url)
+        tiles = download_and_save_shapefile(tile_url, tile_filename)
 
+        print('reprojecting...')
         # Reproject county block groups to match the tiles CRS
         county_block_groups = county_block_groups.to_crs(tiles.crs)
-
+        
+        print('spatial join...')   
         # Perform spatial join to find tiles within county block groups for the current quarter
         tiles_in_county_block_groups = gpd.sjoin(tiles, county_block_groups, how="inner", predicate='intersects')
 
+        print('converting to Mbps...')   
         # Convert to Mbps for easier reading
         tiles_in_county_block_groups['avg_d_mbps'] = tiles_in_county_block_groups['avg_d_kbps'] / 1000
         tiles_in_county_block_groups['avg_u_mbps'] = tiles_in_county_block_groups['avg_u_kbps'] / 1000
@@ -56,6 +76,7 @@ def ookla_county_at_cbg(service_type: str, state_fips: str, county_fips: str, ye
         tiles_in_county_block_groups['year'] = year
         tiles_in_county_block_groups['quarter'] = quarter
 
+        print('Concatenating quarters...') 
         # Concatenate the current quarter's results with the previous quarters
         all_tiles_in_county_block_groups = pd.concat([all_tiles_in_county_block_groups, tiles_in_county_block_groups])
 
@@ -72,30 +93,49 @@ def combine_same_cbg_rows(state_fips: str, county_fips: str):
     df = pd.read_csv(input_csv)
 
     grouped_df = df.groupby('GEOID').agg({
-        'avg_d_mbps': 'mean',
-        'avg_u_mbps': 'mean',
-        'avg_lat_ms': 'mean',
+        'avg_d_mbps': ['mean', 'median'],
+        'avg_u_mbps': ['mean', 'median'],
+        'avg_lat_ms': ['mean', 'median'],
         'tests'     : 'sum',
         'devices'   : 'sum'
     }).reset_index()
 
-    # Rename columns
+    # Flatten the multi-level columns resulting from the aggregation
+    grouped_df.columns = ['_'.join(col).strip() if col[1] else col[0] for col in grouped_df.columns.values]
+
+    # Rename columns for clarity
     grouped_df.rename(columns={
-        'avg_d_mbps': 'avg_d_mbps_avg',
-        'avg_u_mbps': 'avg_u_mbps_avg',
-        'avg_lat_ms': 'avg_lat_ms_avg',
-        'tests': 'total_tests',
-        'devices': 'total_devices'
+        'tests_sum': 'total_tests',
+        'devices_sum': 'total_devices'
     }, inplace=True)
 
     # Merge the non-aggregated columns
     non_agg_columns = df[['GEOID', 'year', 'STATEFP', 'COUNTYFP', 'TRACTCE', 'BLKGRPCE', 'ALAND']].drop_duplicates(subset=['GEOID'])
     final_df = pd.merge(non_agg_columns, grouped_df, on='GEOID')
 
-    subset_columns_df = final_df[['GEOID','year','STATEFP', 'COUNTYFP', 'TRACTCE', 'BLKGRPCE','ALAND', 'avg_d_mbps_avg', 'avg_u_mbps_avg', 'avg_lat_ms_avg', 'total_tests', 'total_devices']]
+    subset_columns_df = final_df[['GEOID','year','STATEFP', 'COUNTYFP', 'TRACTCE', 'BLKGRPCE','ALAND', 'avg_d_mbps_mean', 'avg_d_mbps_median', 'avg_u_mbps_mean', 'avg_u_mbps_median', 'avg_lat_ms_mean', 'avg_lat_ms_median', 'total_tests', 'total_devices']]
 
     # remove sorting if needed
     subset_columns_df = subset_columns_df.sort_values(by='GEOID')
 
     subset_columns_df.to_csv(output_file, index=False)
     print(f'Aggregated data saved to {output_file}.')
+
+def clean_headers(state_fips: str, county_fips: str):
+    print('Cleaning headers...')
+    input_csv = f"../../../datasets/ookla/US/cbg/raw/ookla_fixed_cbg_{state_fips}_{county_fips}_raw.csv"
+    output_file = f"../../../datasets/ookla/US/cbg/raw_headers/ookla_fixed_cbg_{state_fips}_{county_fips}.csv"
+
+    df = pd.read_csv(input_csv)
+
+    df['ookla_geometry'] = df['geometry']
+    df['ookla_latitude'] = df['INTPTLAT']
+    df['ookla_longitude'] = df['INTPTLON']
+
+    subset_columns_df = df[['GEOID','year','STATEFP', 'COUNTYFP', 'TRACTCE', 'BLKGRPCE','ALAND', 'avg_d_mbps', 'avg_u_mbps', 'avg_lat_ms', 'tests', 'devices', 'ookla_latitude', 'ookla_longitude', 'ookla_geometry']]
+
+    # remove sorting if needed
+    subset_columns_df = subset_columns_df.sort_values(by='GEOID')
+
+    subset_columns_df.to_csv(output_file, index=False)
+    print(f'Clean data saved to {output_file}.')
