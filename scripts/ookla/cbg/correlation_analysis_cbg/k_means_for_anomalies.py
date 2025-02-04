@@ -4,8 +4,8 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.cluster import KMeans
 
 state_fips = '06'
-input_file =f"../../../results/ookla/US/cbg/census/ookla_fixed_cbg_{state_fips}_075_census.csv"
-output_file =f"../../../results/ookla/US/cbg/census/ookla_fixed_cbg_{state_fips}_075_census_k.csv"
+input_file =f"../../../../results/ookla/US/cbg/census/ookla_fixed_cbg_{state_fips}_075_census.csv"
+output_file =f"../../../../results/ookla/US/cbg/census/ookla_fixed_cbg_{state_fips}_075_census_k.csv"
 
 df = pd.read_csv(input_file)
 
