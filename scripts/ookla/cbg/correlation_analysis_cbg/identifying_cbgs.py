@@ -89,28 +89,75 @@ def cbgs_above_average(data, bin_label='Bin_1', column_name='asian_alone'):
 
     print(len(county_data))
 
-
-
     county_counts = county_data['COUNTYFP'].value_counts().to_dict()
 
-    print(f'County Name: Number of CBGs in the county with higher {column_name} in {bin_label}')
+    print(f'County FP: Number of CBGs in the county with higher {column_name} in {bin_label}')
     for county, count in county_counts.items():
         print(f'{county}: {count}')
 
-    # Aalameda: 65
-    # Martinez: 57
-    # Santa Clara: 56
+    # Aalameda (1)      : 65
+    # Martinez (13)     : 57
+    # Santa Clara (85)  : 56
 
-    # which means, in alameda county, there are 65 cbgs who are highly impacted by the asian_alone percentage.
-    # let's look only at alameda:
+    # which means, in alameda county, there are 65 cbgs who have high asian_alone percentage and also low density
+    # but still are highly impacted by the asian_alone percentage.
+    # let's look only at alameda to try to reason this phenomenon from the income perspective to try to cancel that out:
 
-    alameda_overall_income = data[data['COUNTYFP'] == '001']['median_household_income'].mean()
+    # Filter out negative values before calculating the mean
+    # all of alameda cbgs
+    alameda_overall_income = data[data['COUNTYFP'] == 1]['median_household_income'][data['median_household_income'] > 0].mean()
 
     print(alameda_overall_income)
 
-    alameda_filtered_income = county_data[county_data['COUNTYFP'] == '001']['median_household_income'].mean()
+    # low density cbgs of alameda
+    alameda_overall_income = bin_data[bin_data['COUNTYFP'] == 1]['median_household_income'][bin_data['median_household_income'] > 0].mean()
+
+    print(alameda_overall_income)
+
+    # low density cbgs of alameda with high asian_alone percentage
+    alameda_filtered_income = county_data[county_data['COUNTYFP'] == 1]['median_household_income'][county_data['median_household_income'] > 0].mean()
 
     print(alameda_filtered_income)
+
+    # updated code:
+    # all of alameda cbgs
+    alameda_all_cbgs = data[data['COUNTYFP'] == 1]
+    print(f'Number of Alameda CBGs: {len(alameda_all_cbgs)}')
+
+    alameda_all_cbgs_filtered = alameda_all_cbgs[alameda_all_cbgs['median_household_income'] > 0]
+    print(f'Number of Alameda CBGs with valid income data: {len(alameda_all_cbgs_filtered)}')
+    # not a lot of difference, so great, very few cbgs have missing income data
+
+    # alamdea overall income:
+    alameda_overall_income = alameda_all_cbgs_filtered['median_household_income'].mean()
+    print(f'Alameda Overall Income: {alameda_overall_income}')
+
+    # low density cbgs of alameda
+    alameda_low_density_cbgs = bin_data[bin_data['COUNTYFP'] == 1]
+    print(f'Number of Alameda CBGs in Bin 1: {len(alameda_low_density_cbgs)}')
+    # their avg income:
+    alameda_low_density_income = alameda_low_density_cbgs['median_household_income'][alameda_low_density_cbgs['median_household_income'] > 0].mean()
+    print(f'Alameda Low Density Income: {alameda_low_density_income}')
+
+    # low density cbgs of alameda with high asian_alone percentage
+    alameda_high_asian_cbgs = higher_cbgs_data[higher_cbgs_data['COUNTYFP'] == 1]
+    print(f'Number of Alameda CBGs in Bin 1 with high asian_alone WHEN compared with bay area average: {len(alameda_high_asian_cbgs)}')
+    # their avg income:
+    alameda_high_asian_income = alameda_high_asian_cbgs['median_household_income'][alameda_high_asian_cbgs['median_household_income'] > 0].mean()
+    print(f'Alameda High Asian Income: {alameda_high_asian_income}')
+
+    print()
+    print("calculating alameda average...")
+    # but we want low density cbgs of alameda with high asian_alone percentage IN ALAMEDA not above bay area average
+    alameda_avg_asian_percentage = alameda_all_cbgs['asian_alone'].mean()
+    print(f'Alameda Average Asian Percentage: {alameda_avg_asian_percentage}')
+
+    alameda_high_asian_cbgs_in_alameda = alameda_all_cbgs[alameda_all_cbgs['asian_alone'] > alameda_avg_asian_percentage]
+    print(f'Number of Alameda CBGs in Bin 1 with high asian_alone WHEN compared with Alameda average: {len(alameda_high_asian_cbgs_in_alameda)}')
+
+    # their avg income:
+    alameda_high_asian_income_in_alameda = alameda_high_asian_cbgs_in_alameda['median_household_income'][alameda_high_asian_cbgs_in_alameda['median_household_income'] > 0].mean()
+    print(f'Alameda High Asian Income in Alameda: {alameda_high_asian_income_in_alameda}')
 
 file_paths = {
     'california': "../../../../../results/ookla/US/cbg/raw_masters/state_master_fixed_06.csv",
@@ -145,7 +192,7 @@ for column_name in columns:
     population_density_wise_averages(data, column_name)
     print()
 
-# show_on_map(data)
+show_on_map(data)
 
 cbgs_above_average(data, bin_label='Bin_1', column_name='asian_alone')
 
