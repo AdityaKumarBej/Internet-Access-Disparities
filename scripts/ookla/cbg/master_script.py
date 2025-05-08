@@ -9,13 +9,10 @@ import pandas as pd
 year =  2023
 service_type = 'fixed'
 
-# # test_county = 'yolo'
-# state = '06'
-# counties = ['113']
-
 # # bay area - the left coast
-# state = '06'
-# counties = ['001','013', '041','055','081','085', '095', '097','075']
+state = '06'
+counties = ['001','013', '041','055','081','085', '095', '097','075']
+region = 'bay area'
 
 # # middlecalifornia area - the far west
 # state = '06'
@@ -42,39 +39,40 @@ service_type = 'fixed'
 # TO DO: (trying below) instead of this list, read from the csv file I have created, and default it to a state or even an area 
 
 # rest of California:
-state = '06'
 # counties = ['003', '005', '007', '009', '011', '015', '017', '021', '023', '027', '033', '035', '045', '049', '051', '053', '057', '061', '063', '067', '069', '071']
 # counties = ['077', '087', '089', '091', '093', '101', '103', '105', '109', '113', '115']
 
-#all of california
-counties = ['001','013', '041','055','081','085', '095', '097','075', '025', '037', '059', '065', '073', '079', '083', '111', '019', '029', '031', '039', '043', '047', '099', '107', '003', '005', '007', '009', '011', '015', '017', '021', '023', '027', '033', '035', '045', '049', '051', '053', '057', '061', '063', '067', '069', '071', '077', '087', '089', '091', '093', '101', '103', '105', '109', '113', '115']
+# test_county = 'yolo'
+# state = '06'
+# counties = ['113']
+
+# all of california
+# state = '06'
+# counties = ['001','013', '041','055','081','085', '095', '097','075', '025', '037', '059', '065', '073', '079', '083', '111', '019', '029', '031', '039', '043', '047', '099', '107', '003', '005', '007', '009', '011', '015', '017', '021', '023', '027', '033', '035', '045', '049', '051', '053', '057', '061', '063', '067', '069', '071', '077', '087', '089', '091', '093', '101', '103', '105', '109', '113', '115']
 
 # for county in counties:
 #     print(f'Processing for {county}----------')
     
 #     # ookla_county_at_cbg(service_type, state, county, year)
 
-#     # combine rows OR clean headers only
-#     # combine_same_cbg_rows(state, county)
-#     clean_headers(state, county)
+#     combine_same_cbg_rows(state, county)
 
-#     add_gender_age_density(state, county)
+#     add_gender_age_density(state, county, get_data_flag=False)
 
-#     add_income(state, county)
+#     add_income(state, county, get_data_flag=False)
 
-#     add_education(state, county)
+#     add_education(state, county, get_data_flag=False)
 
-#     add_race(state, county)
+#     add_race(state, county, get_data_flag=False)
 
-    # do I need bg_shape of the CBG when I now have multiple rows for each CBG in my data? this is used only for
-    # tableau, and I don't know if I can still put this on tableau. CAN I? (repeated spatial data)
-    # since I am now capturing the ookla spatial data as well (where the test was taken), I think I can plot 
-    # my required graphs using that.
-    # ignoring this for now since I can always come back and add this.
+#     # do I need bg_shape of the CBG when I now have multiple rows for each CBG in my data? this is used only for
+#     # tableau, and I don't know if I can still put this on tableau. CAN I? (repeated spatial data)
+#     # since I am now capturing the ookla spatial data as well (where the test was taken), I think I can plot 
+#     # my required graphs using that.
+#     # ignoring this for now since I can always come back and add this.
 
-    # add_bg_shape(state, county, year)
+#     add_bg_shape(state, county, year)
 
-# create_master_file(service_type, state, counties, region)
+create_master_file(service_type, state, counties, region)
 # create_state_master(service_type, state)
-create_nation_master(service_type, state, counties)
-# test 2
+# create_nation_master(service_type, state, counties)

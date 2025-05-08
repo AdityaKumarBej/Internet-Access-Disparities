@@ -87,8 +87,8 @@ def ookla_county_at_cbg(service_type: str, state_fips: str, county_fips: str, ye
 
 def combine_same_cbg_rows(state_fips: str, county_fips: str):
     print('Combining same cbg rows...')
-    input_csv = f"../../../datasets/ookla/US/cbg/raw/ookla_fixed_cbg_{state_fips}_{county_fips}_raw.csv"
-    output_file = f"../../../datasets/ookla/US/cbg/clean/ookla_fixed_cbg_{state_fips}_{county_fips}.csv"
+    input_csv = f"../../../../datasets/ookla/US/cbg/raw/ookla_fixed_cbg_{state_fips}_{county_fips}_raw.csv"
+    output_file = f"../../../../datasets/ookla/US/cbg/clean/ookla_fixed_cbg_{state_fips}_{county_fips}.csv"
 
     df = pd.read_csv(input_csv)
 

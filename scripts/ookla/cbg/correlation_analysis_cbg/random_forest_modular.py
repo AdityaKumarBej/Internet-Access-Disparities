@@ -181,8 +181,9 @@ file_paths = {
     'thefarwest_fresno': "../../../../../results/ookla/US/cbg/raw_census/ookla_fixed_cbg_06_019_census.csv",
     'theleftcoast_santaclara': "../../../../../results/ookla/US/cbg/raw_census/ookla_fixed_cbg_06_085_census.csv",
 
+    # aggregated
+    'bayarea': "../../../../../results/ookla/US/cbg/masters/ookla_fixed_cbg_master_06_bayarea.csv",
 
-    'bayarea': "../../../../../results/ookla/US/cbg/raw_masters/ookla_fixed_cbg_master_06_bayarea.csv",
     'middlecalifornia': "../../../../../results/ookla/US/cbg/raw_masters/ookla_fixed_cbg_master_06_middlecalifornia.csv",
     'losangelesarea': "../../../../../results/ookla/US/cbg/raw_masters/ookla_fixed_cbg_master_06_losangelesarea.csv",
     'dallasarea': "../../../../../results/ookla/US/cbg/raw_masters/ookla_fixed_cbg_master_48_dallasarea.csv",
@@ -201,7 +202,7 @@ relevant_cols = [
     'hispanic_latino', 'black_or_african_american_alone', 'asian_alone'
 ]
 
-dependent_col = 'avg_d_mbps'
+dependent_col = 'avg_d_mbps_mean'
 # dependent_col = 'avg_u_mbps'
 # dependent_col = 'avg_lat_ms'
 

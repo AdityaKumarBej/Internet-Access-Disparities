@@ -19,8 +19,9 @@ file_paths = {
     'thefarwest_fresno': "../../../../results/ookla/US/cbg/raw_census/ookla_fixed_cbg_06_019_census.csv",
     'theleftcoast_santaclara': "../../../../results/ookla/US/cbg/raw_census/ookla_fixed_cbg_06_085_census.csv",
 
+    # aggregated data rows @ cbg
+    'bayarea': "../../../../../results/ookla/US/cbg/masters/ookla_fixed_cbg_master_06_bayarea.csv",
 
-    'bayarea': "../../../../results/ookla/US/cbg/raw_masters/ookla_fixed_cbg_master_06_bayarea.csv",
     'middlecalifornia': "../../../../results/ookla/US/cbg/raw_masters/ookla_fixed_cbg_master_06_middlecalifornia.csv",
     'losangelesarea': "../../../../results/ookla/US/cbg/raw_masters/ookla_fixed_cbg_master_06_losangelesarea.csv",
     'dallasarea': "../../../../results/ookla/US/cbg/raw_masters/ookla_fixed_cbg_master_48_dallasarea.csv",
@@ -28,7 +29,7 @@ file_paths = {
     'southtexasarea': "../../../../results/ookla/US/cbg/raw_masters/ookla_fixed_cbg_master_48_southtexasarea.csv",
 }
 
-file_path = file_paths['losangelesarea']
+file_path = file_paths['bayarea']
 
 data = pd.read_csv(file_path, low_memory=False)
 
@@ -37,15 +38,16 @@ relevant_cols = [
     'median_household_income', 'percentage_female',
     'percentage_age_over_65', 
     'less_than_high_school_diploma',
-    'hispanic_latino', 'black_or_african_american_alone', 'asian_alone'
+    'hispanic_latino', 'black_or_african_american_alone', 'asian_alone',
+    'population_density'
 ]
 
 start_time = time.time()
 
-data = data.dropna(subset=relevant_cols + ['avg_d_mbps'])
+data = data.dropna(subset=relevant_cols + ['avg_d_mbps_mean'])
 
 X = data[relevant_cols]
-y = data['avg_d_mbps']
+y = data['avg_d_mbps_mean']
 
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
@@ -137,15 +139,15 @@ print(f"Null Model Importances: {result_null.importances_mean}")
 # print(f"Mean R² across folds: {cv_scores.mean()}")
 
 # ----------------------------------------------
-# # calculate correlation between the attributes
+# calculate correlation between the attributes
 
-# import seaborn as sns
+import seaborn as sns
 
-# correlation_matrix = X.corr()
-# plt.figure(figsize=(10, 8))
-# sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f", cbar=True)
-# plt.title('Correlation Matrix')
-# plt.show()
+correlation_matrix = X.corr()
+plt.figure(figsize=(10, 8))
+sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f", cbar=True)
+plt.title('Correlation Matrix')
+plt.show()
 
 # ----------------------------------------------
 # # SHAP visualizes the contribution of each feature to the model’s predictions

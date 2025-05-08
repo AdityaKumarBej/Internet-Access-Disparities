@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 def create_master_file(service_type: str, state_fips: str, counties: list, region: str):
-    folder_path = f'../../../results/ookla/US/cbg/raw_census/'
+    folder_path = f'../../../../results/ookla/US/cbg/census/'
 
     # List to hold dataframes
     df_list = []
@@ -19,7 +19,7 @@ def create_master_file(service_type: str, state_fips: str, counties: list, regio
     master_df = pd.concat(df_list, ignore_index=True)
 
     new_region = region.replace(" ", "").lower()
-    output_file_path = f'../../../results/ookla/US/cbg/raw_masters/ookla_{service_type}_cbg_master_{state_fips}_{new_region}.csv'
+    output_file_path = f'../../../../results/ookla/US/cbg/masters/ookla_{service_type}_cbg_master_{state_fips}_{new_region}.csv'
     
     master_df.to_csv(output_file_path, index=False)
 

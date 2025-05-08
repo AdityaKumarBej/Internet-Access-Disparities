@@ -17,7 +17,7 @@ def get_gender_age_density(api_key: str, state_fips: str, county_fips: str, tabl
 
     url = f"https://api.census.gov/data/2022/acs/acs5?get=NAME,group({table_code})&for=block%20group:*&in=state:{state_fips}%20county:{county_fips}&key={api_key}"
 
-    output_file= f"../../../datasets/census/US/cbg/gender_age/{state_fips}_{county_fips}.csv"
+    output_file= f"../../../../datasets/census/US/cbg/gender_age/{state_fips}_{county_fips}.csv"
 
     response = requests.get(url)
 
@@ -72,19 +72,19 @@ def get_gender_age_density(api_key: str, state_fips: str, county_fips: str, tabl
     else:
         print(f"Failed to fetch data: {response.status_code} - {response.text}")
 
+def add_gender_age_density(state_fips: str, county_fips: str, get_data_flag: bool):
 
-def add_gender_age_density(state_fips: str, county_fips: str):
+    if get_data_flag:
+        api_key = Path("../../../../datasets/census/US/myapikey.txt").read_text().strip()
+        table_code = 'B01001'
 
-    api_key = Path("../../../datasets/census/US/myapikey.txt").read_text().strip()
-    table_code = 'B01001'
-
-    get_gender_age_density(api_key, state_fips, county_fips, table_code)
+        # get_gender_age_density(api_key, state_fips, county_fips, table_code)
     
     print(' Adding gender and age data to measurement file...')
 
-    census_csv = f"../../../datasets/census/US/cbg/gender_age/{state_fips}_{county_fips}.csv"
-    # clean vs raw folder
-    ookla_csv = f"../../../datasets/ookla/US/cbg/raw_headers/ookla_fixed_cbg_{state_fips}_{county_fips}.csv"
+    census_csv = f"../../../../datasets/census/US/cbg/gender_age/{state_fips}_{county_fips}.csv"
+
+    ookla_csv = f"../../../../datasets/ookla/US/cbg/clean/ookla_fixed_cbg_{state_fips}_{county_fips}.csv"
 
     ookla_df = pd.read_csv(ookla_csv)
     census_df = pd.read_csv(census_csv)
@@ -95,7 +95,8 @@ def add_gender_age_density(state_fips: str, county_fips: str):
     merged_df['land_area'] = merged_df['ALAND'] / 1000000
     merged_df['population_density'] = merged_df['total_population'] / merged_df['land_area']
 
-    output_csv = f"../../../results/ookla/US/cbg/raw_census/ookla_fixed_cbg_{state_fips}_{county_fips}_census.csv"
+    # output_csv = f"../../../../results/ookla/US/cbg/raw_census/ookla_fixed_cbg_{state_fips}_{county_fips}_census.csv"
+    output_csv = f"../../../../results/ookla/US/cbg/census/ookla_fixed_cbg_{state_fips}_{county_fips}_census.csv"
 
     merged_df.to_csv(output_csv, index=False)
     print(f' Complete and saved in {output_csv}.')
@@ -130,17 +131,18 @@ def get_income(api_key: str, state_fips: str, county_fips: str, table_code: str)
     else:
         print(f"Failed to fetch data: {response.status_code} - {response.text}")
 
-def add_income(state_fips: str, county_fips: str):
+def add_income(state_fips: str, county_fips: str, get_data_flag: bool):
 
-    api_key = Path("../../../datasets/census/US/myapikey.txt").read_text().strip()
-    table_code = 'B19013'
+    if get_data_flag:
+        api_key = Path("../../../../datasets/census/US/myapikey.txt").read_text().strip()
+        table_code = 'B19013'
 
-    get_income(api_key, state_fips, county_fips, table_code)
+        get_income(api_key, state_fips, county_fips, table_code)
 
     print(' Adding income data to census file...')
 
-    base_csv = f"../../../results/ookla/US/cbg/raw_census/ookla_fixed_cbg_{state_fips}_{county_fips}_census.csv"
-    income_csv = f"../../../datasets/census/US/cbg/income/{state_fips}_{county_fips}.csv" 
+    base_csv = f"../../../../results/ookla/US/cbg/census/ookla_fixed_cbg_{state_fips}_{county_fips}_census.csv"
+    income_csv = f"../../../../datasets/census/US/cbg/income/{state_fips}_{county_fips}.csv" 
 
     base_df = pd.read_csv(base_csv)
     income_df = pd.read_csv(income_csv)
@@ -184,16 +186,17 @@ def get_education(api_key: str, state_fips: str, county_fips: str, table_code: s
     else:
         print(f"Failed to fetch data: {response.status_code} - {response.text}")
 
-def add_education(state_fips: str, county_fips: str):
+def add_education(state_fips: str, county_fips: str, get_data_flag: bool):
 
-    api_key = Path("../../../datasets/census/US/myapikey.txt").read_text().strip()
-    table_code = 'B15002'
+    if get_data_flag:
+        api_key = Path("../../../../datasets/census/US/myapikey.txt").read_text().strip()
+        table_code = 'B15002'
 
-    get_education(api_key, state_fips, county_fips, table_code)
+        get_education(api_key, state_fips, county_fips, table_code)
 
     print(' Adding education data to census file...')
-    base_csv = f"../../../results/ookla/US/cbg/raw_census/ookla_fixed_cbg_{state_fips}_{county_fips}_census.csv"
-    edu_csv = f"../../../datasets/census/US/cbg/education/{state_fips}_{county_fips}.csv"
+    base_csv = f"../../../../results/ookla/US/cbg/census/ookla_fixed_cbg_{state_fips}_{county_fips}_census.csv"
+    edu_csv = f"../../../../datasets/census/US/cbg/education/{state_fips}_{county_fips}.csv"
 
     base_df = pd.read_csv(base_csv)
     edu_df = pd.read_csv(edu_csv)
@@ -241,16 +244,17 @@ def get_race(api_key: str, state_fips: str, county_fips: str, table_code: str):
     else:
         print(f"Failed to fetch data: {response.status_code} - {response.text}")
 
-def add_race(state_fips: str, county_fips: str):
+def add_race(state_fips: str, county_fips: str, get_data_flag: bool):
 
-    api_key = Path("../../../datasets/census/US/myapikey.txt").read_text().strip()
-    table_code = 'B03002'
+    if get_data_flag:
+        api_key = Path("../../../../datasets/census/US/myapikey.txt").read_text().strip()
+        table_code = 'B03002'
 
-    get_race(api_key, state_fips, county_fips, table_code)
+        get_race(api_key, state_fips, county_fips, table_code)
 
     print(' Adding race data to census file...')
-    base_csv = f"../../../results/ookla/US/cbg/raw_census/ookla_fixed_cbg_{state_fips}_{county_fips}_census.csv"
-    race_csv = f"../../../datasets/census/US/cbg/race/{state_fips}_{county_fips}.csv"
+    base_csv = f"../../../../results/ookla/US/cbg/census/ookla_fixed_cbg_{state_fips}_{county_fips}_census.csv"
+    race_csv = f"../../../../datasets/census/US/cbg/race/{state_fips}_{county_fips}.csv"
 
     base_df = pd.read_csv(base_csv)
     race_df = pd.read_csv(race_csv)
@@ -265,8 +269,8 @@ def add_bg_shape(state_fips: str, county_fips: str, year: int):
     print(' Adding block group shape columns to census file...')
 
     # block_group_url = f"https://www2.census.gov/geo/tiger/TIGER{year}/BG/tl_{year}_{state_fips}_bg.zip"
-    block_group_file = f"../../../datasets/census/US/cbg/regions/tl_{year}_{state_fips}_bg.zip"
-    base_file = f"../../../results/ookla/US/cbg/census/ookla_fixed_cbg_{state_fips}_{county_fips}_census.csv"
+    block_group_file = f"../../../../datasets/census/US/cbg/regions/tl_{year}_{state_fips}_bg.zip"
+    base_file = f"../../../../results/ookla/US/cbg/census/ookla_fixed_cbg_{state_fips}_{county_fips}_census.csv"
 
     # shape_df = gpd.read_file(block_group_url)
     shape_df = gpd.read_file(block_group_file)
