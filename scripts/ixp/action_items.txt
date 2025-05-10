@@ -1,5 +1,0 @@
-Number of Facilities and Their Locations: Mapping facilities across counties or states can show which regions have more access points to IXPs, potentially leading to better internet quality.
-
-Participant Count and Network Type in IXs: Higher participant counts generally mean more networks exchanging traffic at that IXP, potentially resulting in lower latency and better speeds for users in that area.
-
-Traffic Volume and Peak Traffic at IXs: Assessing traffic volumes and peak hours at IXPs can help you understand the demand and potential load capacity, which affects performance.

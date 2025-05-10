@@ -183,22 +183,22 @@ file_paths = {
 
     # aggregated
     'bayarea': "../../../../../results/ookla/US/cbg/masters/ookla_fixed_cbg_master_06_bayarea.csv",
+    'middlecalifornia': "../../../../../results/ookla/US/cbg/masters/ookla_fixed_cbg_master_06_middlecaliforniaarea.csv",
+    'losangelesarea': "../../../../../results/ookla/US/cbg/masters/ookla_fixed_cbg_master_06_losangelesarea.csv",
 
-    'middlecalifornia': "../../../../../results/ookla/US/cbg/raw_masters/ookla_fixed_cbg_master_06_middlecalifornia.csv",
-    'losangelesarea': "../../../../../results/ookla/US/cbg/raw_masters/ookla_fixed_cbg_master_06_losangelesarea.csv",
-    'dallasarea': "../../../../../results/ookla/US/cbg/raw_masters/ookla_fixed_cbg_master_48_dallasarea.csv",
-    'houstonarea': "../../../../../results/ookla/US/cbg/raw_masters/ookla_fixed_cbg_master_48_houstonarea.csv",
-    'southtexasarea': "../../../../../results/ookla/US/cbg/raw_masters/ookla_fixed_cbg_master_48_southtexasarea.csv",
+    'dallasarea': "../../../../../results/ookla/US/cbg/masters/ookla_fixed_cbg_master_48_dallasarea.csv",
+    'houstonarea': "../../../../../results/ookla/US/cbg/masters/ookla_fixed_cbg_master_48_houstonarea.csv",
+    'southtexasarea': "../../../../../results/ookla/US/cbg/masters/ookla_fixed_cbg_master_48_southtexasarea.csv",
 }
 
-file_path = file_paths['bayarea']
+file_path = file_paths['southtexasarea']
 
 data = pd.read_csv(file_path, low_memory=False)
 
 relevant_cols = [
     'median_household_income', 'percentage_female',
     'percentage_age_over_65', 
-    'less_than_high_school_diploma',
+    'less_than_high_school_diploma', # bachelor_or_associate_degree
     'hispanic_latino', 'black_or_african_american_alone', 'asian_alone'
 ]
 
