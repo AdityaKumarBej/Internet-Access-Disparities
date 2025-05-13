@@ -1,2 +1,2 @@
-scripts/virtualenv/
+venv/
 .DS_Store
